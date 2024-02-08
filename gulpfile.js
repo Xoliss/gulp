@@ -1,4 +1,16 @@
-var gulp = require('gulp');
-gulp.tast ('mytask', function function_name () {
-    console.log('hello');
-});
+// Основной модуль
+import gulp from "gulp";
+// Импорт путей
+import { path } from "./gulp/config/path.js";
+
+// Передае значения в глобальную переменную
+global.app = {
+    path: path,
+    gulp:gulp,
+}
+
+// Импорт задач
+import {copy} from "./gulp/tasks/copy.js";
+
+// Выполнение сценария по умолчанию
+gulp.task('default', copy);
