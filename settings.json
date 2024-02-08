@@ -1,0 +1,12 @@
+{
+    "window.zoomLevel": 1,
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.autofetch": true,
+    "terminal.integrated.defaultProfile.osx": "bash",
+
+    "path-autocomplete.pathMappings": {
+        "@img": "${folder}/src/img",
+        "@scss": "${folder}/src/scss",
+        "@js": "${folder}/src/js"
+    }
+}
