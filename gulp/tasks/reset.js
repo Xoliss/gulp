@@ -1,4 +1,5 @@
-import del from "del";
+import {deleteAsync}  from "del";
+
 export const reset = () => {
-    return del(app.path.clean); // функция удаления (в папке с результатом) удаленных файлов из основного проекта
+    return deleteAsync(app.path.clean);
 }
