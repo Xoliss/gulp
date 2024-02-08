@@ -14,7 +14,7 @@ export const html = () => {
         //.pipe(fileinclude())// // при установке pug можно убрать данную строку
         .pipe(pug({
             pretty: true, // сжатие html файла
-            verbose: true
+            verbose: true // Показывать в терминале какой файл обработан
         }))
         .pipe(app.plugins.replace(/@img\//g, 'img/'))
         .pipe(webpHtmlNosvg())
@@ -35,4 +35,6 @@ export const html = () => {
             })
         )
         .pipe(app.gulp.dest(app.path.build.html)) // Путь назначения
+        .pipe(app.plugins.browsersync.stream()); // stream - обновление
+        
 }
