@@ -31,7 +31,7 @@ export const scss = () => {
             overrideBrowserslist: ["last 3 versions"], // Кол-во версий браузера (3 версии назад еще будут работать)
             cascade: true
         }))
-        // Раскоменти строку, если нужно будет посмотреть несжатый css файл
+        // Закоменти 1 нижнюю строку строку, если не нужен будет несжатый дуьль css файла
         .pipe(app.gulp.dest(app.path.build.css))
         .pipe(cleanCss())
         .pipe(rename({

@@ -18,17 +18,21 @@ import { reset } from "./gulp/tasks/reset.js";
 import { html } from  "./gulp/tasks/html.js";
 import { server } from "./gulp/tasks/server.js";
 import {scss} from "./gulp/tasks/scss.js";
+import {js} from "./gulp/tasks/js.js";
+import {images} from "./gulp/tasks/images.js";
 
 // Наш наблюдатель
 function watcher() {
     gulp.watch(path.watch.files, copy);  // (Пусть к файлам, за которыми нужно следить, задача которую нужно выполнить)
     gulp.watch(path.watch.html, html);
     gulp.watch(path.watch.scss, scss);
+    gulp.watch(path.watch.js, js);
+    gulp.watch(path.watch.images, images);
 
 }
 
 // Основные задачи
-const mainTasks = gulp.parallel(copy, html, scss); // Одновременное выполнение задач: копирование файлов из src и задача html
+const mainTasks = gulp.parallel(copy, html, scss, js, images); // Одновременное выполнение задач: копирование файлов из src и задача html
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel (watcher, server)); // последовательность задач в режиме разработчика (сначала мы удаляем папку с результатом, потом открывается сервер паралельно с наблюдателей (чтобы файлы на сервере сразу менялись после их обновления в коде)
