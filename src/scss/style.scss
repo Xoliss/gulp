@@ -1,7 +1,88 @@
+@import "./default.scss";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+// @import "../../node_modules/slick-carousel/slick/slick-theme.scss"; // Стандартные настройки слайдера
+
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 
     span {
-        color: green;
+        color: rgb(0, 0, 0)55, 255, 255;
+    }
+}
+
+// слайдер (блок)
+.carousel {
+    padding: 0 50px 30px;
+    margin: 20px;
+
+    &__img {
+        max-height: 400px;
+        margin: 0 auto;
+    }
+}
+
+// слайдер (стрелки)
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0px;
+
+    // рисуем стрелки (вместо стандартных кнопок)
+
+    &::before {
+        display: table;
+        font-size: 60px;
+    }
+}
+
+.slick-prev {
+    left: 0;
+
+    &::before {
+        content: "\276E";
+        background-color: white;
+    }
+}
+
+.slick-next {
+    right: 0;
+
+    &::before {
+        content: "\276F";
+        background-color: white;
+    }
+}
+
+// слайдер (пагинация (вобор слайда внизу))
+
+.slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    button {
+        background-color: #aaa;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        font-size: 0;
+
+        &:hover,
+        &:focus {
+            opacity: 0.6;
+        }
+    }
+}
+
+.slick-active {
+    button {
+        background-color: rgb(0, 0, 0);
     }
 }

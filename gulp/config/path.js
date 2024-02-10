@@ -20,14 +20,14 @@ export const path = {
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
         svg: `${srcFolder}/img/**/*.svg`,
         scss: `${srcFolder}/scss/style.scss`,
-        html: `${srcFolder}/*.pug`, // из исходников будем получать файлы, которые находят в src
+        html: `${srcFolder}/*.html`, // из исходников будем получать файлы, которые находят в src
         files: `${srcFolder}/files/**/*.*`, // путь к папке с файлами, которые нужно будет скопировать; srcFolder - папка с исходниками; папка files, из нее будут переноситься файлы; ** - проверка файлы в любых вложенных папках внутри папки files; *.* проверка всех файлов с любыми названиями
     }, 
     watch: { // автоматический перенос файлов в наш результат (dist/files)
         js: `${srcFolder}/js/**/*.js`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
         scss: `${srcFolder}/scss/**/*.scss`,
-        html: `${srcFolder}/**/*.pug`, // Наблюдем за html афйлами, которые в src и в других подпапках src
+        html: `${srcFolder}/**/*.html`, // Наблюдем за html афйлами, которые в src и в других подпапках src
         files: `${srcFolder}/files/**/*.*`,
     }, 
     clean: buildFolder, // clean = папке с результатом
