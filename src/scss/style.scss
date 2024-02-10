@@ -87,4 +87,13 @@ body {
     }
 }
 
-// Приближение слайдера
+// меньший слайдер
+.carousel--small {
+    padding: 0 50px 30px;
+    margin: 20px;
+
+    &__img {
+        width: 100px;
+        height: 100px;
+    }
+}
