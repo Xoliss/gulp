@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/head.html', {
-"title" :"Обо мне"
+"title" :"Вход"
 })
 
 <body>
     <div class="wrapper">
         @@include('html/header-about.html', {})
         <main>
-            <div class="menu-authorizataion">
-                <div class="title">
-                    <div class="input_block">
-                        <div class="login_block">
-                            <input type="text" placeholder="Введите логин">
+            <div class="MenuAuthorizataion">
+                <div class="MenuAuthorizataion__title title">
+                    <div class="MenuAuthorizataion__input_block input_block">
+                        <div class="MenuAuthorizataion__login_block login_block">
+                            <input class="MenuAuthorizataion__input" type="MenuAuthorizataion__text text" placeholder="Введите логин">
                         </div>
-                        <div class="pass_block">
-                            <input type="text" placeholder="Введите пароль">
+                        <div class="MenuAuthorizataion__pass_block pass_block">
+                            <input type="MenuAuthorizataion__text text" placeholder="Введите пароль">
                         </div>
                     </div>
-                    <button class="signIn">Войти</button>
+                    <button class="MenuAuthorizataion__signIn signIn">Войти</button>
                 </div>
         </main>
         @@include('html/footer.html', {})

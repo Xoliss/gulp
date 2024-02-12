@@ -217,7 +217,7 @@ body span {
 
 .carousel--big .slick-arrow::before {
   display: table;
-  font-size: 60px;
+  font-size: 7vh;
 }
 
 .carousel--big .slick-prev {
