@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    @@include('html/head.html', {
-    "title" :"Главная"
-    })
+@@include('html/head.html', {
+"title" :"Главная"
+})
 
-    <body>
-        @@include('html/header.html', {})
-        <main>
+<body>
+    <main>
+        <div class="wrapper">
+            @@include('html/header.html', {})
             <div class="carousel carousel--big">
-                <div class="carousel__item"><img src="img/slide-1.webp" alt="" class="carousel__img"></div>
-                <div class="carousel__item"><img src="img/slide-2.webp" alt="" class="carousel__img"></div>
-                <div class="carousel__item"><img src="img/slide-3.webp" alt="" class="carousel__img"></div>
-                <div class="carousel__item"><img src="img/slide-4.webp" alt="" class="carousel__img"></div>
-                <div class="carousel__item"><img src="img/slide-5.webp" alt="" class="carousel__img"></div>
+                <div class="carousel__item carousel--big__item"><img src="img/slide-1.webp" alt=""
+                        class="carousel__img carousel--big__img"></div>
+                <div class="carousel__item carousel--big__item"><img src="img/slide-2.webp" alt=""
+                        class="carousel__img carousel--big__img"></div>
+                <div class="carousel__item carousel--big__item"><img src="img/slide-3.webp" alt=""
+                        class="carousel__img carousel--big__img"></div>
+                <div class="carousel__item carousel--big__item"><img src="img/slide-4.webp" alt=""
+                        class="carousel__img carousel--big__img"></div>
+                <div class="carousel__item carousel--big__item"><img src="img/slide-5.webp" alt=""
+                        class="carousel__img carousel--big__img"></div>
             </div>
             <div class="carousel carousel--small">
-                <div class="carousel__item"><img src="img/slide-1.webp" alt="" class="carousel--small__img"></div>
-                <div class="carousel__item"><img src="img/slide-2.webp" alt="" class="carousel--small__img"></div>
-                <div class="carousel__item"><img src="img/slide-3.webp" alt="" class="carousel--small__img"></div>
-                <div class="carousel__item"><img src="img/slide-4.webp" alt="" class="carousel--small__img"></div>
-                <div class="carousel__item"><img src="img/slide-5.webp" alt="" class="carousel--small__img"></div>
+                <div class="carousel__item carousel--small__item"><img src="img/slide-1.webp" alt=""
+                        class="carousel__img carousel--small__img"></div>
+                <div class="carousel__item carousel--small__item"><img src="img/slide-2.webp" alt=""
+                        class="carousel__img carousel--small__img"></div>
+                <div class="carousel__item carousel--small__item"><img src="img/slide-3.webp" alt=""
+                        class="carousel__img carousel--small__img"></div>
+                <div class="carousel__item carousel--small__item"><img src="img/slide-4.webp" alt=""
+                        class="carousel__img carousel--small__img"></div>
+                <div class="carousel__item carousel--small__item"><img src="img/slide-5.webp" alt=""
+                        class="carousel__img carousel--small__img"></div>
             </div>
-        </main>
-        @@include('html/footer.html', {})
-        <script src="js/app.min.js"></script>
-    </body>
+            @@include('html/footer.html', {})
+    </main>
+    <script src="js/app.min.js"></script>
+</body>
+
 </html>

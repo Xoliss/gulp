@@ -14,15 +14,22 @@ const swiper = new Swiper();
 import "slick-carousel";
 
 jquery(".carousel--big").slick({
-    dots: true,
+    dots: false,
     slidesToShow: 1, // сколько слайдов на экране (по умолчанию 1, но можно и поставить 2, 3...)
     infinite: true, // значение бесконечности (после конечного слайда будет переноситься в начало)
     initialSlide: 0, // какой слайд первый
     touchThreshold: 10, // какое расстояние нужно просвайпить чтобы фото сменилось
     waitForAnimate: false, // можно быстро нажимать на стрелочки (и фото будут двигаться, не дожидаясь конца анимации)
-
+    fade: true,
+    asNavFor: ".carousel--small",
 });
-
 jquery(".carousel--small").slick({
-    slidesToShow: 3,
+    dots: true,
+    slidesToShow: 3, // сколько слайдов на экране (по умолчанию 1, но можно и поставить 2, 3...)
+    infinite: true, // значение бесконечности (после конечного слайда будет переноситься в начало)
+    initialSlide: 0, // какой слайд первый
+    touchThreshold: 10, // какое расстояние нужно просвайпить чтобы фото сменилось
+    waitForAnimate: false, // можно быстро нажимать на стрелочки (и фото будут двигаться, не дожидаясь конца анимации)
+    centerMode: true,
+    asNavFor: ".carousel--big",
 });

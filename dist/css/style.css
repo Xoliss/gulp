@@ -119,6 +119,28 @@ li {
   display: none;
 }
 
+.header__inner {
+  background-color: black;
+  padding: 15px 0;
+}
+
+.header__text {
+  font-size: 4vw;
+  color: white;
+  text-align: center;
+}
+
+.footer__inner {
+  background-color: black;
+  padding: 15px 0;
+}
+
+.footer__text {
+  font-size: 4vw;
+  color: white;
+  text-align: center;
+}
+
 body {
   background-color: rgb(255, 255, 255);
 }
@@ -127,17 +149,17 @@ body span {
   color: rgb(0, 0, 0) 55, 255, 255;
 }
 
-.carousel {
-  padding: 0 50px 30px;
-  margin: 20px;
-}
-
-.carousel__img {
-  max-height: 400px;
+.carousel--big {
+  padding: 30px 50px 30px;
   margin: 0 auto;
 }
 
-.slick-arrow {
+.carousel--big__img {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.carousel--big .slick-arrow {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -146,30 +168,30 @@ body span {
   font-size: 0px;
 }
 
-.slick-arrow::before {
+.carousel--big .slick-arrow::before {
   display: table;
   font-size: 60px;
 }
 
-.slick-prev {
+.carousel--big .slick-prev {
   left: 0;
 }
 
-.slick-prev::before {
+.carousel--big .slick-prev::before {
   content: "❮";
   background-color: white;
 }
 
-.slick-next {
+.carousel--big .slick-next {
   right: 0;
 }
 
-.slick-next::before {
+.carousel--big .slick-next::before {
   content: "❯";
   background-color: white;
 }
 
-.slick-dots {
+.carousel--big .slick-dots {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -178,12 +200,12 @@ body span {
           transform: translateX(-50%);
 }
 
-.slick-dots li {
+.carousel--big .slick-dots li {
   display: inline-block;
   margin: 0 5px;
 }
 
-.slick-dots button {
+.carousel--big .slick-dots button {
   background-color: #aaa;
   border-radius: 50%;
   width: 12px;
@@ -191,21 +213,84 @@ body span {
   font-size: 0;
 }
 
-.slick-dots button:hover,
-.slick-dots button:focus {
+.carousel--big .slick-dots button:hover,
+.carousel--big .slick-dots button:focus {
   opacity: 0.6;
 }
 
-.slick-active button {
+.carousel--big .slick-active button {
   background-color: rgb(0, 0, 0);
 }
 
 .carousel--small {
-  padding: 0 50px 30px;
-  margin: 20px;
+  padding: 30px 50px 30px;
+  margin: 0 auto;
 }
 
 .carousel--small__img {
-  width: 100px;
-  height: 100px;
+  margin: 0 auto;
+  width: 12vw;
+}
+
+.carousel--small .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 0px;
+}
+
+.carousel--small .slick-arrow::before {
+  display: table;
+  font-size: 60px;
+}
+
+.carousel--small .slick-prev {
+  left: 0;
+}
+
+.carousel--small .slick-prev::before {
+  content: "❮";
+  background-color: white;
+}
+
+.carousel--small .slick-next {
+  right: 0;
+}
+
+.carousel--small .slick-next::before {
+  content: "❯";
+  background-color: white;
+}
+
+.carousel--small .slick-dots {
+  position: absolute;
+  bottom: 10;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.carousel--small .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel--small .slick-dots button {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  font-size: 0;
+}
+
+.carousel--small .slick-dots button:hover,
+.carousel--small .slick-dots button:focus {
+  opacity: 0.6;
+}
+
+.carousel--small .slick-active button {
+  background-color: rgb(0, 0, 0);
 }
