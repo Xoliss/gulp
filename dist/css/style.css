@@ -109,3 +109,7 @@ label {
 legend {
   display: block;
 }
+
+h1 {
+  padding-top: 1px;
+}
