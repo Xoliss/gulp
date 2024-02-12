@@ -2,7 +2,8 @@
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 // @import "../../node_modules/slick-carousel/slick/slick-theme.scss"; // Стандартные настройки слайдера
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -16,16 +17,33 @@ main {
     flex: 1 1 auto;
 }
 
+.header__button {
+    margin: 0 auto;
+    width: 35vw;
+    height: 6vh;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    a {
+        color: rgb(112, 112, 112);
+        font-size: 1.3rem
+    }
+}
+
+
 .header {
     &__inner {
         background-color: black;
         padding: 15px 0;
-    }
-
-    &__text {
-        font-size: 4vw;
-        color: white;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -53,6 +71,7 @@ body {
 .carousel--big {
     padding: 30px 50px 30px;
     margin: 0 auto;
+
     &__img {
         width: 40vw;
         margin: 0 auto;
@@ -64,60 +83,60 @@ body {
         top: 50%;
         transform: translateY(-50%);
         font-size: 0px;
-    
+
         // рисуем стрелки (вместо стандартных кнопок)
-    
+
         &::before {
             display: table;
             font-size: 60px;
         }
     }
-    
+
     .slick-prev {
         left: 0;
-    
+
         &::before {
             content: "\276E";
             background-color: white;
         }
     }
-    
+
     .slick-next {
         right: 0;
-    
+
         &::before {
             content: "\276F";
             background-color: white;
         }
     }
-    
+
     // слайдер (пагинация (вобор слайда внизу))
-    
+
     .slick-dots {
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-    
+
         li {
             display: inline-block;
             margin: 0 5px;
         }
-    
+
         button {
             background-color: #aaa;
             border-radius: 50%;
             width: 12px;
             height: 12px;
             font-size: 0;
-    
+
             &:hover,
             &:focus {
                 opacity: 0.6;
             }
         }
     }
-    
+
     .slick-active {
         button {
             background-color: rgb(0, 0, 0);
@@ -128,6 +147,7 @@ body {
 .carousel--small {
     padding: 30px 50px 30px;
     margin: 0 auto;
+
     &__img {
         margin: 0 auto;
         width: 15vw;
@@ -139,72 +159,121 @@ body {
         top: 50%;
         transform: translateY(-50%);
         font-size: 0px;
-    
+
         // рисуем стрелки (вместо стандартных кнопок)
-    
+
         &::before {
             display: table;
             font-size: 60px;
         }
     }
-    
+
     .slick-prev {
         left: 0;
-    
+
         &::before {
             content: "\276E";
             background-color: white;
         }
     }
-    
+
     .slick-next {
         right: 0;
-    
+
         &::before {
             content: "\276F";
             background-color: white;
         }
     }
-    
+
     // слайдер (пагинация (вобор слайда внизу))
-    
+
     .slick-dots {
         position: absolute;
         bottom: 10;
         left: 50%;
         transform: translateX(-50%);
-    
+
         li {
             display: inline-block;
             margin: 0 5px;
         }
-    
+
         button {
             background-color: #aaa;
             border-radius: 50%;
             width: 12px;
             height: 12px;
             font-size: 0;
-    
+
             &:hover,
             &:focus {
                 opacity: 0.6;
             }
         }
     }
-    
+
     .slick-active {
         button {
             background-color: rgb(0, 0, 0);
         }
     }
-}        
+}
+
+.menu-authorizataion {
+    display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	width: 600px;
+	height: 350px;
+	border: 15px solid rgb(0, 133, 7);
+	border-radius: 10px;
+	.title {
+		color: $color_1;
+		font-size: 35px;
+		letter-spacing: 3px;
+		font-weight: 700;
+		font-family: $font-family_1;
+	}
+	.input_block {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 250px;
+		height: 100px;
+		input {
+			font-weight: 700;
+			font-size: 15px;
+			text-align: center;
+			height: 30px;
+			width: 100%;
+			&::placeholder {
+				font-weight: 700;
+				font-size: 15px;
+			}
+		}
+	}
+	button {
+		width: 150px;
+		height: 30px;
+		font-weight: 800;
+		font-size: 15px;
+		border: 0;
+		border-radius: 5px;
+		color: $color_2;
+		background-color: $background-color_2;
+		&:active {
+			background-color: $background-color_3;
+		}
+        margin-left: 50px;
+        margin-top: 20px;
+	}
+}
 
 @media (max-width: 600px) {
     .carousel--small {
         width: 80vw;
     }
 }
-
-
-

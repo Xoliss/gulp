@@ -4,7 +4,7 @@ import * as flsFunctions from "./modules/functions.js";
 import jquery from "jquery";
 
 // Загрузка сладера (Siper), но в данной работе он не используется
-
+flsFunctions.authorization();
 flsFunctions.isWebp();
 import Swiper, { Navigation, Pagination } from 'swiper';
 const swiper = new Swiper();

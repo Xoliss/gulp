@@ -8,7 +8,9 @@ button {
 }
 
 ul,
-li {
+li,
+a {
+  text-decoration: none;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -141,15 +143,38 @@ main {
           flex: 1 1 auto;
 }
 
+.header__button {
+  margin: 0 auto;
+  width: 35vw;
+  height: 6vh;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.header__button a {
+  color: rgb(112, 112, 112);
+  font-size: 1.3rem;
+}
+
 .header__inner {
   background-color: black;
   padding: 15px 0;
-}
-
-.header__text {
-  font-size: 4vw;
-  color: white;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__inner {

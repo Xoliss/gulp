@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    @@include('html/head.html', {
-    "title" :"Обо мне"
-    })
+@@include('html/head.html', {
+"title" :"Обо мне"
+})
 
-    <body>
-        @@include('html/header.html', {})
-        <main></main>
+<body>
+    <div class="wrapper">
+        @@include('html/header-about.html', {})
+        <main>
+            <div class="menu-authorizataion">
+                <div class="title">
+                    <div class="input_block">
+                        <div class="login_block">
+                            <input type="text" placeholder="Введите логин">
+                        </div>
+                        <div class="pass_block">
+                            <input type="text" placeholder="Введите пароль">
+                        </div>
+                    </div>
+                    <button class="signIn">Войти</button>
+                </div>
+        </main>
         @@include('html/footer.html', {})
-    </body>
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+
 </html>
