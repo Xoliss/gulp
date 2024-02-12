@@ -32,4 +32,17 @@ jquery(".carousel--small").slick({
     waitForAnimate: false, // можно быстро нажимать на стрелочки (и фото будут двигаться, не дожидаясь конца анимации)
     centerMode: true,
     asNavFor: ".carousel--big",
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+            }
+        }, {
+            breakpoint: 430,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });

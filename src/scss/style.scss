@@ -2,6 +2,20 @@
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 // @import "../../node_modules/slick-carousel/slick/slick-theme.scss"; // Стандартные настройки слайдера
 
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
 .header {
     &__inner {
         background-color: black;
@@ -116,7 +130,7 @@ body {
     margin: 0 auto;
     &__img {
         margin: 0 auto;
-        width: 12vw;
+        width: 15vw;
     }
 
 
@@ -185,5 +199,12 @@ body {
         }
     }
 }        
+
+@media (max-width: 600px) {
+    .carousel--small {
+        width: 80vw;
+    }
+}
+
 
 
