@@ -20,15 +20,16 @@ export const path = {
         js: `${srcFolder}/resources/js/app.js`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
         svg: `${srcFolder}/img/**/*.svg`,
-        scss: `${srcFolder}/components/**/*.scss`,
-        html: `${srcFolder}/components/**/*.html`, // из исходников будем получать файлы, которые находят в src
+        scss: `${srcFolder}/components/main/*.scss`,
+        html: `${srcFolder}/components/main/*.html`, // из исходников будем получать файлы, которые находят в src
         files: `${srcFolder}/files/**/*.*`, // путь к папке с файлами, которые нужно будет скопировать; srcFolder - папка с исходниками; папка files, из нее будут переноситься файлы; ** - проверка файлы в любых вложенных папках внутри папки files; *.* проверка всех файлов с любыми названиями
     }, 
-    watch: { // автоматический перенос файлов в наш результат (dist/files)
+    watch: {
+        // автоматический перенос файлов в наш результат (dist/files)
         js: `${srcFolder}/resources/js/**/*.js`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
-        scss: `${srcFolder}/components/**/*.scss`,
-        html: `${srcFolder}/components/**/*.html`, // Наблюдем за html файлами, которые в src и в других подпапках src
+        scss: `${srcFolder}/components/main/*.scss`,
+        html: `${srcFolder}/components/main/*.html`, // Наблюдем за components файлами, которые в src и в других подпапках src
         files: `${srcFolder}/files/**/*.*`,
     }, 
     clean: buildFolder, // clean = папке с результатом
