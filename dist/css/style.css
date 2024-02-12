@@ -1,211 +1,113 @@
 @charset "UTF-8";
 
-button {
+* {
+  padding: 0px;
+  margin: 0px;
   border: none;
-  background-color: none;
-  padding: 0;
-  cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Линки */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Коммоны */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 ul,
-li {
+ul li {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-/* Slider */
-
-.slick-slider {
-  position: relative;
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
+img {
+  vertical-align: top;
 }
 
-.slick-list {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0;
-  padding: 0;
+img,
+svg {
+  max-width: 100%;
+  height: auto;
 }
 
-.slick-list:focus {
+address {
+  font-style: normal;
+}
+
+/* Формы */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
   outline: none;
 }
 
-.slick-list.dragging {
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
   cursor: pointer;
-  cursor: hand;
 }
 
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-  position: relative;
-  left: 0;
-  top: 0;
+legend {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slick-track:before,
-.slick-track:after {
-  content: "";
-  display: table;
-}
-
-.slick-track:after {
-  clear: both;
-}
-
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-
-.slick-slide {
-  float: left;
-  height: 100%;
-  min-height: 1px;
-  display: none;
-}
-
-[dir=rtl] .slick-slide {
-  float: right;
-}
-
-.slick-slide img {
-  display: block;
-}
-
-.slick-slide.slick-loading img {
-  display: none;
-}
-
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
-.slick-initialized .slick-slide {
-  display: block;
-}
-
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-  display: none;
-}
-
-body {
-  background-color: rgb(255, 255, 255);
-}
-
-body span {
-  color: rgb(0, 0, 0) 55, 255, 255;
-}
-
-.carousel {
-  padding: 0 50px 30px;
-  margin: 20px;
-}
-
-.carousel__img {
-  max-height: 400px;
-  margin: 0 auto;
-}
-
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 0px;
-}
-
-.slick-arrow::before {
-  display: table;
-  font-size: 60px;
-}
-
-.slick-prev {
-  left: 0;
-}
-
-.slick-prev::before {
-  content: "❮";
-  background-color: white;
-}
-
-.slick-next {
-  right: 0;
-}
-
-.slick-next::before {
-  content: "❯";
-  background-color: white;
-}
-
-.slick-dots {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.slick-dots li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.slick-dots button {
-  background-color: #aaa;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-  font-size: 0;
-}
-
-.slick-dots button:hover,
-.slick-dots button:focus {
-  opacity: 0.6;
-}
-
-.slick-active button {
-  background-color: rgb(0, 0, 0);
-}
-
-.carousel--small {
-  padding: 0 50px 30px;
-  margin: 20px;
-}
-
-.carousel--small__img {
-  width: 100px;
-  height: 100px;
 }

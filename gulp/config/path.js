@@ -27,7 +27,7 @@ export const path = {
         js: `${srcFolder}/js/**/*.js`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
         scss: `${srcFolder}/scss/**/*.scss`,
-        html: `${srcFolder}/**/*.html`, // Наблюдем за html афйлами, которые в src и в других подпапках src
+        html: `${srcFolder}/**/*.html`, // Наблюдем за html файлами, которые в src и в других подпапках src
         files: `${srcFolder}/files/**/*.*`,
     }, 
     clean: buildFolder, // clean = папке с результатом

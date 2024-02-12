@@ -1,3 +1,4 @@
+// Здесь описываем все функции
 // функция проверки (Поддерживается ли браузером картинки WEBP?)
 export function isWebp() {
     function testWebp (callback) {
