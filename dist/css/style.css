@@ -1,3 +1,74 @@
+@import "../../node_modules/swiper/swiper-bundle.css";
+
+@font-face {
+  font-family: Englishscriptc;
+  font-display: swap;
+  src: url("../fonts/Englishscriptc.woff2") format("woff2"), url("../fonts/Englishscriptc.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Datacron;
+  font-display: swap;
+  src: url("../fonts/Datacron.woff2") format("woff2"), url("../fonts/Datacron.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 80vw;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.swiper-wrapper {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
+
+.swiper-button-prev::after {
+  color: orange;
+  font-size: 30px;
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+
+.swiper-button-next::after {
+  color: orange;
+  font-size: 30px;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  border: 2px solid orange;
+}
+
 * {
   padding: 0px;
   margin: 0px;
