@@ -76,14 +76,6 @@
   background-color: white;
 }
 
-.swiper-mini .swiper-button-prev {
-  display: none;
-}
-
-.swiper-mini .swiper-button-next {
-  display: none;
-}
-
 * {
   padding: 0px;
   margin: 0px;

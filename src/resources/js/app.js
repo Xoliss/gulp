@@ -6,16 +6,18 @@
 import Swiper from "swiper";
 import { Navigation, Pagination } from 'swiper/modules';
 
-const swiper = new Swiper('.swiper-large', {
+
+let swiperLarge = new Swiper('.swiper-large', {
     modules: [Navigation, Pagination],
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    paginationClickable: true,
+    slidesPerView: 1,
 
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination1',
+        el: '.swiper-pagination',
+        clickable: true,
     },
 
     // Navigation arrows
@@ -25,16 +27,21 @@ const swiper = new Swiper('.swiper-large', {
     },
 });
 
-const swiperMini = new Swiper('.swiper-mini', {
+
+let swiperMini = new Swiper('.swiper-mini', {
     modules: [Navigation, Pagination],
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    paginationClickable: true,
+    slidesPerView: 1,
+    controller: {
+        control: swiperLarge,
+    },
 
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination2',
+        el: '.swiper-pagination',
+        clickable: true,
     },
 
     // Navigation arrows
@@ -43,6 +50,3 @@ const swiperMini = new Swiper('.swiper-mini', {
         prevEl: '.swiper-button-prev',
     },
 });
-
-swiper.controller.control = swiperMini;
-swiperMini.controller.control = swiper;

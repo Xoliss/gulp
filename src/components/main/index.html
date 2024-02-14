@@ -1,62 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('../layouts/head.html', {
-"title" :"Главная"
-})
+    @@include('../layouts/head.html', {
+    "title" :"Главная"
+    })
 
-<body>
-    @@include('../layouts/header.html', {})
-    <main>
-        <div class="wrapper">
-
-            <div class="swiper-large swiper">
-                            
-                <div class="swiper-large__wrapper swiper-wrapper">
-
-                    <div class="swiper-large__slide swiper-slide"><img src="../../img/10054-5.jpg" alt=""></div>
-                    <div class="swiper-large__slide swiper-slide"><img src="../../img/10057-2.jpg" alt=""></div>
-                    <div class="swiper-large__slide swiper-slide"><img src="../../img/10060-6.jpg" alt=""></div>
-                    <div class="swiper-large__slide swiper-slide"><img src="../../img/10062-3.jpg" alt=""></div>
-                    <div class="swiper-large__slide swiper-slide"><img src="../../img/10064-7.jpg" alt=""></div>
-                </div>
-
-                
-                
-                <div class="swiper-pagination swiper-pagination1"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <div class="swiper-scrollbar"></div>
-
-            </div>
-
-            <div class="swiper-mini swiper">
-         
-                <div class="swiper-mini__wrapper swiper-wrapper">
-
-                    <div class="swiper-mini__slide swiper-slide"><img src="../../img/10054-5.jpg" alt=""></div>
-                    <div class="swiper-mini__slide swiper-slide"><img src="../../img/10057-2.jpg" alt=""></div>
-                    <div class="swiper-mini__slide swiper-slide"><img src="../../img/10060-6.jpg" alt=""></div>
-                    <div class="swiper-mini__slide swiper-slide"><img src="../../img/10062-3.jpg" alt=""></div>
-                    <div class="swiper-mini__slide swiper-slide"><img src="../../img/10064-7.jpg" alt=""></div>
-                </div>
-
-                
-
-                <div class="swiper-pagination swiper-pagination2"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <div class="swiper-scrollbar"></div>
-
-            </div>
-        </div>
-
-    </main>
-    @@include('../layouts/footer.html', {})
-    <script src="js/app.min.js"></script>
-</body>
-
+    <body>
+        @@include('../layouts/header.html', {})
+        <main>
+            @@include('../layouts/top.html', {})
+            @@include('../layouts/promo.html', {})
+            @@include('../layouts/projects-cards.html', {})
+            @@include('../layouts/advantages.html', {})
+        </main>
+        @@include('../layouts/footer.html', {})
+        <script src="js/app.min.js"></script>
+    </body>
 </html>
