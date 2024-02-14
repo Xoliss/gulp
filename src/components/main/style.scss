@@ -1,4 +1,53 @@
-@import "../../resources/scss/fonts.scss"; 
+@import "../../resources/scss/fonts.scss";
 @import "../../node_modules/swiper/swiper-bundle.css";
 @import "../../resources/scss/swiper.scss"; 
 @import "../../resources/scss/default.scss"; 
+@import "../../resources/scss/mobile.scss";
+@import "../../resources/scss/adaptive.scss";
+
+.header {
+    
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__logo-inner {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        h4 {
+            width: 180px;
+            padding-top: 10px;
+        }
+    }
+
+    &__connection {
+        display: flex;
+        gap: 50px;
+
+    }
+    .connection {
+        padding-top: 25px;
+        gap: 85px;
+        &__inner {
+            max-width: 313px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            &-text {
+                color: var(--Color-a, #614F44);
+                font-weight: 700;
+            }
+        }
+    }
+
+}

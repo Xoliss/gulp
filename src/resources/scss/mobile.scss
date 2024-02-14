@@ -1,0 +1,24 @@
+@media (max-width: 375px) {
+    
+}
+
+@media (max-width: 330px) {
+    .header {
+        .container {
+            padding: 0 5px;
+        }
+
+        .connection {
+            padding-top: 40px;
+            gap: 10px;
+
+            &__link {
+
+                &-icon {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
