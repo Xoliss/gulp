@@ -1,7 +1,6 @@
 .swiper {
-
     display: flex;
-    max-width: 80vw;
+    max-width: 35vw;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -15,13 +14,16 @@
     &-slide {
 
         display: flex;
+        justify-content: center;
 
         img {
+
             width: 100%;
             height: 100%;
-        } 
+        }
 
     }
+
     &-button {
 
         &-prev {
@@ -31,8 +33,8 @@
             &::after {
                 color: orange;
                 font-size: 30px;
-            }    
-            
+            }
+
         }
 
         &-next {
@@ -42,11 +44,12 @@
             &::after {
                 color: orange;
                 font-size: 30px;
-            }  
+            }
 
         }
 
     }
+
     &-pagination {
 
         &-bullet {
@@ -55,6 +58,32 @@
             height: 15px;
             opacity: 1;
             border: 2px solid orange;
+
+            &-active {
+                background-color: white;
+            }
+        }
+
+    }
+
+    &-large {
+        .swiper-pagination {
+        }
+    }
+
+    &-mini {
+
+        &__wrapper {
+
+            &__slide {}
+        }
+
+        .swiper-button-prev {
+            display: none;
+        }
+
+        .swiper-button-next {
+            display: none;
         }
     }
 }

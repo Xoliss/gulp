@@ -6,20 +6,43 @@
 import Swiper from "swiper";
 import { Navigation, Pagination } from 'swiper/modules';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-large', {
     modules: [Navigation, Pagination],
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
+    paginationClickable: true,
+
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+        el: '.swiper-pagination1',
     },
-  
+
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-  });
+});
+
+const swiperMini = new Swiper('.swiper-mini', {
+    modules: [Navigation, Pagination],
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    paginationClickable: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination2',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+swiper.controller.control = swiperMini;
+swiperMini.controller.control = swiper;

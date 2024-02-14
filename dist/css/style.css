@@ -20,7 +20,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 80vw;
+  max-width: 35vw;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -36,6 +36,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .swiper-slide img {
@@ -67,6 +70,18 @@
   height: 15px;
   opacity: 1;
   border: 2px solid orange;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.swiper-mini .swiper-button-prev {
+  display: none;
+}
+
+.swiper-mini .swiper-button-next {
+  display: none;
 }
 
 * {
