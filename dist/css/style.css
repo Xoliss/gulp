@@ -268,6 +268,10 @@ p {
   font-weight: inherit;
 }
 
+u {
+  text-decoration: none;
+}
+
 ul,
 ul li {
   list-style: none;
@@ -337,6 +341,7 @@ legend {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 10px;
+  z-index: 2;
 }
 
 h1,
@@ -369,6 +374,32 @@ h3 {
 
 h4 {
   font-size: 14px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 60px;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 7px;
+  background: var(--Color-c, #E86439);
+  z-index: 2;
+}
+
+.orange {
+  color: var(--Color-c, #E86439);
+  font-weight: 700;
 }
 
 .header__inner {
@@ -432,6 +463,100 @@ h4 {
 .header .connection__link-text {
   color: var(--Color-a, #614F44);
   font-weight: 700;
+}
+
+.promo {
+  margin-top: 100px;
+}
+
+.promo__abstraction {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+.promo__img {
+  position: absolute;
+  left: 650px;
+  top: 135px;
+}
+
+.promo__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.promo__info h1 {
+  max-width: 785px;
+}
+
+.promo__info h2 {
+  max-width: 530px;
+}
+
+.promo__button {
+  margin: 20px 0 100px;
+}
+
+.promo__button h3 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.promo .advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.promo .advantages__inner {
+  z-index: 2;
+  max-width: 284px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: white;
+  position: relative;
+}
+
+.promo .advantages__inner--1 {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.promo .advantages__inner--3 {
+  border-radius: 0 10px 10px 0;
+}
+
+.promo .advantages__info {
+  padding: 30px 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promo .advantages__icon {
+  position: absolute;
+  top: -25px;
+  left: 20px;
+}
+
+.promo .advantages__bullet {
+  position: absolute;
+}
+
+.promo .advantages h3 {
+  padding-left: 17px;
+}
+
+.promo__under {
+  position: absolute;
+  z-index: 3;
+  bottom: 435px;
 }
 
 @media (max-width: 985px) {

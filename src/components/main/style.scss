@@ -1,21 +1,22 @@
 @import "../../resources/scss/fonts.scss";
 @import "../../node_modules/swiper/swiper-bundle.css";
-@import "../../resources/scss/swiper.scss"; 
-@import "../../resources/scss/default.scss"; 
+@import "../../resources/scss/swiper.scss";
+@import "../../resources/scss/default.scss";
 @import "../../resources/scss/mobile.scss";
 @import "../../resources/scss/adaptive.scss";
 
 .header {
-    
+
     &__inner {
         display: flex;
         justify-content: space-between;
     }
-    
+
     &__logo-inner {
         align-items: center;
         display: flex;
         gap: 20px;
+
         h4 {
             width: 180px;
             padding-top: 10px;
@@ -27,9 +28,11 @@
         gap: 50px;
 
     }
+
     .connection {
         padding-top: 25px;
         gap: 85px;
+
         &__inner {
             max-width: 313px;
             display: flex;
@@ -48,6 +51,100 @@
                 font-weight: 700;
             }
         }
+    }
+
+}
+
+.promo {
+
+    margin-top: 100px;
+
+    &__abstraction {
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+
+    &__img {
+        position: absolute;
+        left: 650px;
+        top: 135px;
+    }
+
+
+    &__inner {}
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        h1 {
+            max-width: 785px;
+        }
+
+        h2 {
+            max-width: 530px;
+        }
+
+    }
+
+    &__button {
+
+        margin: 20px 0 100px;
+
+        h3 {
+            color: white;
+            text-transform: uppercase;
+        }
+        
+    }
+
+    .advantages {
+        display: flex;
+        gap: 10px;
+
+        &__inner {
+            z-index: 2;
+            max-width: 284px;
+            border-radius: 10px 0px 0px 10px;
+            background-color: white;
+            position: relative;
+            &--1 {
+                border-radius: 10px 0px 0px 10px;
+            }
+
+            &--3 {
+                border-radius: 0 10px 10px 0;
+            }
+
+        }
+
+        &__info {
+            padding: 30px 20px 20px;
+            display: flex;
+
+        }
+
+        &__icon {
+            position: absolute;
+            top: -25px;
+            left: 20px;
+        }
+
+        &__bullet {
+            position: absolute;
+        }
+
+        h3 {
+            padding-left: 17px;
+        }
+    }
+
+    &__under {
+        position: absolute;
+        z-index: 3;
+        bottom: 435px;
     }
 
 }
