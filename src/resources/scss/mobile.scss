@@ -1,5 +1,27 @@
 @media (max-width: 375px) {
-    
+    .promo {
+        padding-top: 75px;
+        &__abstraction {
+            height: 35vh;
+            left: 24px
+        }
+        &__button {
+            width: 75vw;
+        } 
+        &__down {
+            padding: 40px 0 0;
+            
+            &--img {
+                height: 35vh;
+
+            }
+        }
+        .advantages {
+            &__info {
+                padding-bottom: 25px;
+            }
+        }
+    }
 }
 
 @media (max-width: 330px) {
