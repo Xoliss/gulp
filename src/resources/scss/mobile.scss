@@ -22,8 +22,10 @@
             }
         }
     }
-    .top {
-        &__inner {}
+    .trade-offer {
+        &__inner {
+            height: 850px;
+        }
     
         &__img {
             &--man {}
@@ -39,7 +41,9 @@
     
         &__text {}
     
-        &__button {}
+        &__button {
+            width: 75vw;
+        }
     }
 }
 

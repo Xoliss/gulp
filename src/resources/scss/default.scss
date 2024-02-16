@@ -1,6 +1,6 @@
 html, body {
 	max-width: 2600px;
-	background: var(--Bg, #ffffff);
+	background: var(--Bg, #F5F4F4);
 }
 
 * {
@@ -184,7 +184,7 @@ h4 {
 
 
 
-@media (max-width: 475px) {
+@media (max-width: 375px) {
 	h1 {
 		font-size: 24px;
 	}

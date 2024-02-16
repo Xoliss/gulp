@@ -223,7 +223,7 @@
 html,
 body {
   max-width: 2600px;
-  background: var(--Bg, #ffffff);
+  background: var(--Bg, #F5F4F4);
 }
 
 * {
@@ -410,7 +410,7 @@ h4 {
 }
 
 .header {
-  background: var(--Bg, #F5F4F4);
+  background: var(--Bg, #ffffff);
 }
 
 .header__inner {
@@ -578,7 +578,7 @@ h4 {
 }
 
 .trade-offer {
-  padding-top: 200px;
+  margin-top: 200px;
   background: var(--Bg, #F5F4F4);
 }
 
@@ -681,8 +681,7 @@ h4 {
 
   .trade-offer__inner {
     width: 90vw;
-    height: 1200px;
-    background-position-x: right;
+    height: 1300px;
     background-position-y: top;
   }
 
@@ -692,24 +691,11 @@ h4 {
   }
 
   .trade-offer__img-inner {
-    padding: 0 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .trade-offer__img-inner .img {
-    width: 50rem;
-    height: 35rem;
-    -o-object-fit: scale-down;
-    object-fit: scale-down;
-  }
-
-  .trade-offer--vector {
-    display: none;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    left: 15vw;
   }
 
   .trade-offer__info {
@@ -801,19 +787,23 @@ h4 {
     padding-left: 30px;
     padding-right: 20px;
   }
+
+  .trade-offer__inner {
+    background-position-y: center;
+  }
+
+  .trade-offer__img-inner {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    left: 0;
+  }
 }
 
 @media (max-width: 775px) {
-  .trade-offer__img-inner {
-    height: 500px;
-    overflow: hidden;
-  }
-
-  .trade-offer__img-inner .img {
-    width: 100%;
-    height: auto;
-    -o-object-fit: scale-down;
-    object-fit: scale-down;
+  .trade-offer__inner {
+    height: 1320px;
   }
 }
 
@@ -887,15 +877,8 @@ h4 {
     width: 65vw;
   }
 
-  .trade-offer__img-inner {
-    padding: 30px 0 0;
-  }
-
-  .trade-offer__img-inner .img {
-    width: 100vw;
-    height: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
+  .trade-offer__inner {
+    height: 1250px;
   }
 
   .trade-offer__info {
@@ -926,6 +909,21 @@ h4 {
 
 @media (max-width: 475px) {
   h1 {
+    font-size: 38px;
+  }
+
+  .trade-offer__inner {
+    height: 1070px;
+  }
+
+  .trade-offer__button {
+    width: 250px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
     font-size: 24px;
   }
 
@@ -941,13 +939,6 @@ h4 {
     font-size: 12px;
   }
 
-  .trade-offer__button {
-    width: 250px;
-    height: 60px;
-  }
-}
-
-@media (max-width: 375px) {
   .promo {
     padding-top: 75px;
   }
@@ -971,6 +962,14 @@ h4 {
 
   .promo .advantages__info {
     padding-bottom: 25px;
+  }
+
+  .trade-offer__inner {
+    height: 850px;
+  }
+
+  .trade-offer__button {
+    width: 75vw;
   }
 }
 
