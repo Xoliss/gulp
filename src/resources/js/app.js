@@ -4,15 +4,34 @@
 // flsFunctions.name_function(); // прописываем все функции из functions.js
 
 import Swiper from "swiper";
-import { Navigation, Pagination } from 'swiper/modules';
+import { Controller, Navigation, Pagination } from 'swiper/modules';
 
 
-let swiperLarge = new Swiper('.swiper-large', {
+let swiperStandart = new Swiper('.swiper--standart', {
     modules: [Navigation, Pagination],
-    // Optional parameters
-    direction: 'horizontal',
+
     loop: true,
     slidesPerView: 1,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: { 
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+let swiperMini = new Swiper('.swiper--mini', {
+    modules: [Navigation, Pagination],
+
+    loop: true,
+    slidesPerView: 1,
+    nested: true,
 
     // If we need pagination
     pagination: {
@@ -25,28 +44,11 @@ let swiperLarge = new Swiper('.swiper-large', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-});
 
-
-let swiperMini = new Swiper('.swiper-mini', {
-    modules: [Navigation, Pagination],
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1,
     controller: {
-        control: swiperLarge,
-    },
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        control: swiperStandart
     },
 });
+
+swiperMini.controller.control = swiperStandart;
+swiperStandart.controller.control = swiperMini;

@@ -47,6 +47,29 @@
             margin-bottom: 20px;
         }
     }
+    .advantages {
+        &__inner {}
+    
+        &__info {
+            h1 {
+                u {}
+            }
+    
+            h2 {}
+        }
+    
+        &__blocks {
+            &--double {}
+        }
+    
+        &__block {}
+    
+        &__icon {}
+    
+        &__text {
+            h3 {}
+        }
+    }
 }
 
 
@@ -154,21 +177,6 @@
             left: 0;
         }
 
-        &__img {
-            &--man {}
-
-            &--elipce {}
-
-            &--vector {}
-        }
-
-        &__info {}
-
-        &__name {}
-
-        &__text {}
-
-        &__button {}
     }
 
 }
@@ -177,11 +185,6 @@
     .trade-offer {
         &__inner {
             height: 1320px;
-        }
-        &__img-inner {
-
-
-            .img {}
         }
     }
 }
@@ -268,12 +271,6 @@
             height: 1250px;
         }
 
-        &__img-inner {
-            
-            .img {
-            }
-        }
-
         &__info {
             width: 80vw;
             padding-right: 0;
@@ -301,6 +298,29 @@
             margin: 0;
         }
     }
+    .advantages {
+        &__inner {}
+    
+        &__info {
+            h1 {
+                u {}
+            }
+    
+            h2 {}
+        }
+    
+        &__blocks {
+            &--double {}
+        }
+    
+        &__block {}
+    
+        &__icon {}
+    
+        &__text {
+            h3 {}
+        }
+    }
 }
 
 @media (max-width: 475px) {
@@ -315,10 +335,28 @@
             width: 250px;
             height: 60px;
         }
-        &__img-inner {
-            
-            .img {
+    }
+    .advantages {
+        &__inner {}
+    
+        &__info {
+            h1 {
+                u {}
             }
+    
+            h2 {}
+        }
+    
+        &__blocks {
+            &--double {}
+        }
+    
+        &__block {}
+    
+        &__icon {}
+    
+        &__text {
+            h3 {}
         }
     }
 }

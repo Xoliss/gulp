@@ -27,23 +27,32 @@
     &-button {
 
         &-prev {
-
-            left: 20px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
 
             &::after {
-                color: orange;
-                font-size: 30px;
+                color: #E86439;
+                font-size: 15px;
+                padding-right: 2px;
             }
 
         }
 
-        &-next {
 
-            right: 20px;
+        &-next {
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
 
             &::after {
-                color: orange;
-                font-size: 30px;
+                color: #E86439;
+                font-size: 15px;
+                padding-left: 2px;
             }
 
         }
@@ -67,8 +76,7 @@
     }
 
     &-large {
-        .swiper-pagination {
-        }
+        .swiper-pagination {}
     }
 
     &-mini {
@@ -78,12 +86,8 @@
             &__slide {}
         }
 
-        .swiper-button-prev {
+        .swiper-button-prev {}
 
-        }
-
-        .swiper-button-next {
-
-        }
+        .swiper-button-next {}
     }
 }

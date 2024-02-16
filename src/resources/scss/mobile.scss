@@ -26,23 +26,32 @@
         &__inner {
             height: 850px;
         }
-    
-        &__img {
-            &--man {}
-    
-            &--elipce {}
-    
-            &--vector {}
-        }
-    
-        &__info {}
-    
-        &__name {}
-    
-        &__text {}
-    
+
         &__button {
             width: 75vw;
+        }
+    }
+    .advantages {
+        &__inner {}
+    
+        &__info {
+            h1 {
+                u {}
+            }
+    
+            h2 {}
+        }
+    
+        &__blocks {
+            &--double {}
+        }
+    
+        &__block {}
+    
+        &__icon {}
+    
+        &__text {
+            h3 {}
         }
     }
 }
@@ -66,23 +75,27 @@
             }
         }
     }
-    .top {
+    .advantages {
         &__inner {}
     
-        &__img {
-            &--man {}
+        &__info {
+            h1 {
+                u {}
+            }
     
-            &--elipce {}
-    
-            &--vector {}
+            h2 {}
         }
     
-        &__info {}
+        &__blocks {
+            &--double {}
+        }
     
-        &__name {}
+        &__block {}
     
-        &__text {}
+        &__icon {}
     
-        &__button {}
+        &__text {
+            h3 {}
+        }
     }
 }

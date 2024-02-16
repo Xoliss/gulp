@@ -1,6 +1,6 @@
 @import "../../resources/scss/fonts.scss";
 @import "../../node_modules/swiper/swiper-bundle.css";
-@import "../../resources/scss/swiper.scss";
+@import "../../resources/scss/slider.scss";
 @import "../../resources/scss/default.scss";
 @import "../../resources/scss/mobile.scss";
 @import "../../resources/scss/adaptive.scss";
@@ -232,5 +232,29 @@
         height: 60px;
         margin-left: 50px;
 
+    }
+}
+
+.advantages {
+    &__inner {}
+
+    &__info {
+        h1 {
+            u {}
+        }
+
+        h2 {}
+    }
+
+    &__blocks {
+        &--double {}
+    }
+
+    &__block {}
+
+    &__icon {}
+
+    &__text {
+        h3 {}
     }
 }

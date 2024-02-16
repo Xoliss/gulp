@@ -191,21 +191,31 @@
 }
 
 .swiper-button-prev {
-  left: 20px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .swiper-button-prev::after {
-  color: orange;
-  font-size: 30px;
+  color: #E86439;
+  font-size: 15px;
+  padding-right: 2px;
 }
 
 .swiper-button-next {
-  right: 20px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .swiper-button-next::after {
-  color: orange;
-  font-size: 30px;
+  color: #E86439;
+  font-size: 15px;
+  padding-left: 2px;
 }
 
 .swiper-pagination-bullet {
