@@ -1,4 +1,4 @@
-@media (max-width: 1285px) {
+@media (max-width: 1315px) {
     .promo {
 
         &__abstraction {
@@ -48,9 +48,13 @@
         }
     }
     .advantages {
-        &__inner {}
+        background-position: 350px 85px;
+        &__inner {
+            background-position: 100px 30px;
+        }
     
         &__info {
+            margin-left: 5vw;
             h1 {
                 u {}
             }
@@ -59,6 +63,7 @@
         }
     
         &__blocks {
+            margin-left: 5vw;
             &--double {}
         }
     
@@ -159,7 +164,7 @@
 
     }
 
-    .advantages {
+    .convenience {
         padding-left: 30px;
         padding-right: 20px;
 
@@ -250,7 +255,7 @@
 
         }
 
-        .advantages {
+        .convenience {
             flex-direction: column;
             padding-left: 15px;
 

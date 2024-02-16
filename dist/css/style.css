@@ -543,14 +543,14 @@ h4 {
   display: none;
 }
 
-.promo .advantages {
+.promo .convenience {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
 
-.promo .advantages__inner {
+.promo .convenience__inner {
   z-index: 5;
   width: 284px;
   border-radius: 10px 0px 0px 10px;
@@ -558,32 +558,32 @@ h4 {
   position: relative;
 }
 
-.promo .advantages__inner--1 {
+.promo .convenience__inner--1 {
   border-radius: 10px 0px 0px 10px;
 }
 
-.promo .advantages__inner--3 {
+.promo .convenience__inner--3 {
   border-radius: 0 10px 10px 0;
 }
 
-.promo .advantages__info {
+.promo .convenience__info {
   padding: 30px 20px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.promo .advantages__icon {
+.promo .convenience__icon {
   position: absolute;
   top: -25px;
   left: 20px;
 }
 
-.promo .advantages__bullet {
+.promo .convenience__bullet {
   position: absolute;
 }
 
-.promo .advantages h3 {
+.promo .convenience h3 {
   padding-left: 17px;
 }
 
@@ -678,7 +678,92 @@ h4 {
   margin-left: 50px;
 }
 
-@media (max-width: 1285px) {
+.advantages {
+  padding-top: 120px;
+  background-color: white;
+  background-position: 105% -70%;
+}
+
+.advantages__inner {
+  background-position: 50px 30px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.advantages__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45vw;
+  gap: 20px;
+}
+
+.advantages__info h1 {
+  color: var(--Color-a, #614F44);
+}
+
+.advantages__info h1 u {
+  font-weight: 700;
+}
+
+.advantages__info h2 {
+  margin-bottom: 40px;
+}
+
+.advantages__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.advantages__blocks--double {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.advantages__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 310px;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  border-radius: 20px;
+  background: var(--White, #FFF);
+  -webkit-box-shadow: 0px 0px 10.2px 0px rgba(97, 79, 68, 0.08);
+          box-shadow: 0px 0px 10.2px 0px rgba(97, 79, 68, 0.08);
+}
+
+.advantages__text h3 {
+  color: var(--Color-a, #614F44);
+}
+
+@media (max-width: 1315px) {
   .promo__abstraction {
     height: 60vh;
   }
@@ -720,6 +805,22 @@ h4 {
 
   .trade-offer__button {
     margin-bottom: 20px;
+  }
+
+  .advantages {
+    background-position: 350px 85px;
+  }
+
+  .advantages__inner {
+    background-position: 100px 30px;
+  }
+
+  .advantages__info {
+    margin-left: 5vw;
+  }
+
+  .advantages__blocks {
+    margin-left: 5vw;
   }
 }
 
@@ -793,7 +894,7 @@ h4 {
        object-fit: scale-down;
   }
 
-  .advantages {
+  .convenience {
     padding-left: 30px;
     padding-right: 20px;
   }
@@ -870,7 +971,7 @@ h4 {
     margin: 20px 0 50px;
   }
 
-  .promo .advantages {
+  .promo .convenience {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -878,12 +979,12 @@ h4 {
     padding-left: 15px;
   }
 
-  .promo .advantages__inner {
+  .promo .convenience__inner {
     width: 65vw;
     border-radius: 0px;
   }
 
-  .promo .advantages__info {
+  .promo .convenience__info {
     width: 65vw;
   }
 
@@ -970,7 +1071,7 @@ h4 {
     height: 35vh;
   }
 
-  .promo .advantages__info {
+  .promo .convenience__info {
     padding-bottom: 25px;
   }
 

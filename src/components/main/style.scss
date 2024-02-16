@@ -110,7 +110,7 @@
         display: none;
     }
 
-    .advantages {
+    .convenience {
         display: flex;
         gap: 10px;
 
@@ -236,25 +236,62 @@
 }
 
 .advantages {
-    &__inner {}
+    padding-top: 120px;
+    background-color: white;
+    background-position: 105% -70%;
+
+    &__inner {
+        background-position: 50px 30px;
+        height: fit-content
+    }
 
     &__info {
+        display: flex;
+        flex-direction: column;
+        width: 45vw;
+        gap: 20px;
+
         h1 {
-            u {}
+            color: var(--Color-a, #614F44);
+            u {
+                font-weight: 700;
+            }
         }
 
-        h2 {}
+        h2 {
+            margin-bottom: 40px;
+        }
     }
 
     &__blocks {
-        &--double {}
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &--double {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 
-    &__block {}
+    &__block {
+        display: flex;
+        width: 310px;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        border-radius: 20px;
+        background: var(--White, #FFF);
+        box-shadow: 0px 0px 10.2px 0px rgba(97, 79, 68, 0.08);
+    }
 
     &__icon {}
 
     &__text {
-        h3 {}
+        h3 {
+            color: var(--Color-a, #614F44); 
+        }
     }
 }
