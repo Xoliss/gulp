@@ -492,16 +492,6 @@ h4 {
   display: none;
 }
 
-.promo__abstraction {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 60vh;
-  width: 90vw;
-}
-
 .promo__img {
   position: absolute;
   right: 0;
@@ -587,6 +577,97 @@ h4 {
   padding-left: 17px;
 }
 
+.trade-offer {
+  padding-top: 200px;
+  background: var(--Bg, #F5F4F4);
+}
+
+.trade-offer__inner {
+  height: 700px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  border-radius: 20px;
+  background: var(--White, #FFF);
+  position: relative;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.trade-offer__img {
+  position: absolute;
+  top: 140px;
+  height: 70%;
+}
+
+.trade-offer__img-inner {
+  display: none;
+}
+
+.trade-offer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50em;
+  position: absolute;
+  gap: 20px;
+  right: 0;
+  padding-right: 40px;
+  padding-top: 30px;
+}
+
+.trade-offer__info h1 {
+  margin-left: 50px;
+}
+
+.trade-offer__info h1 u {
+  color: var(--Color-a, #614F44);
+}
+
+.trade-offer__name {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  padding: 10px 11px;
+  gap: 10px;
+  border-radius: 7px;
+  background: var(--Color-b, #CFC7C2);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 50px;
+}
+
+.trade-offer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  max-width: 530px;
+}
+
+.trade-offer__text h3 {
+  max-width: 530px;
+  margin-left: 50px;
+}
+
+.trade-offer__button {
+  margin-top: 20px;
+  width: 350px;
+  height: 60px;
+  margin-left: 50px;
+}
+
 @media (max-width: 1285px) {
   .promo__abstraction {
     height: 60vh;
@@ -596,6 +677,53 @@ h4 {
     right: 0.8rem;
     top: 5rem;
     width: 35rem;
+  }
+
+  .trade-offer__inner {
+    width: 90vw;
+    height: 1200px;
+    background-position-x: right;
+    background-position-y: top;
+  }
+
+  .trade-offer__img {
+    bottom: 0;
+    display: none;
+  }
+
+  .trade-offer__img-inner {
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .trade-offer__img-inner .img {
+    width: 50rem;
+    height: 35rem;
+    -o-object-fit: scale-down;
+    object-fit: scale-down;
+  }
+
+  .trade-offer--vector {
+    display: none;
+  }
+
+  .trade-offer__info {
+    width: 90vw;
+    position: sticky;
+    margin: 0 auto;
+  }
+
+  .trade-offer__info h1 {
+    width: 70vw;
+  }
+
+  .trade-offer__button {
+    margin-bottom: 20px;
   }
 }
 
@@ -675,6 +803,20 @@ h4 {
   }
 }
 
+@media (max-width: 775px) {
+  .trade-offer__img-inner {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .trade-offer__img-inner .img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: scale-down;
+    object-fit: scale-down;
+  }
+}
+
 @media (max-width: 600px) {
   .header .container {
     margin: 0 20px;
@@ -744,9 +886,45 @@ h4 {
   .promo .advantages__info {
     width: 65vw;
   }
+
+  .trade-offer__img-inner {
+    padding: 30px 0 0;
+  }
+
+  .trade-offer__img-inner .img {
+    width: 100vw;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .trade-offer__info {
+    width: 80vw;
+    padding-right: 0;
+  }
+
+  .trade-offer__info h1 {
+    margin-left: 0;
+  }
+
+  .trade-offer__info h3 {
+    width: 80vw;
+  }
+
+  .trade-offer__name {
+    margin-left: 0;
+  }
+
+  .trade-offer__text h3 {
+    margin-left: 0;
+  }
+
+  .trade-offer__button {
+    margin: 0;
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   h1 {
     font-size: 24px;
   }
@@ -763,6 +941,13 @@ h4 {
     font-size: 12px;
   }
 
+  .trade-offer__button {
+    width: 250px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 375px) {
   .promo {
     padding-top: 75px;
   }

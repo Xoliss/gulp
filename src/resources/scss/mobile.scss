@@ -22,6 +22,25 @@
             }
         }
     }
+    .top {
+        &__inner {}
+    
+        &__img {
+            &--man {}
+    
+            &--elipce {}
+    
+            &--vector {}
+        }
+    
+        &__info {}
+    
+        &__name {}
+    
+        &__text {}
+    
+        &__button {}
+    }
 }
 
 @media (max-width: 330px) {
@@ -42,5 +61,24 @@
                 }
             }
         }
+    }
+    .top {
+        &__inner {}
+    
+        &__img {
+            &--man {}
+    
+            &--elipce {}
+    
+            &--vector {}
+        }
+    
+        &__info {}
+    
+        &__name {}
+    
+        &__text {}
+    
+        &__button {}
     }
 }
