@@ -63,7 +63,7 @@
             position: sticky;
             margin: 0 auto;
 
-            h1 {
+            h5 {
                 width: 70vw;
             }
         }
@@ -335,7 +335,7 @@
             width: 80vw;
             padding-right: 0;
 
-            h1 {
+            h5 {
                 margin-left: 0;
             }
 
@@ -370,7 +370,7 @@
 }
 
 @media (max-width: 475px) {
-    h1 {
+    h1, h5 {
         font-size: 38px;
     }
 

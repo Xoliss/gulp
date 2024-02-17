@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
 	max-width: 2600px;
 	background: var(--Bg, #F5F4F4);
 }
@@ -160,6 +161,11 @@ h4 {
 	font-size: 14px;
 }
 
+h5 {
+	font-size: 48px;
+	font-weight: 700;
+}
+
 .button {
 	display: flex;
 	width: 300px;
@@ -199,5 +205,9 @@ h4 {
 
 	h4 {
 		font-size: 12px;
+	}
+
+	h5 {
+		font-size: 24px;
 	}
 }

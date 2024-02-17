@@ -393,6 +393,11 @@ h4 {
   font-size: 14px;
 }
 
+h5 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,11 +635,11 @@ h4 {
   padding-top: 30px;
 }
 
-.trade-offer__info h1 {
+.trade-offer__info h5 {
   margin-left: 50px;
 }
 
-.trade-offer__info h1 u {
+.trade-offer__info h5 u {
   color: var(--Color-a, #614F44);
 }
 
@@ -704,11 +709,11 @@ h4 {
   gap: 20px;
 }
 
-.advantages__info h1 {
+.advantages__info h5 {
   color: var(--Color-a, #614F44);
 }
 
-.advantages__info h1 u {
+.advantages__info h5 u {
   font-weight: 700;
 }
 
@@ -829,7 +834,7 @@ h4 {
     margin: 0 auto;
   }
 
-  .trade-offer__info h1 {
+  .trade-offer__info h5 {
     width: 70vw;
   }
 
@@ -1075,7 +1080,7 @@ h4 {
     padding-right: 0;
   }
 
-  .trade-offer__info h1 {
+  .trade-offer__info h5 {
     margin-left: 0;
   }
 
@@ -1107,7 +1112,8 @@ h4 {
 }
 
 @media (max-width: 475px) {
-  h1 {
+  h1,
+  h5 {
     font-size: 38px;
   }
 
@@ -1146,6 +1152,10 @@ h4 {
 
   h4 {
     font-size: 12px;
+  }
+
+  h5 {
+    font-size: 24px;
   }
 
   .promo {
