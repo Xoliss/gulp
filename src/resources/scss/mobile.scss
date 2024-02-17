@@ -32,70 +32,11 @@
         }
     }
     .advantages {
-        &__inner {}
-    
-        &__info {
-            h1 {
-                u {}
-            }
-    
-            h2 {}
-        }
-    
-        &__blocks {
-            &--double {}
-        }
-    
-        &__block {}
-    
-        &__icon {}
-    
-        &__text {
-            h3 {}
-        }
-    }
-}
+        background-position: center bottom (-10px);
 
-@media (max-width: 330px) {
-    .header {
-        .container {
-            padding: 0 5px;
-        }
-
-        .connection {
-            padding-top: 40px;
-            gap: 10px;
-
-            &__link {
-
-                &-icon {
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-        }
-    }
-    .advantages {
-        &__inner {}
-    
-        &__info {
-            h1 {
-                u {}
-            }
-    
-            h2 {}
-        }
-    
-        &__blocks {
-            &--double {}
-        }
-    
-        &__block {}
-    
-        &__icon {}
-    
-        &__text {
-            h3 {}
+        &__inner {
+            height: 1150px;
+            background-position: center top (10px);
         }
     }
 }

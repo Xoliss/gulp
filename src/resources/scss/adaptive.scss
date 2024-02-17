@@ -1,3 +1,28 @@
+@media (max-width: 2500px) {
+    .advantages {
+        background-position: right 50px;
+    }
+}
+
+@media (max-width: 2000px) {
+    .advantages {
+        background-position: 635px 50px;
+    }
+}
+
+@media (max-width: 1750px) {
+    .advantages {
+        background-position: 500px 50px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .advantages {
+        background-position: 400px 50px;
+    }
+}
+
+
 @media (max-width: 1315px) {
     .promo {
 
@@ -47,32 +72,20 @@
             margin-bottom: 20px;
         }
     }
+
     .advantages {
-        background-position: 350px 85px;
+        background-position: 350px 80px;
+
         &__inner {
-            background-position: 100px 30px;
+            background-position: 100px 300px;
         }
-    
+
         &__info {
             margin-left: 5vw;
-            h1 {
-                u {}
-            }
-    
-            h2 {}
         }
-    
+
         &__blocks {
             margin-left: 5vw;
-            &--double {}
-        }
-    
-        &__block {}
-    
-        &__icon {}
-    
-        &__text {
-            h3 {}
         }
     }
 }
@@ -87,7 +100,7 @@
         &__inner {
             gap: 50px;
             justify-content: center;
-            
+
         }
 
         &__logo-inner {
@@ -174,6 +187,7 @@
         &__inner {
             background-position-y: center;
         }
+
         &__img-inner {
             display: block;
             position: absolute;
@@ -184,12 +198,53 @@
 
     }
 
+    .advantages {
+        background-position: center bottom;
+
+        &__inner {
+            background-position: 100px 300px;
+            height: 1350px;
+        }
+    }
+
 }
 
 @media (max-width: 775px) {
     .trade-offer {
         &__inner {
             height: 1320px;
+        }
+    }
+
+    .advantages {
+        background-position: center bottom (-80px);
+        background-size: 170%;
+        padding-bottom: 0;
+
+        &__inner {
+            background-position: center top (100px);
+            height: 1500px;
+        }
+
+        &__info {
+            width: 85vw;
+        }
+
+        &__blocks {
+            margin: 0 auto;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+
+            &--double {
+                margin: 0 auto;
+                width: 90vw;
+            }
+        }
+
+        &__block {
+            margin: 0 auto;
+            width: 90vw;
         }
     }
 }
@@ -303,27 +358,13 @@
             margin: 0;
         }
     }
+
     .advantages {
-        &__inner {}
-    
-        &__info {
-            h1 {
-                u {}
-            }
-    
-            h2 {}
-        }
-    
-        &__blocks {
-            &--double {}
-        }
-    
-        &__block {}
-    
-        &__icon {}
-    
-        &__text {
-            h3 {}
+        background-size: 200%;
+        background-position: center bottom (-100px);
+        padding-top: 50px;
+        &__inner {
+            background-position: center top 160px;
         }
     }
 }
@@ -332,36 +373,25 @@
     h1 {
         font-size: 38px;
     }
+
     .trade-offer {
         &__inner {
             height: 1070px;
         }
+
         &__button {
             width: 250px;
             height: 60px;
         }
     }
+
     .advantages {
-        &__inner {}
-    
-        &__info {
-            h1 {
-                u {}
-            }
-    
-            h2 {}
-        }
-    
-        &__blocks {
-            &--double {}
-        }
-    
-        &__block {}
-    
-        &__icon {}
-    
-        &__text {
-            h3 {}
+        background-size: 175%;
+        background-position: center bottom (-20px);
+
+        &__inner {
+            background-position: center top (145px);
+            height: 1380px;
         }
     }
 }

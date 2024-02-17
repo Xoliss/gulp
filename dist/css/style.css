@@ -681,7 +681,8 @@ h4 {
 .advantages {
   padding-top: 120px;
   background-color: white;
-  background-position: 105% -70%;
+  background-position: 360px 100px;
+  padding-bottom: 40px;
 }
 
 .advantages__inner {
@@ -759,8 +760,37 @@ h4 {
           box-shadow: 0px 0px 10.2px 0px rgba(97, 79, 68, 0.08);
 }
 
+.advantages__icon {
+  width: 60px;
+  height: 60px;
+}
+
 .advantages__text h3 {
   color: var(--Color-a, #614F44);
+}
+
+@media (max-width: 2500px) {
+  .advantages {
+    background-position: right 50px;
+  }
+}
+
+@media (max-width: 2000px) {
+  .advantages {
+    background-position: 635px 50px;
+  }
+}
+
+@media (max-width: 1750px) {
+  .advantages {
+    background-position: 500px 50px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .advantages {
+    background-position: 400px 50px;
+  }
 }
 
 @media (max-width: 1315px) {
@@ -808,11 +838,11 @@ h4 {
   }
 
   .advantages {
-    background-position: 350px 85px;
+    background-position: 350px 80px;
   }
 
   .advantages__inner {
-    background-position: 100px 30px;
+    background-position: 100px 300px;
   }
 
   .advantages__info {
@@ -910,11 +940,59 @@ h4 {
     height: auto;
     left: 0;
   }
+
+  .advantages {
+    background-position: center bottom;
+  }
+
+  .advantages__inner {
+    background-position: 100px 300px;
+    height: 1350px;
+  }
 }
 
 @media (max-width: 775px) {
   .trade-offer__inner {
     height: 1320px;
+  }
+
+  .advantages {
+    background-position: center bottom -80px;
+    background-size: 170%;
+    padding-bottom: 0;
+  }
+
+  .advantages__inner {
+    background-position: center top 100px;
+    height: 1500px;
+  }
+
+  .advantages__info {
+    width: 85vw;
+  }
+
+  .advantages__blocks {
+    margin: 0 auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .advantages__blocks--double {
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .advantages__block {
+    margin: 0 auto;
+    width: 90vw;
   }
 }
 
@@ -1016,6 +1094,16 @@ h4 {
   .trade-offer__button {
     margin: 0;
   }
+
+  .advantages {
+    background-size: 200%;
+    background-position: center bottom -100px;
+    padding-top: 50px;
+  }
+
+  .advantages__inner {
+    background-position: center top 160px;
+  }
 }
 
 @media (max-width: 475px) {
@@ -1030,6 +1118,16 @@ h4 {
   .trade-offer__button {
     width: 250px;
     height: 60px;
+  }
+
+  .advantages {
+    background-size: 175%;
+    background-position: center bottom -20px;
+  }
+
+  .advantages__inner {
+    background-position: center top 145px;
+    height: 1380px;
   }
 }
 
@@ -1082,20 +1180,13 @@ h4 {
   .trade-offer__button {
     width: 75vw;
   }
-}
 
-@media (max-width: 330px) {
-  .header .container {
-    padding: 0 5px;
+  .advantages {
+    background-position: center bottom -10px;
   }
 
-  .header .connection {
-    padding-top: 40px;
-    gap: 10px;
-  }
-
-  .header .connection__link-icon {
-    width: 40px;
-    height: 40px;
+  .advantages__inner {
+    height: 1150px;
+    background-position: center top 10px;
   }
 }
