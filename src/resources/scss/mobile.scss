@@ -39,4 +39,37 @@
             background-position: center top (10px);
         }
     }
+    .dignities {
+        .grid {
+            &__item {
+
+                &-E {
+                    grid-row: 26/28;
+                    .orange {
+                        color: var(--Color-a, #614F44);
+                    }
+                }
+
+                &-F {
+                    grid-row: 28/30;
+                    h2 {
+                        margin-top: 0;
+                    }
+                }
+
+                &-G {
+                    grid-row: 30/32;;
+                    .orange {
+                        color: var(--Color-a, #614F44);
+                    }
+                }
+
+                &-H {
+                    grid-column: 1/3;
+                    grid-row: 32/38;
+
+                }
+            }
+        }
+    }
 }
