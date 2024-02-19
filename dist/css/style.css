@@ -592,6 +592,14 @@ h5 {
   padding-left: 17px;
 }
 
+.block__shadow {
+  width: 100%;
+  height: 150px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #8d8d8d), to(rgba(245, 244, 244, 0)));
+  background: linear-gradient(0deg, #8d8d8d 9%, rgba(245, 244, 244, 0) 100%);
+  z-index: 555;
+}
+
 .trade-offer {
   margin-top: 200px;
   background: var(--Bg, #F5F4F4);
@@ -686,8 +694,7 @@ h5 {
 .advantages {
   padding-top: 120px;
   background-color: white;
-  background-position: 360px 100px;
-  padding-bottom: 40px;
+  background-position: 360px 45px;
 }
 
 .advantages__inner {
@@ -722,6 +729,7 @@ h5 {
 }
 
 .advantages__blocks {
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,18 +782,22 @@ h5 {
   color: var(--Color-a, #614F44);
 }
 
-.dignities {
-  margin-top: 90px;
+.advantages .block-shadow {
+  width: 100vw;
+  height: 120px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #F5F4F4), to(rgba(245, 244, 244, 0)));
+  background: linear-gradient(0deg, #F5F4F4 9%, rgba(245, 244, 244, 0) 100%);
 }
 
 .dignities__inner {
   border-radius: 20px;
   background: var(--White, #FFF);
   padding-bottom: 40px;
+  margin-top: -75px;
 }
 
 .dignities__info {
-  margin: 40px 0 60px 40px;
+  margin: 0 0 60px 40px;
   padding-top: 40px;
 }
 
@@ -934,27 +946,131 @@ h5 {
   background: var(--Color-b, #CFC7C2);
 }
 
+.footer {
+  margin-bottom: 60px;
+}
+
+.footer__content {
+  border-radius: 30px;
+  background: var(--Black, #212121);
+  width: 94vw;
+  margin: 0 auto;
+  margin-top: 120px;
+  padding: 3vw 0;
+}
+
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+}
+
+.footer__item h2,
+.footer__item h3,
+.footer__item h4 {
+  color: white;
+}
+
+.footer__item--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.footer__item--icon h4 {
+  width: 10vw;
+}
+
+.footer .connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 120px;
+}
+
+.footer .connection__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.footer .connection__link {
+  font-size: 32px;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 6vw;
+}
+
+.footer__bottom .footer__item {
+  gap: 10px;
+}
+
+.footer__bottom .footer__item h2,
+.footer__bottom .footer__item h3,
+.footer__bottom .footer__item h4 {
+  color: var(--Color-b, #CFC7C2);
+}
+
 @media (max-width: 2500px) {
   .advantages {
-    background-position: right 50px;
+    background-position: right 45px;
   }
 }
 
 @media (max-width: 2000px) {
   .advantages {
-    background-position: 635px 50px;
+    background-position: 635px 45px;
   }
 }
 
 @media (max-width: 1750px) {
   .advantages {
-    background-position: 500px 50px;
+    background-position: 500px 45px;
   }
 }
 
 @media (max-width: 1550px) {
   .advantages {
-    background-position: 400px 50px;
+    background-position: 400px 45px;
+  }
+
+  .dignities__info h5 {
+    width: 60vw;
   }
 
   .dignities .grid {
@@ -1008,7 +1124,7 @@ h5 {
   }
 
   .advantages {
-    background-position: 350px 80px;
+    background-position: 360px 220px;
   }
 
   .advantages__inner {
@@ -1023,9 +1139,18 @@ h5 {
     margin-left: 5vw;
   }
 
+  .advantages .block-shadow {
+    height: 100px;
+  }
+
   .dignities__inner {
     margin: 0 40px;
     padding-bottom: 20px;
+    margin-top: -50px;
+  }
+
+  .dignities__info h5 {
+    width: 70vw;
   }
 
   .dignities .grid {
@@ -1134,6 +1259,10 @@ h5 {
     height: 1350px;
   }
 
+  .dignities__info h5 {
+    width: 78vw;
+  }
+
   .dignities .grid {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
@@ -1221,6 +1350,41 @@ h5 {
     -ms-grid-row-span: 6;
     grid-row: 44/50;
   }
+
+  .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer .connection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__item {
+    margin-left: 20vw;
+  }
+
+  .footer__item--icon {
+    margin-bottom: 40px;
+  }
+
+  .footer__item--icon h4 {
+    width: 40vw;
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 775px) {
@@ -1229,7 +1393,7 @@ h5 {
   }
 
   .advantages {
-    background-position: center bottom -80px;
+    background-position: center bottom -10px;
     background-size: 170%;
     padding-bottom: 0;
   }
@@ -1265,6 +1429,10 @@ h5 {
   .advantages__block {
     margin: 0 auto;
     width: 90vw;
+  }
+
+  .footer__item {
+    margin-left: 10vw;
   }
 }
 
@@ -1423,6 +1591,14 @@ h5 {
   .dignities .grid__item-F h2 {
     margin-top: 20px;
   }
+
+  .footer__content {
+    margin: 120px 20px 0;
+  }
+
+  .footer__item {
+    margin-left: 1vw;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1488,6 +1664,10 @@ h5 {
     background-position: center top 10px;
   }
 
+  .dignities__info h5 {
+    width: 70vw;
+  }
+
   .dignities .grid__item-E {
     -ms-grid-row: 26;
     -ms-grid-row-span: 2;
@@ -1525,5 +1705,9 @@ h5 {
     -ms-grid-row: 32;
     -ms-grid-row-span: 6;
     grid-row: 32/38;
+  }
+
+  .footer__item--icon h4 {
+    font-size: 14px;
   }
 }

@@ -110,6 +110,8 @@
         display: none;
     }
 
+    
+
     .convenience {
         display: flex;
         gap: 10px;
@@ -153,6 +155,14 @@
     }
 
 }
+
+.block__shadow {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(0deg, #8d8d8d 9%, rgba(245, 244, 244, 0.00) 100%);
+    z-index: 555;
+}
+
 
 .trade-offer {
     margin-top: 200px;
@@ -238,8 +248,7 @@
 .advantages {
     padding-top: 120px;
     background-color: white;
-    background-position: 360px 100px;
-    padding-bottom: 40px;
+    background-position: 360px 45px;
 
     &__inner {
         background-position: 50px 30px;
@@ -266,6 +275,7 @@
     }
 
     &__blocks {
+        margin-bottom: 40px;
         display: flex;
         align-items: center;
         gap: 20px;
@@ -300,19 +310,23 @@
             color: var(--Color-a, #614F44);
         }
     }
+    .block-shadow {
+        width: 100vw;
+        height: 120px;
+        background: linear-gradient(0deg, #F5F4F4 9%, rgba(245, 244, 244, 0.00) 100%);
+    }
 }
 
 .dignities {
-    margin-top: 90px;
-
     &__inner {
         border-radius: 20px;
         background: var(--White, #FFF);
         padding-bottom: 40px;
+        margin-top: -75px;
     }
 
     &__info {
-        margin: 40px 0 60px 40px;
+        margin: 0 0 60px 40px;
         padding-top: 40px;
 
         h5 {
@@ -355,22 +369,27 @@
                 grid-row: 1/10;
                 background: var(--Color-b, #CFC7C2);
             }
+
             &-B {
                 grid-column: 5/11;
                 grid-row: 1/10;
                 background: var(--Color-b, #CFC7C2);
             }
+
             &-C {
                 grid-column: 11/16;
                 grid-row: 1/10;
             }
+
             &-D {
                 grid-column: 16/23;
                 grid-row: 1/10;
+
                 .orange {
                     margin: 0;
                 }
             }
+
             &-E {
                 grid-column: 1/5;
                 grid-row: 10/16;
@@ -378,17 +397,20 @@
                 align-items: center;
                 background: #F5F4F4;
             }
+
             &-F {
                 grid-column: 5/9;
                 grid-row: 10/16;
-                text-align: center; 
+                text-align: center;
                 align-items: center;
                 background: #F5F4F4;
+
                 h2 {
                     margin-top: 10px;
-                    
+
                 }
             }
+
             &-G {
                 grid-column: 9/13;
                 grid-row: 10/16;
@@ -396,6 +418,7 @@
                 align-items: center;
                 background: #F5F4F4;
             }
+
             &-H {
                 grid-column: 13/23;
                 grid-row: 10/16;
@@ -403,4 +426,89 @@
             }
         }
     }
+}
+
+.footer {
+    margin-bottom: 60px;
+
+    &__content {
+        border-radius: 30px;
+        background: var(--Black, #212121);
+        width: 94vw;
+        margin: 0 auto;
+        margin-top: 120px;
+        padding: 3vw 0;
+    }
+
+    &__item {
+        display: flex;
+        padding: 15px;
+
+        h2,
+        h3,
+        h4 {
+            color: white;
+        }
+
+        &--icon {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            h4 {
+                width: 10vw;
+            }
+        }
+    }
+
+    .connection {
+        display: flex;
+        gap: 120px;
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        &__link {
+            font-size: 32px;
+        }
+
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__logo-inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6vw;
+
+        .footer__item {
+            gap: 10px;
+
+            h2,
+            h3,
+            h4 {
+                color: var(--Color-b, #CFC7C2);
+            }
+        }
+    }
+
+
+
+
+
+
+
+
 }

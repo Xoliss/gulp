@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240219122056">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240219191512">
     <title>Главная</title>
 </head>
     
@@ -73,6 +73,7 @@
         <picture><source srcset="../../img/main/promo.webp" type="image/webp"><img class="promo__down--img" src="../../img/main/promo.png" alt="Ddom"></picture>
     </div>
 </section>
+<div class="block__shadow"></div>
 
             <section class="trade-offer">
     <div class="trade-offer__inner container"
@@ -144,12 +145,13 @@
 </section>
             
             <section class="advantages" style="background-image: url(../../img/main/advantages.png); background-repeat: no-repeat;">
-    <div class="advantages__inner container" style="background-image: url(../../img/main/Bg.png); background-repeat: no-repeat;">
+    <div class="advantages__inner container"
+        style="background-image: url(../../img/main/Bg.png); background-repeat: no-repeat;">
 
         <div class="advantages__info">
             <h5><u> Мы знаем </u> сотни нюансов в строительстве павильонов.</h5>
             <h2>Это ограждает Вас от переплат, разрушений и других последствий неправильного монтажа</h2>
-        </div> 
+        </div>
 
         <div class="advantages__blocks">
 
@@ -158,14 +160,20 @@
                 <div class="advantages__block">
 
                     <picture><source srcset="../../img/icon/Size-2.webp" type="image/webp"><img src="../../img/icon/Size-2.png" alt="Size" class="advantages__icon"></picture>
-                    <div class="advantages__text"><h3>Ваш павильон будет точно соответствовать чертежу‚ а цена работ не изменится ни на рубль.</h3></div>
+                    <div class="advantages__text">
+                        <h3>Ваш павильон будет точно соответствовать чертежу‚ а цена работ не изменится ни на рубль.
+                        </h3>
+                    </div>
 
                 </div>
 
                 <div class="advantages__block">
 
                     <picture><source srcset="../../img/icon/Quality.webp" type="image/webp"><img src="../../img/icon/Quality.png" alt="Quality" class="advantages__icon"></picture>
-                    <div class="advantages__text"><h3>Не экономим на качестве. Все материалы, используемые при строительстве павильонов имеютсертификаты качества.</h3></div>
+                    <div class="advantages__text">
+                        <h3>Не экономим на качестве. Все материалы, используемые при строительстве павильонов
+                            имеютсертификаты качества.</h3>
+                    </div>
 
                 </div>
 
@@ -174,13 +182,15 @@
             <div class="advantages__block">
 
                 <picture><source srcset="../../img/icon/Checklist.webp" type="image/webp"><img src="../../img/icon/Checklist.png" alt="Checklist" class="advantages__icon"></picture>
-                <div class="advantages__text"><h3>Каждый этап производства контролируется и принимается отдельно по чек-листу.</h3></div>
+                <div class="advantages__text">
+                    <h3>Каждый этап производства контролируется и принимается отдельно по чек-листу.</h3>
+                </div>
 
             </div>
 
         </div>
-
     </div>
+    <div class="block-shadow"></div>
 </section>
 
             <section class="dignities">
@@ -236,26 +246,48 @@
     </div>
 </section>
         </main>
-        <footer>
-    <div class="footer_content">
+        <footer class="footer">
+    <div class="footer__content">
         <div class="footer__inner container">
-            <div class="footer__grid grid">
-                <div class="grid__container">
-                    <div class="grid__item"><img src="" alt="" class="footer__img"></div>
-                    <div class="grid__item--text"><h4>Производство торговых павильонов под ключ</h4></div>
+            <div class="footer__top">
+                <div class="footer__item footer__item--icon">
+                    <picture><source srcset="../../img/icon/footer__logo.webp" type="image/webp"><img class="footer__logo" src="../../img/icon/footer__logo.png" alt=""></picture>
+                    <h4>Производство торговых павильонов под ключ</h4>
                 </div>
-                <div class="grid__container">
-                    <div class="grid__item"><h3>Звоните, мы сейчас на связи</h3></div>
-                    <div class="grid__item--text"><h6>+7 918 03 555 02</h6></div>
+                <div class="footer__item connection">
+
+                    <div class="connection__inner">
+                        <h3>Звоните, мы сейчас на связи</h3>
+                        <a href="#">
+                            <h2 class="connection__link">+7 918 03 555 02</h2>
+                        </a>
+                    </div>
+
+                    <div class="connection__inner">
+                        <h4>Почта</h4>
+                        <a href="#">
+                            <h2 class="connection__link">zakaz@mail.ru</h2>
+                        </a>
+                    </div>
+
                 </div>
-                <div class="grid__container">
-                    <div class="grid__item"><h3>Почта</h3></div>
-                    <div class="grid__item--text"><h6>zakaz@mail.ru</h6></div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__item">
+                    <h3>© 2022 HOMEFORT. Все права защищены</h3>
+                </div>
+                <div class="footer__item">
+                    <h3>Разработано</h3>
+                    <picture><source srcset="../../img/icon/IT-format.webp" type="image/webp"><img src="../../img/icon/IT-format.png" alt=""></picture>
+                </div>
+                <div class="footer__item">
+                    <h3>Политика конфиденциальности</h3>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-        <script src="js/app.min.js?_v=20240219122056"></script>
+        <script src="js/app.min.js?_v=20240219191512"></script>
     </body>
 </html>
