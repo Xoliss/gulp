@@ -520,10 +520,82 @@
         flex-direction: column;
         gap: 20px;
         width: 60vw;
+        margin-bottom: 60px;
+
+        h5 {
+            u {
+                color: var(--Color-a, #614F44);
+                font-weight: 700;
+            }
+        }
+
+        h2 {
+            width: 50vw;
+        }
     }
 
+    &__card {
+        display: flex;
+        gap: 40px;
+    }
 
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-bottom: 1px solid var(--Color-b, #CFC7C2);
+        padding-bottom: 20px;
+        &__item {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
 
+        &__bullet {
+            padding-top: 7px;
+        }
 
+    }
+    .card-info {
+        &__blocks {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+            border-bottom: 1px solid var(--Color-b, #CFC7C2);
+            padding-bottom: 20px;
+        }
+    }
 
+    .block {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .cost {
+
+        &__money {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            h3 {
+                color: var(--Color-a, #614F44);
+                width: 95px;
+            }
+            h2 {
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 2px;
+            }
+        }
+        &__button {
+            margin: 20px 0;
+            h3 {
+                color: white;
+            }
+        }
+        h4 {
+            width: 400px;
+        }
+    }
 }
