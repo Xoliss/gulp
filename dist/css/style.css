@@ -164,6 +164,21 @@
   position: relative;
 }
 
+.portfolio .swiper--large {
+  display: none;
+  position: absolute;
+  max-width: 99%;
+  height: 90vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.portfolio .swiper--large__img {
+  -o-object-fit: unset;
+     object-fit: unset;
+}
+
 .swipers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,21 +287,6 @@
 
 .swipers .swiper--mini__slide {
   padding-right: 20px;
-}
-
-.swipers .swiper--large {
-  display: none;
-  position: absolute;
-  max-width: 99%;
-  height: 90vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.swipers .swiper--large__img {
-  -o-object-fit: unset;
-     object-fit: unset;
 }
 
 html,
@@ -546,7 +546,7 @@ h5 {
 }
 
 .header .connection__link-text {
-  color: var(--Color-a, #614F44);
+  color: var(--Color-a, #614f44);
   font-weight: 700;
 }
 
@@ -559,8 +559,8 @@ h5 {
 .promo__under {
   position: absolute;
   z-index: 1;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #F5F4F4), to(rgba(245, 244, 244, 0)));
-  background: linear-gradient(0deg, #F5F4F4 9%, rgba(245, 244, 244, 0) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #f5f4f4), to(rgba(245, 244, 244, 0)));
+  background: linear-gradient(0deg, #f5f4f4 9%, rgba(245, 244, 244, 0) 100%);
   bottom: 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -656,8 +656,8 @@ h5 {
 .block__shadow {
   width: 100%;
   height: 500px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #F5F4F4), to(rgba(245, 244, 244, 0)));
-  background: linear-gradient(0deg, #F5F4F4 9%, rgba(245, 244, 244, 0) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #f5f4f4), to(rgba(245, 244, 244, 0)));
+  background: linear-gradient(0deg, #f5f4f4 9%, rgba(245, 244, 244, 0) 100%);
   z-index: 2;
   position: absolute;
   bottom: -120px;
@@ -666,7 +666,7 @@ h5 {
 
 .trade-offer {
   margin-top: 200px;
-  background: var(--Bg, #F5F4F4);
+  background: var(--Bg, #f5f4f4);
 }
 
 .trade-offer__inner {
@@ -675,7 +675,7 @@ h5 {
       -ms-flex-pack: right;
           justify-content: right;
   border-radius: 20px;
-  background: var(--White, #FFF);
+  background: var(--White, #fff);
   position: relative;
   background-position-x: right;
   background-position-y: bottom;
@@ -712,7 +712,7 @@ h5 {
 }
 
 .trade-offer__info h5 u {
-  color: var(--Color-a, #614F44);
+  color: var(--Color-a, #614f44);
 }
 
 .trade-offer__name {
@@ -724,7 +724,7 @@ h5 {
   padding: 10px 11px;
   gap: 10px;
   border-radius: 7px;
-  background: var(--Color-b, #CFC7C2);
+  background: var(--Color-b, #cfc7c2);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -785,7 +785,7 @@ h5 {
 }
 
 .advantages__info h5 {
-  color: var(--Color-a, #614F44);
+  color: var(--Color-a, #614f44);
 }
 
 .advantages__info h5 u {
@@ -836,7 +836,7 @@ h5 {
           align-items: flex-start;
   gap: 20px;
   border-radius: 20px;
-  background: var(--White, #FFF);
+  background: var(--White, #fff);
   -webkit-box-shadow: 0px 0px 10.2px 0px rgba(97, 79, 68, 0.08);
           box-shadow: 0px 0px 10.2px 0px rgba(97, 79, 68, 0.08);
 }
@@ -847,19 +847,19 @@ h5 {
 }
 
 .advantages__text h3 {
-  color: var(--Color-a, #614F44);
+  color: var(--Color-a, #614f44);
 }
 
 .advantages .block-shadow {
   width: 100vw;
   height: 120px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #F5F4F4), to(rgba(245, 244, 244, 0)));
-  background: linear-gradient(0deg, #F5F4F4 9%, rgba(245, 244, 244, 0) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #f5f4f4), to(rgba(245, 244, 244, 0)));
+  background: linear-gradient(0deg, #f5f4f4 9%, rgba(245, 244, 244, 0) 100%);
 }
 
 .dignities__inner {
   border-radius: 20px;
-  background: var(--White, #FFF);
+  background: var(--White, #fff);
   padding-bottom: 40px;
   margin-top: -75px;
 }
@@ -870,7 +870,7 @@ h5 {
 }
 
 .dignities__info h5 {
-  color: var(--Color-a, #614F44);
+  color: var(--Color-a, #614f44);
   width: 50vw;
 }
 
@@ -923,7 +923,7 @@ h5 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 9;
   grid-row: 1/10;
-  background: var(--Color-b, #CFC7C2);
+  background: var(--Color-b, #cfc7c2);
 }
 
 .dignities .grid__item-B {
@@ -933,7 +933,7 @@ h5 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 9;
   grid-row: 1/10;
-  background: var(--Color-b, #CFC7C2);
+  background: var(--Color-b, #cfc7c2);
 }
 
 .dignities .grid__item-C {
@@ -969,7 +969,7 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #F5F4F4;
+  background: #f5f4f4;
 }
 
 .dignities .grid__item-F {
@@ -983,7 +983,7 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #F5F4F4;
+  background: #f5f4f4;
 }
 
 .dignities .grid__item-F h2 {
@@ -1001,7 +1001,7 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #F5F4F4;
+  background: #f5f4f4;
 }
 
 .dignities .grid__item-H {
@@ -1011,7 +1011,7 @@ h5 {
   -ms-grid-row: 10;
   -ms-grid-row-span: 6;
   grid-row: 10/16;
-  background: var(--Color-b, #CFC7C2);
+  background: var(--Color-b, #cfc7c2);
 }
 
 .footer {
@@ -1111,7 +1111,7 @@ h5 {
 .footer__bottom .footer__item h2,
 .footer__bottom .footer__item h3,
 .footer__bottom .footer__item h4 {
-  color: var(--Color-b, #CFC7C2);
+  color: var(--Color-b, #cfc7c2);
 }
 
 .portfolio {
@@ -1134,7 +1134,7 @@ h5 {
 }
 
 .portfolio__text h5 u {
-  color: var(--Color-a, #614F44);
+  color: var(--Color-a, #614f44);
   font-weight: 700;
 }
 
@@ -1158,7 +1158,7 @@ h5 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  border-bottom: 1px solid var(--Color-b, #CFC7C2);
+  border-bottom: 1px solid var(--Color-b, #cfc7c2);
   padding-bottom: 20px;
 }
 
@@ -1182,7 +1182,7 @@ h5 {
   display: flex;
   gap: 20px;
   margin: 20px 0;
-  border-bottom: 1px solid var(--Color-b, #CFC7C2);
+  border-bottom: 1px solid var(--Color-b, #cfc7c2);
   padding-bottom: 20px;
 }
 
@@ -1205,7 +1205,7 @@ h5 {
 }
 
 .portfolio .cost__money h3 {
-  color: var(--Color-a, #614F44);
+  color: var(--Color-a, #614f44);
   width: 95px;
 }
 
@@ -1225,6 +1225,70 @@ h5 {
 
 .portfolio .cost h4 {
   width: 400px;
+}
+
+.consultation__inner {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border-radius: 20px;
+  background: var(--White, #fff);
+  margin: 0 auto;
+}
+
+.consultation__close {
+  position: absolute;
+  right: 0;
+}
+
+.consultation__text {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.consultation__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  margin-top: 37px;
+}
+
+.consultation__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  border-radius: 7px;
+  border: 1px solid var(--Color-b, #cfc7c2);
+  background: var(--White, #fff);
+  margin: 0 35px;
+}
+
+.consultation__data {
+  margin-top: 20px;
 }
 
 @media (max-width: 2500px) {

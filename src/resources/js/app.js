@@ -4,7 +4,10 @@
 // flsFunctions.name_function(); // прописываем все функции из functions.js
 
 import Swiper from "swiper";
+
 import { Navigation, Controller, Pagination } from 'swiper/modules'
+
+import * as flsFunctions from "./modules/functions.js";
 
 
 let swiperStandart = new Swiper('.swiper--standart');
