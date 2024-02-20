@@ -1,5 +1,6 @@
 @media (max-width: 375px) {
     .promo {
+        background-size: 100% 24%;
         padding-top: 75px;
         &__abstraction {
             height: 35vh;
@@ -9,10 +10,10 @@
             width: 75vw;
         } 
         &__down {
-            padding: 40px 0 0;
+            padding: 0;
             
             &--img {
-                height: 35vh;
+                height: 25vh;
 
             }
         }
@@ -21,6 +22,9 @@
                 padding-bottom: 25px;
             }
         }
+    }
+    .block__shadow {
+        height: 250px;
     }
     .trade-offer {
         &__inner {

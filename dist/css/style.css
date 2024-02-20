@@ -492,7 +492,8 @@ h5 {
 }
 
 .promo {
-  background: var(--Bg, #F5F4F4);
+  position: relative;
+  background: var(--Bg, #ffffff);
   padding-top: 100px;
 }
 
@@ -536,6 +537,7 @@ h5 {
 }
 
 .promo__button {
+  z-index: 3;
   margin: 20px 0 100px;
 }
 
@@ -594,10 +596,13 @@ h5 {
 
 .block__shadow {
   width: 100%;
-  height: 150px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #8d8d8d), to(rgba(245, 244, 244, 0)));
-  background: linear-gradient(0deg, #8d8d8d 9%, rgba(245, 244, 244, 0) 100%);
-  z-index: 555;
+  height: 500px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #F5F4F4), to(rgba(245, 244, 244, 0)));
+  background: linear-gradient(0deg, #F5F4F4 9%, rgba(245, 244, 244, 0) 100%);
+  z-index: 2;
+  position: absolute;
+  bottom: -120px;
+  left: 0;
 }
 
 .trade-offer {
@@ -689,6 +694,10 @@ h5 {
   width: 350px;
   height: 60px;
   margin-left: 50px;
+}
+
+.trade-offer__button h3 {
+  color: white;
 }
 
 .advantages {
@@ -1046,6 +1055,24 @@ h5 {
   color: var(--Color-b, #CFC7C2);
 }
 
+.portfolio {
+  margin-top: 90px;
+  padding-top: 60px;
+  background-color: white;
+}
+
+.portfolio__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 60vw;
+}
+
 @media (max-width: 2500px) {
   .advantages {
     background-position: right 45px;
@@ -1088,6 +1115,11 @@ h5 {
     right: 0.8rem;
     top: 5rem;
     width: 35rem;
+  }
+
+  .block__shadow {
+    bottom: 0;
+    left: 0;
   }
 
   .trade-offer__inner {
@@ -1191,15 +1223,9 @@ h5 {
   }
 
   .promo {
+    background-position-x: 40px;
+    background-size: 100% 33%;
     padding-top: 50px;
-  }
-
-  .promo__under {
-    display: none;
-  }
-
-  .promo__abstraction {
-    height: 53vh;
   }
 
   .promo__img {
@@ -1233,9 +1259,18 @@ h5 {
        object-fit: scale-down;
   }
 
-  .convenience {
+  .promo .convenience {
     padding-left: 30px;
     padding-right: 20px;
+  }
+
+  .promo .convenience__inner {
+    background: -webkit-gradient(linear, right top, left top, from(#e9e9e9), color-stop(1%, rgba(255, 255, 255, 0.322)));
+    background: linear-gradient(270deg, #e9e9e9 0%, rgba(255, 255, 255, 0.322) 1%);
+  }
+
+  .block__shadow {
+    height: 300px;
   }
 
   .trade-offer__inner {
@@ -1388,6 +1423,11 @@ h5 {
 }
 
 @media (max-width: 775px) {
+  .promo {
+    background-position-x: 40px;
+    background-size: 100% 36%;
+  }
+
   .trade-offer__inner {
     height: 1320px;
   }
@@ -1473,6 +1513,11 @@ h5 {
     height: 40px;
   }
 
+  .promo {
+    background-position-x: 20px;
+    background-size: 100% 34%;
+  }
+
   .promo__under {
     display: none;
   }
@@ -1500,6 +1545,9 @@ h5 {
   .promo .convenience__inner {
     width: 65vw;
     border-radius: 0px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e9e9e9), color-stop(7%, rgba(255, 255, 255, 0.9725490196)));
+    background: linear-gradient(0deg, #e9e9e9 0%, rgba(255, 255, 255, 0.9725490196) 7%);
+    height: 100px;
   }
 
   .promo .convenience__info {
@@ -1568,6 +1616,11 @@ h5 {
     font-size: 38px;
   }
 
+  .promo {
+    background-position-x: 25px;
+    background-size: 100% 33%;
+  }
+
   .trade-offer__inner {
     height: 1070px;
   }
@@ -1623,6 +1676,7 @@ h5 {
   }
 
   .promo {
+    background-size: 100% 24%;
     padding-top: 75px;
   }
 
@@ -1636,15 +1690,19 @@ h5 {
   }
 
   .promo__down {
-    padding: 40px 0 0;
+    padding: 0;
   }
 
   .promo__down--img {
-    height: 35vh;
+    height: 25vh;
   }
 
   .promo .convenience__info {
     padding-bottom: 25px;
+  }
+
+  .block__shadow {
+    height: 250px;
   }
 
   .trade-offer__inner {
