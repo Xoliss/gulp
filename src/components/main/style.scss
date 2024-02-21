@@ -53,6 +53,9 @@
       &-text {
         color: var(--Color-a, #614f44);
         font-weight: 700;
+        &:hover {
+          color: var(--Color-a, #000000);
+        }
       }
     }
   }
@@ -628,9 +631,7 @@
     right: 0;
     cursor: pointer;
     font-size: 25px;
-    img {
-      margin: 20px 20px 0 0;
-    }
+    padding: 20px;
   }
 
   &__text {
@@ -683,13 +684,6 @@
 
   &__button {
     margin: 40px auto 0;
-    // pointer-events: none;
-    // cursor: default;
-
-    // &--active {
-    //   pointer-events: auto;
-    //   cursor: pointer;
-    // }
 
     h3 {
       color: white;

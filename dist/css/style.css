@@ -557,6 +557,10 @@ h5 {
   font-weight: 700;
 }
 
+.header .connection__link-text:hover {
+  color: var(--Color-a, #000000);
+}
+
 .promo {
   position: relative;
   background: var(--Bg, #ffffff);
@@ -1274,10 +1278,7 @@ h5 {
   right: 0;
   cursor: pointer;
   font-size: 25px;
-}
-
-.consultation__close img {
-  margin: 20px 20px 0 0;
+  padding: 20px;
 }
 
 .consultation__text {

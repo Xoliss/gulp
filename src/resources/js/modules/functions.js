@@ -72,7 +72,9 @@ closeButton.addEventListener('click', hideConsultation);
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Создание условий (Если поля запонены - разблокировать кнопку)
 
 const phoneInput = document.querySelector(".phone");
 
@@ -108,10 +110,14 @@ phoneInput.oninput = function(){
   }
 }
 
+//////////////////////////////////////////////////////////////
+
 // Создаем маску в инпуте
 const phoneMask = new IMask(phoneInput, {
   mask: "+{7}(000)000-00-00",
 });
+
+//
 
 function checkAllConditions() {
   if (Fio.value.length >= 5 && check.checked && phoneMask.masked.isComplete) {
@@ -126,18 +132,7 @@ check.oninput = checkAllConditions;
 phoneInput.oninput = checkAllConditions;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// Отдельно для телефона (условие: если введена маска активировать кнопку)
 
 
 // // Обработчик события для инпута
