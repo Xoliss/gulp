@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240221013722">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240221140539">
     <title>Главная</title>
 </head>
     
@@ -353,36 +353,54 @@
     </div>
 </section>
 
-            <section class="consultation">
+            <div class="overlay"></div>
+
+<section class="consultation">
 
     <div class="consultation__inner">
+        <div class="consultation__content">
 
-        <div class="consultation__close">
-            &#10006;
+            <div class="consultation__close">
+                &#10006;
+            </div>
+
+            <div class="consultation__text">
+
+                <h5>Консультация</h5>
+                <h3>Оставьте заявку и мы перезвоним в течение 5 минут</h3>
+
+            </div>
+
+            <div class="consultation__blocks">
+
+                <input class="consultation__input" type="text" name="FIO" placeholder="ФИО*" required>
+
+                <input class="consultation__input" type="text" name="Number" placeholder="Номер телефона*" required>
+
+            </div>
+
+            <div class="consultation__data">
+                <label class="consultation__label">
+                    <input class="consultation__checkbox" type="checkbox" name="personalData">
+
+                    <span class="consultation__checkbox--custom"></span>
+
+                    <style>
+                        .consultation__checkbox--custom::before {
+                            background-image: url(../../img/icon/Vector.png);
+                            background-repeat: no-repeat;
+                        }
+                    </style>
+
+                    <h4>Я даю своё согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности
+                    </h4>
+
+                </label>
+            </div>
+
+            <button class="consultation__button button"><h3>Отправить</h3></button>
+
         </div>
-
-        <div class="consultation__text">
-
-            <h5>Консультация</h5>
-            <h3>Оставьте заявку и мы перезвоним в течение 5 минут</h3>
-
-        </div>
-
-        <div class="consultation__blocks">
-
-            <div class="consultation__input">ФИО*</div>
-
-            <div class="consultation__input">Номер телефона*</div>
-
-        </div>
-
-        <div class="consultation__data">
-            <div class="checkbox"></div>
-            <h4>Я даю своё согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</h4>
-        </div>
-
-        <button class="consultation__button button">Отправить</button>
-
     </div>
 
 </section>
@@ -429,6 +447,6 @@
         </div>
     </div>
 </footer>
-        <script src="js/app.min.js?_v=20240221013722"></script>
+        <script src="js/app.min.js?_v=20240221140539"></script>
     </body>
 </html>

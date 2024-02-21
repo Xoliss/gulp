@@ -1227,6 +1227,32 @@ h5 {
   width: 400px;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+.consultation {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.consultation__content {
+  margin: 0 35px;
+}
+
 .consultation__inner {
   width: 500px;
   height: 500px;
@@ -1239,6 +1265,9 @@ h5 {
 .consultation__close {
   position: absolute;
   right: 0;
+  cursor: pointer;
+  font-size: 25px;
+  margin: 20px 20px 0 0;
 }
 
 .consultation__text {
@@ -1252,6 +1281,11 @@ h5 {
           flex-direction: column;
   gap: 20px;
   text-align: center;
+}
+
+.consultation__text h3 {
+  width: 258px;
+  margin: 0 auto;
 }
 
 .consultation__blocks {
@@ -1284,11 +1318,69 @@ h5 {
   border-radius: 7px;
   border: 1px solid var(--Color-b, #cfc7c2);
   background: var(--White, #fff);
-  margin: 0 35px;
 }
 
 .consultation__data {
   margin-top: 20px;
+}
+
+.consultation__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.consultation__label h4 {
+  width: 90%;
+}
+
+.consultation__button {
+  margin: 40px auto 0;
+}
+
+.consultation__button h3 {
+  color: white;
+}
+
+.consultation__checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.consultation__checkbox--custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  position: relative;
+}
+
+.consultation__checkbox--custom::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 9px;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+      -ms-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.consultation .consultation__checkbox:checked + .consultation__checkbox--custom::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
 }
 
 @media (max-width: 2500px) {
