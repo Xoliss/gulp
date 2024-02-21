@@ -476,11 +476,18 @@ h5 {
   border-radius: 7px;
   background: var(--Color-c, #E86439);
   z-index: 2;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
 }
 
 .orange {
   color: var(--Color-c, #E86439);
   font-weight: 700;
+}
+
+:disabled {
+  background: var(--Color-c, rgba(232, 101, 57, 0.368627451));
+  pointer-events: none;
 }
 
 .header {
@@ -1267,6 +1274,9 @@ h5 {
   right: 0;
   cursor: pointer;
   font-size: 25px;
+}
+
+.consultation__close img {
   margin: 20px 20px 0 0;
 }
 
@@ -1281,6 +1291,10 @@ h5 {
           flex-direction: column;
   gap: 20px;
   text-align: center;
+}
+
+.consultation__text h5 {
+  color: #614F44;
 }
 
 .consultation__text h3 {

@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240221140539">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240221152640">
     <title>Главная</title>
 </head>
     
@@ -361,7 +361,7 @@
         <div class="consultation__content">
 
             <div class="consultation__close">
-                &#10006;
+                <picture><source srcset="../../img/icon/close.webp" type="image/webp"><img src="../../img/icon/close.png" alt="" class=""></picture>
             </div>
 
             <div class="consultation__text">
@@ -373,9 +373,9 @@
 
             <div class="consultation__blocks">
 
-                <input class="consultation__input" type="text" name="FIO" placeholder="ФИО*" required>
+                <input class="consultation__input Fio" type="text" name="FIO" placeholder="ФИО*" required>
 
-                <input class="consultation__input" type="text" name="Number" placeholder="Номер телефона*" required>
+                <input id="phone" class="consultation__input phone" type="tel" name="phone" placeholder="Номер телефона*" required>
 
             </div>
 
@@ -398,7 +398,7 @@
                 </label>
             </div>
 
-            <button class="consultation__button button"><h3>Отправить</h3></button>
+            <button disabled="true" class="consultation__button button"><h3>Отправить</h3></button>
 
         </div>
     </div>
@@ -447,6 +447,6 @@
         </div>
     </div>
 </footer>
-        <script src="js/app.min.js?_v=20240221140539"></script>
+        <script src="js/app.min.js?_v=20240221152640"></script>
     </body>
 </html>

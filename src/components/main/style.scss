@@ -5,6 +5,11 @@
 @import "../../resources/scss/mobile.scss";
 @import "../../resources/scss/adaptive.scss";
 
+
+:disabled {
+  background: var(--Color-c, #e865395e);
+  pointer-events: none;
+}
 .header {
   background: var(--Bg, #ffffff);
 
@@ -623,7 +628,9 @@
     right: 0;
     cursor: pointer;
     font-size: 25px;
-    margin: 20px 20px 0 0;
+    img {
+      margin: 20px 20px 0 0;
+    }
   }
 
   &__text {
@@ -632,7 +639,9 @@
     flex-direction: column;
     gap: 20px;
     text-align: center;
-
+    h5 {
+      color: #614F44;
+    }
     h3 {
       width: 258px;
       margin: 0 auto;
@@ -674,6 +683,13 @@
 
   &__button {
     margin: 40px auto 0;
+    // pointer-events: none;
+    // cursor: default;
+
+    // &--active {
+    //   pointer-events: auto;
+    //   cursor: pointer;
+    // }
 
     h3 {
       color: white;

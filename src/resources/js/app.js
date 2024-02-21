@@ -5,6 +5,8 @@
 
 import Swiper from "swiper";
 
+import IMask from 'imask';
+
 import { Navigation, Controller, Pagination } from 'swiper/modules'
 
 import * as flsFunctions from "./modules/functions.js";

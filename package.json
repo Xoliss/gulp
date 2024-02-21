@@ -39,6 +39,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "browser-sync": "^3.0.2"
+    "browser-sync": "^3.0.2",
+    "imask": "^7.4.0"
   }
 }
