@@ -160,23 +160,28 @@
   font-style: normal;
 }
 
-.portfolio {
-  position: relative;
-}
-
-.portfolio .swiper--large {
+.swiper--large {
   display: none;
-  position: absolute;
-  max-width: 99%;
-  height: 90vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-width: 99vw;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
-.portfolio .swiper--large__img {
+.swiper--large__img {
   -o-object-fit: unset;
      object-fit: unset;
+  margin: 0 auto;
+}
+
+.portfolio {
+  position: relative;
 }
 
 .swipers {
@@ -263,9 +268,13 @@
 }
 
 .swipers .swiper--standart {
-  width: 95%;
+  width: 96%;
   height: 71%;
   margin: 0;
+}
+
+.swipers .swiper--standart__slide {
+  padding-left: 10px;
 }
 
 .swipers .swiper--standart__img {
@@ -286,7 +295,8 @@
 }
 
 .swipers .swiper--mini__slide {
-  padding-right: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 html,
@@ -1129,6 +1139,18 @@ h5 {
   margin-top: 90px;
   padding-top: 60px;
   background-color: white;
+}
+
+.portfolio .overlay-slider {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 15;
 }
 
 .portfolio__text {

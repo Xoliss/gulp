@@ -16,26 +16,40 @@ export function isWebp() {
 
 // открытие и закрытие большого слайдера
 
-export function openSlider() {
+export function toggleSlider() {
   const slider = document.querySelector('.swiper--large');
-  const overlay = document.createElement('div');
-  overlay.classList.add('overlay');
-  const images = document.querySelectorAll('.swiper--standart__img');
+  const overlay = document.querySelector('.overlay-slider');
 
+  const images = document.querySelectorAll('.swiper--standart__img');
   images.forEach(image => {
     image.addEventListener('click', () => {
       slider.style.display = 'block'; // Показываем слайдер
-      document.body.appendChild(overlay); // Добавляем overlay в body
+      slider.style.position = 'absolute'; // Устанавливаем позицию "absolute"
+      overlay.style.display = 'block'; // Проявляем оверлэй
     });
   });
 
   overlay.addEventListener('click', () => {
     slider.style.display = 'none'; // Скрываем слайдер
     slider.style.position = 'static'; // Устанавливаем позицию "static"
-    document.body.removeChild(overlay); // Удаляем overlay из body
+    overlay.style.display = 'none'; // Проявляем оверлэй
   });
 }
 
+toggleSlider();
+
+
+// var buttons = document.querySelectorAll('.button');
+// buttons.forEach(function (button) {
+//   button.addEventListener('click', showConsultation);
+// });
+
+// var closeButton = document.querySelector('.consultation__close');
+// closeButton.addEventListener('click', hideConsultation);
+
+
+
+////////////////////////////////////////////////////////////////////////////////
 // открытие и скрытие меню консультации
 
 export function showConsultation() {
@@ -53,6 +67,7 @@ export function hideConsultation() {
   var overlay = document.querySelector('.overlay');
 
   consultationContent.style.display = 'none';
+
   overlay.style.display = 'none';
 }
 
