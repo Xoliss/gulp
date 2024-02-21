@@ -24,7 +24,7 @@ export function toggleSlider() {
   images.forEach(image => {
     image.addEventListener('click', () => {
       slider.style.display = 'block'; // Показываем слайдер
-      slider.style.position = 'absolute'; // Устанавливаем позицию "absolute"
+      slider.style.position = 'fixed'; // Устанавливаем позицию "absolute"
       overlay.style.display = 'block'; // Проявляем оверлэй
     });
   });

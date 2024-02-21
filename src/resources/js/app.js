@@ -62,6 +62,7 @@ new Swiper('.swiper--large', {
 
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },      
 
     controller: {
