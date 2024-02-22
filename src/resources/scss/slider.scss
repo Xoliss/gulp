@@ -94,7 +94,7 @@
     flex-direction: column;
     gap: 20px;
     width: 35vw;
-    height: 47vh;
+    max-width: 35vw;
 
 
     .swiper {
@@ -126,7 +126,7 @@
         &-button {
 
             &-prev {
-                left: 10px;
+                left: 20px;
                 width: 30px;
                 height: 30px;
                 background-color: white;
@@ -142,7 +142,7 @@
 
 
             &-next {
-                right: 10px;
+                right: 20px;
                 width: 30px;
                 height: 30px;
                 background-color: white;
@@ -175,12 +175,12 @@
         }
 
         &--standart {
-            width: 96%;
-            height: 71%;
+            width: 98%;
             margin: 0;
 
             &__slide {
                 padding-left: 10px;
+                padding-right: 10px;
             }
 
             &__img {
@@ -190,7 +190,6 @@
 
         &--mini {
             width: 98%;
-            height: 29%;
             margin: 0;
             cursor: pointer;
 
@@ -211,23 +210,245 @@
 
 @media screen and (max-width: 3000px) {
     .swiper--large {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 9999;
-        max-width: 64vw;
-        transition: 0.2s ease-in;
 
-        &__slide {
-            text-align: center;
+        max-width: 64vw;
+    }
+}
+
+@media screen and (max-width: 2500px) {
+    .swiper--large {
+        max-width: 75vw;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .swiper--large {
+        max-width: 85vw;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .portfolio {
+        &__card {
+            justify-content: space-between;
         }
 
-        &__img {
-            object-fit: unset;
-            margin: 0 auto;
-            border-radius: 10%;
+        .swipers {
+            width: 700px;
+            .swiper {
+                &--standart {
+                    max-width: 700px;
+                    width: 700px;
+                }
+
+                &--mini {
+                    max-width: 700px;
+                    width: 700px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1375px) {
+    .portfolio {
+        &__card {
+            justify-content: left;
+            gap: 40px;
+        }
+
+        .swipers {
+            width: 47vw;
+            max-width: 47vw;
+            .swiper {
+                &--standart {
+                    max-width: 47vw;
+                    width: 47vw;
+                }
+
+                &--mini {
+                    max-width: 47vw;
+                    width: 47vw;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 993px) {
+    .swiper--large {
+        max-width: 95%;
+
+        .swiper-pagination {
+            height: 2rem;
+
+            &-bullet {
+                width: 25px;
+                height: 25px;
+
+                &-active {
+                    border: 3px solid #e86539ce;
+                }
+            }
+        }
+
+
+        &__button {
+            &-prev {
+                left: 20px;
+                width: 60px;
+                height: 60px;
+
+                &::after {
+                    font-size: 40px;
+                    padding-right: 3px;
+                    padding-top: 2px;
+                }
+
+            }
+
+
+            &-next {
+                right: 20px;
+                width: 60px;
+                height: 60px;
+
+                &::after {
+                    font-size: 40px;
+                    padding-left: 3px;
+                    padding-top: 2px;
+                }
+
+            }
+        }
+    }
+
+    .portfolio {
+        &__text {
+            width: 90vw;
+
+            h5 {
+                width: 90vw;
+            }
+
+            h2 {
+                width: 75vw;
+            }
+        }
+
+        .card {
+            flex-direction: column;
+            gap: 2vw;
+
+            &-info {
+                &__block {
+                    padding: 0;
+                }
+
+                .card-info__blocks {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .swipers {
+            max-width: 85vw;
+            width: 85vw;
+
+            .swiper {
+                &--standart {
+                    max-width: 88vw;
+                    width: 88vw;
+                    &__button-next {
+                        width: 5vw;
+                        height: 5vw;
+                        &::after {
+                            font-size: 20px;
+                        }
+                    }
+                    &__button-prev {
+                        width: 5vw;
+                        height: 5vw;
+                        &::after {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                &--mini {
+                    max-width: 88vw;
+                    width: 88vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .swiper--large {
+
+        .swiper-pagination {
+            height: 1.5rem;
+
+            &-bullet {
+                width: 20px;
+                height: 20px;
+
+                &-active {
+                    border: 2px solid #e86539ce;
+                }
+            }
+        }
+
+
+        &__button {
+            &-prev {
+                left: 15px;
+                width: 45px;
+                height: 45px;
+
+                &::after {
+                    font-size: 30px;
+                }
+
+            }
+
+
+            &-next {
+                right: 15px;
+                width: 45px;
+                height: 45px;
+
+                &::after {
+                    font-size: 30px;
+                }
+
+            }
+        }
+    }
+
+    .portfolio {
+        &__text {
+
+            h5 {
+                width: 75vw;
+            }
+
+            h2 {
+                width: 89vw;
+            }
+        }
+
+        .card-info {
+            .cost {
+                h4 {
+                    width: 60vw;
+                }
+            }
         }
     }
 }
