@@ -218,6 +218,10 @@ u {
   text-decoration: none;
 }
 
+.hidden {
+  display: none !important;
+}
+
 ul,
 ul li {
   list-style: none;
@@ -773,6 +777,35 @@ h5 {
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
+  margin-bottom: 40px;
+}
+
+.portfolio__button {
+  margin: 40px 0 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 60px;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+  background: var(--Color-c, #E86439);
+}
+
+.portfolio__button h3 {
+  color: white;
+}
+
+.portfolio .card--3 {
+  margin-bottom: 0;
+  padding-bottom: 40px;
 }
 
 .portfolio .list {

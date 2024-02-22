@@ -166,12 +166,6 @@ phoneInput.oninput = checkAllConditions;
 
 
 
-
-
-
-
-
-
 // // Отправляем номер телефона
 // async function btnHandler(e) {
 //   e.preventDefault();
@@ -182,4 +176,16 @@ phoneInput.oninput = checkAllConditions;
 // }
 
 
+// Кнопка показать еще
+
+const openButton = document.querySelector('.portfolio__button');
+const cards = Array.from(document.querySelector('.card'));
+
+export function response1() {
+  if (cards < 4) {
+    openButton.add('hidden');
+
+    cards
+  }
+}
 

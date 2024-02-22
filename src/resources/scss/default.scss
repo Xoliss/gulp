@@ -54,7 +54,9 @@ p {
 u {
 	text-decoration: none;
 }
-
+.hidden {
+	display: none !important;
+}
 ul,
 ul li {
 	list-style: none;
