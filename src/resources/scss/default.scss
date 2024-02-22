@@ -186,9 +186,45 @@ h5 {
 	font-weight: 700;
 }
 
+:disabled {
+	background: var(--Color-c, #e865395e);
+	pointer-events: none;
+}
 
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9998;
+}
 
+@media (max-width: 1315px) {
+    
+    .block__shadow {
+        bottom: 0;
+        left: 0;
+    }
 
+}
+
+@media (max-width: 985px) {
+    .block__shadow {
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 475px) {
+    h1,
+    h5 {
+        font-size: 38px;
+    }
+
+}
 
 
 @media (max-width: 375px) {

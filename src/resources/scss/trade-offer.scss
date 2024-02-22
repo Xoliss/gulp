@@ -1,0 +1,201 @@
+.trade-offer {
+  margin-top: 200px;
+  background: var(--Bg, #f5f4f4);
+
+  &__inner {
+    height: 700px;
+    justify-content: right;
+    border-radius: 20px;
+    background: var(--White, #fff);
+    position: relative;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+
+  &__img {
+    position: absolute;
+    top: 140px;
+    height: 70%;
+  }
+
+  &__img-inner {
+    display: none;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+    position: absolute;
+    gap: 20px;
+    right: 0;
+    padding-right: 40px;
+    padding-top: 30px;
+
+    h5 {
+      margin-left: 50px;
+
+      u {
+        color: var(--Color-a, #614f44);
+      }
+    }
+  }
+
+  &__name {
+    width: 200px;
+    display: flex;
+    height: 40px;
+    padding: 10px 11px;
+    gap: 10px;
+    border-radius: 7px;
+    background: var(--Color-b, #cfc7c2);
+    justify-content: center;
+    margin-left: 50px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 530px;
+
+    h3 {
+      max-width: 530px;
+      margin-left: 50px;
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
+    width: 350px;
+    height: 60px;
+    margin-left: 50px;
+
+    h3 {
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 1315px) {
+
+  .trade-offer {
+    &__inner {
+      width: 90vw;
+      height: 1300px;
+      background-position-y: top;
+    }
+
+    &__img {
+      bottom: 0;
+      display: none;
+    }
+
+    &__img-inner {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      height: auto;
+      left: 15vw;
+    }
+
+
+    &__info {
+      width: 90vw;
+      position: sticky;
+      margin: 0 auto;
+
+      h5 {
+        width: 70vw;
+      }
+    }
+
+    &__button {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 985px) {
+
+  .block__shadow {
+    height: 300px;
+  }
+
+
+  .trade-offer {
+    &__inner {
+      background-position-y: center;
+    }
+
+    &__img-inner {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      height: auto;
+      left: 0;
+    }
+
+  }
+}
+
+@media (max-width: 775px) {
+
+  .trade-offer {
+    &__inner {
+      height: 1320px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+
+  .trade-offer {
+    &__inner {
+      height: 1250px;
+    }
+
+    &__info {
+      width: 80vw;
+      padding-right: 0;
+
+      h5 {
+        margin-left: 0;
+      }
+
+      h3 {
+        width: 80vw;
+      }
+    }
+
+    &__name {
+      margin-left: 0;
+    }
+
+    &__text {
+      h3 {
+        margin-left: 0;
+      }
+    }
+
+    &__button {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 475px) {
+
+
+  .trade-offer {
+    &__inner {
+      height: 1070px;
+    }
+
+    &__button {
+      width: 250px;
+      height: 60px;
+    }
+  }
+}
