@@ -656,3 +656,29 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+
+    .portfolio {
+        .card-info {
+            .cost {
+
+                &__button {
+                    width: 75vw;
+                }
+
+                &__money {
+                    gap: 10px;
+
+                    h3 {
+                        width: 75px;
+                    }
+
+                    h2 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -198,3 +198,14 @@
       }
   }
 }
+
+@media (max-width: 375px) {
+  .advantages {
+      background-position: center bottom (-10px);
+
+      &__inner {
+          height: 1150px;
+          background-position: center top (10px);
+      }
+  }
+}

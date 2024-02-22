@@ -199,3 +199,17 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+
+
+  .trade-offer {
+      &__inner {
+          height: 850px;
+      }
+
+      &__button {
+          width: 75vw;
+      }
+  }
+}

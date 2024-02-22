@@ -1609,6 +1609,12 @@ h5 {
   }
 }
 
+@media screen and (max-width: 1350px) {
+  .header .connection__inner {
+    padding-right: 15px;
+  }
+}
+
 @media (max-width: 1315px) {
   .block__shadow {
     bottom: 0;
@@ -2148,6 +2154,41 @@ h5 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .consultation__inner {
+    width: 90vw;
+  }
+
+  .consultation__text {
+    padding-top: 60px;
+  }
+
+  .consultation__button {
+    width: 60vw;
+    margin-bottom: 40px;
+  }
+
+  .portfolio .swipers .swiper--standart__button-next {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .portfolio .swipers .swiper--standart__button-next::after {
+    font-size: 17px;
+    padding-left: 2px;
+  }
+
+  .portfolio .swipers .swiper--standart__button-prev {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .portfolio .swipers .swiper--standart__button-prev::after {
+    font-size: 17px;
+    padding-right: 2px;
+  }
+}
+
 @media (max-width: 600px) {
   .header__inner {
     margin: 0 20px;
@@ -2287,28 +2328,6 @@ h5 {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .portfolio .swipers .swiper--standart__button-next {
-    width: 7vw;
-    height: 7vw;
-  }
-
-  .portfolio .swipers .swiper--standart__button-next::after {
-    font-size: 17px;
-    padding-left: 2px;
-  }
-
-  .portfolio .swipers .swiper--standart__button-prev {
-    width: 7vw;
-    height: 7vw;
-  }
-
-  .portfolio .swipers .swiper--standart__button-prev::after {
-    font-size: 17px;
-    padding-right: 2px;
-  }
-}
-
 @media (max-width: 475px) {
   h1,
   h5 {
@@ -2415,8 +2434,9 @@ h5 {
     padding-bottom: 25px;
   }
 
-  .block__shadow {
-    height: 150px;
+  .promo .block__shadow {
+    height: 300px;
+    bottom: -10px;
   }
 
   .trade-offer__inner {
@@ -2425,6 +2445,22 @@ h5 {
 
   .trade-offer__button {
     width: 75vw;
+  }
+
+  .portfolio .card-info .cost__button {
+    width: 75vw;
+  }
+
+  .portfolio .card-info .cost__money {
+    gap: 10px;
+  }
+
+  .portfolio .card-info .cost__money h3 {
+    width: 75px;
+  }
+
+  .portfolio .card-info .cost__money h2 {
+    font-size: 30px;
   }
 
   .advantages {
@@ -2479,23 +2515,31 @@ h5 {
     grid-row: 32/38;
   }
 
-  .portfolio .card-info .cost__button {
-    width: 75vw;
-  }
-
-  .portfolio .card-info .cost__money {
-    gap: 10px;
-  }
-
-  .portfolio .card-info .cost__money h3 {
-    width: 75px;
-  }
-
-  .portfolio .card-info .cost__money h2 {
-    font-size: 30px;
-  }
-
   .footer__item--icon h4 {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .consultation__content {
+    margin: 0 20px;
+  }
+
+  .consultation__inner {
+    height: 470px;
+  }
+
+  .consultation__text h3 {
+    width: 70vw;
+  }
+
+  .consultation__button {
+    width: 63vw;
+    margin: 24px auto 0;
+  }
+
+  .consultation__close img {
+    width: 20px;
+    height: 20px;
   }
 }

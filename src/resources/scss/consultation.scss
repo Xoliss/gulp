@@ -1,124 +1,168 @@
 .consultation {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-  
-    &__content {
-      margin: 0 35px;
-    }
-  
-    &__inner {
-      width: 500px;
-      height: 500px;
-      position: relative;
-      border-radius: 20px;
-      background: var(--White, #fff);
-      margin: 0 auto;
-    }
-  
-    &__close {
-      position: absolute;
-      right: 0;
-      cursor: pointer;
-      font-size: 25px;
-      padding: 20px;
-    }
-  
-    &__text {
-      padding-top: 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      text-align: center;
-      h5 {
-        color: #614F44;
-      }
-      h3 {
-        width: 258px;
-        margin: 0 auto;
-      }
-    }
-  
-    &__blocks {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 37px;
-    }
-  
-    &__input {
-      display: flex;
-      padding: 10px;
-      align-items: center;
-      gap: 10px;
-      flex: 1 0 0;
-      align-self: stretch;
-      border-radius: 7px;
-      border: 1px solid var(--Color-b, #cfc7c2);
-      background: var(--White, #fff);
-    }
-  
-    &__data {
-      margin-top: 20px;
-  
-    }
-  
-    &__label {
-      display: flex;
-      gap: 12px;
-  
-      h4 {
-        width: 90%;
-      }
-    }
-  
-    &__button {
-      margin: 40px auto 0;
-  
-      h3 {
-        color: white;
-      }
-    }
-  
-    &__checkbox {
-      width: 0;
-      height: 0;
-      opacity: 0;
-      position: absolute;
-      z-index: -1;
-  
-      &--custom {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background: white;
-        border: 1px solid black;
-        border-radius: 2px;
-        position: relative;
-  
-  
-        &::before {
-          content: '';
-          display: inline-block;
-          width: 12px;
-          height: 9px;
-          background-size: contain;
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%) scale(0);
-          transition: 0.2s ease-in;
-        }
-  
-      }
-  
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+
+  &__content {
+    margin: 0 35px;
+  }
+
+  &__inner {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 20px;
+    background: var(--White, #fff);
+    margin: 0 auto;
+  }
+
+  &__close {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  &__text {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+    h5 {
+      color: #614F44;
     }
 
-    .consultation__checkbox:checked+.consultation__checkbox--custom::before {
-      transform: translate(-50%, -50%) scale(1);
+    h3 {
+      width: 258px;
+      margin: 0 auto;
     }
-  
   }
+
+  &__blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 37px;
+  }
+
+  &__input {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 7px;
+    border: 1px solid var(--Color-b, #cfc7c2);
+    background: var(--White, #fff);
+  }
+
+  &__data {
+    margin-top: 20px;
+
+  }
+
+  &__label {
+    display: flex;
+    gap: 12px;
+
+    h4 {
+      width: 90%;
+    }
+  }
+
+  &__button {
+    margin: 40px auto 0;
+
+    h3 {
+      color: white;
+    }
+  }
+
+  &__checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+
+    &--custom {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 1px solid black;
+      border-radius: 2px;
+      position: relative;
+
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 9px;
+        background-size: contain;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 0.2s ease-in;
+      }
+
+    }
+
+  }
+
+  .consultation__checkbox:checked+.consultation__checkbox--custom::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .consultation {
+    &__inner {
+      width: 90vw;
+    }
+    &__text {
+        padding-top: 60px;
+    }
+    &__button {
+      width: 60vw;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .consultation {
+    
+    &__content {
+      margin: 0 20px;
+    }
+    &__inner {
+      height: 470px;
+    }
+    &__text {
+      h3 {
+        width: 70vw;
+      }
+    }
+    &__button {
+      width: 63vw;
+      margin: 24px auto 0;
+    }
+    &__close {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
