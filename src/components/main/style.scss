@@ -4,20 +4,22 @@
 @import "../../node_modules/swiper/swiper-bundle.css";
 @import "../../resources/scss/default.scss";
 
-@import "../../resources/scss/consultation.scss";
-
 // Секции
 
-@import "../../resources/scss/header.scss";
+@import "../layouts/header/header.scss";
 
-@import "../../resources/scss/promo.scss";
+@import "../layouts/promo/promo.scss";
 
-@import "../../resources/scss/trade-offer.scss";
+@import "../layouts/trade-offer/trade-offer.scss";
 
-@import "../../resources/scss/portfolio.scss";
+@import "../layouts/portfolio/portfolio.scss";
 
-@import "../../resources/scss/adwantages.scss";
+@import "../layouts/advantages/advantages.scss";
 
-@import "../../resources/scss/dignities.scss";
+@import "../layouts/dignities/dignities.scss";
 
-@import "../../resources/scss/footer.scss";
+@import "../layouts/footer/footer.scss";
+
+// Всплывающие окна
+
+@import "../pop-ups/consultation.scss";
