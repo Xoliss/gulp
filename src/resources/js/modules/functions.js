@@ -1,4 +1,6 @@
 // Здесь описываем все функции
+
+
 // функция проверки (Поддерживается ли браузером картинки WEBP?)
 export function isWebp() {
   function testWebp(callback) {
@@ -178,14 +180,33 @@ phoneInput.oninput = checkAllConditions;
 
 // Кнопка показать еще
 
-const openButton = document.querySelector('.portfolio__button');
-const cards = Array.from(document.querySelector('.card'));
+// const openButton = document.querySelector('.portfolio__button');
+// const cards = Array.from(document.querySelector('.card'));
 
-export function response1() {
-  if (cards < 4) {
-    openButton.add('hidden');
+// export function response1() {
+//   if (cards < 4) {
+//     openButton.add('hidden');
 
-    cards
+//     cards
+//   }
+// }
+
+const showMore = document.querySelector('.portfolio__button')
+
+const productsLenght = document.querySelectorAll('.card').length; // сколько их всего
+
+let items = 3; //начальные карточки
+
+showMore.addEventListener('click', () => {
+  items += 3;
+  const array = Array.from(document.querySelector('.portfolio__cards').children);
+  const VisItems = array.slice(0, items);
+
+  VisItems.forEach(el => el.classList.add('is-visible'));
+
+  if (VisItems.length === productsLenght) {
+    showMore.style.display = 'none';
   }
-}
+  
+})
 

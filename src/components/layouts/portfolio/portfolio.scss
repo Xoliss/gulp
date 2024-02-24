@@ -1,714 +1,691 @@
 .swiper--large {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-width: 99vw;
+
+  &__slide {
+    text-align: center;
+  }
+
+  &__img {
+    object-fit: unset;
+    margin: 0 auto;
+    border-radius: 10%;
+  }
+
+  .swiper-pagination {
+    height: 3rem;
+
+    &-bullet {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      opacity: 0.3;
+
+      &-active {
+        background: #ffffffce;
+        border: 4px solid #e86539ce;
+        opacity: 1;
+      }
+
+      &:hover {
+        background: #e86539;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__button {
+    &-prev {
+      left: 30px;
+      width: 80px;
+      height: 80px;
+      background-color: white;
+      border-radius: 50%;
+
+      &::after {
+        color: #e86439;
+        font-size: 45px;
+        padding-right: 5px;
+        padding-top: 4px;
+      }
+    }
+
+    &-next {
+      right: 30px;
+      width: 80px;
+      height: 80px;
+      background-color: white;
+      border-radius: 50%;
+
+      &::after {
+        color: #e86439;
+        font-size: 45px;
+        padding-left: 5px;
+        padding-top: 4px;
+      }
+    }
+  }
+}
+
+.portfolio {
+  margin-top: 90px;
+  padding-top: 60px;
+  background-color: white;
+
+  .overlay-slider {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    max-width: 99vw;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 15;
+    cursor: pointer;
+  }
 
-    &__slide {
-        text-align: center;
-    }
-
-    &__img {
-        object-fit: unset;
-        margin: 0 auto;
-        border-radius: 10%;
-    }
-
-    .swiper-pagination {
-        height: 3rem;
-
-        &-bullet {
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-            opacity: 0.3;
-
-            &-active {
-                background: #ffffffce;
-                border: 4px solid #e86539ce;
-                opacity: 1;
-            }
-
-            &:hover {
-                background: #e86539;
-                opacity: 0.7;
-            }
-
-        }
-    }
-
-
-    &__button {
-        &-prev {
-            left: 30px;
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            border-radius: 50%;
-
-            &::after {
-                color: #E86439;
-                font-size: 45px;
-                padding-right: 5px;
-                padding-top: 4px;
-            }
-
-        }
-
-
-        &-next {
-            right: 30px;
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            border-radius: 50%;
-
-            &::after {
-                color: #E86439;
-                font-size: 45px;
-                padding-left: 5px;
-                padding-top: 4px;
-            }
-
-        }
-    }
-}
-
-
-
-
-.portfolio {
-    margin-top: 90px;
-    padding-top: 60px;
-    background-color: white;
-
-    .overlay-slider {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: 0.7;
-        z-index: 15;
-        cursor: pointer;
-    }
-
-    &__text {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 60vw;
-        margin-bottom: 60px;
-
-        h5 {
-            u {
-                color: var(--Color-a, #614f44);
-                font-weight: 700;
-            }
-        }
-
-        h2 {
-            width: 50vw;
-        }
-    }
-
-    &__card {
-        display: flex;
-        gap: 40px;
-        margin-bottom: 40px;
-    }
-
-    &__button {
-        margin: 40px 0 0 10px;
-        display: flex;
-        width: 300px;
-        height: 60px;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 7px;
-        background: var(--Color-c, #E86439);
-
-        h3 {
-            color: white;
-
-        }
-    }
-
-
-    // убираем лишние карточки при необходимости
-    // .card:nth-child(n + 2) {
-    //     display: none;
-    // }
-
-    .card--3 {
-        margin-bottom: 0;
-        padding-bottom: 40px;
-    }
-
-    .list {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        border-bottom: 1px solid var(--Color-b, #cfc7c2);
-        padding-bottom: 20px;
-
-        &__item {
-            display: flex;
-            gap: 5px;
-            align-items: center;
-        }
-
-        &__bullet {
-            padding-top: 7px;
-        }
-    }
-
-    .card-info {
-        &__blocks {
-            display: flex;
-            gap: 20px;
-            margin: 20px 0;
-            border-bottom: 1px solid var(--Color-b, #cfc7c2);
-            padding-bottom: 20px;
-        }
-    }
-
-    .block {
-        display: flex;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .cost {
-        &__money {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-
-            h3 {
-                color: var(--Color-a, #614f44);
-                width: 95px;
-            }
-
-            h2 {
-                font-size: 32px;
-                font-weight: 700;
-                margin-bottom: 2px;
-            }
-        }
-
-        &__button {
-            margin: 20px 0;
-
-            h3 {
-                color: white;
-            }
-        }
-
-        h4 {
-            width: 400px;
-        }
-    }
-}
-
-
-
-.portfolio {
-    position: relative;
-
-}
-
-.swipers {
+  &__text {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 35vw;
-    max-width: 35vw;
+    width: 60vw;
+    margin-bottom: 60px;
 
-
-    .swiper {
-
-        border-radius: 4%;
-        display: flex;
-        max-width: 35vw;
-        width: 100%;
-        height: auto;
-
-
-        &-wrapper {
-            box-sizing: content-box;
-
-        }
-
-        &-slide {
-            display: flex;
-            justify-content: center;
-
-            img {
-                border-radius: 4%;
-                width: 100%;
-                height: 100%;
-            }
-
-        }
-
-        &-button {
-
-            &-prev {
-                left: 20px;
-                width: 30px;
-                height: 30px;
-                background-color: white;
-                border-radius: 50%;
-
-                &::after {
-                    color: #E86439;
-                    font-size: 15px;
-                    padding-right: 2px;
-                }
-
-            }
-
-
-            &-next {
-                right: 20px;
-                width: 30px;
-                height: 30px;
-                background-color: white;
-                border-radius: 50%;
-
-                &::after {
-                    color: #E86439;
-                    font-size: 15px;
-                    padding-left: 2px;
-                }
-
-            }
-
-        }
-
-        &-pagination {
-
-            &-bullet {
-                background-color: transparent;
-                width: 15px;
-                height: 15px;
-                opacity: 1;
-                border: 2px solid orange;
-
-                &-active {
-                    background-color: white;
-                }
-            }
-
-        }
-
-        &--standart {
-            width: 98%;
-            margin: 0;
-
-            &__slide {
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-
-            &__img {
-                cursor: pointer;
-            }
-        }
-
-        &--mini {
-            width: 98%;
-            margin: 0;
-            cursor: pointer;
-
-            &__wrapper {
-                display: flex;
-
-                &__slide {}
-            }
-
-            &__slide {
-                padding-right: 10px;
-                padding-left: 10px;
-            }
-        }
-
+    h5 {
+      u {
+        color: var(--Color-a, #614f44);
+        font-weight: 700;
+      }
     }
+
+    h2 {
+      width: 50vw;
+    }
+  }
+
+  .card {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    &--last {
+      margin-bottom: 0;
+      padding-bottom: 40px;
+    }
+  }
+
+  // убираем лишние карточки при необходимости
+
+  .card:nth-child(n + 4) {
+    display: none;
+  }
+
+  .portfolio__card.is-visible {
+    display: flex;
+  }
+
+  &__button {
+    margin: 40px 0 0 10px;
+    display: flex;
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 7px;
+    background: var(--Color-c, #e86439);
+    cursor: pointer;
+
+    h3 {
+      color: white;
+    }
+  }
+
+  // .card--3 {
+  //     margin-bottom: 0;
+  //     padding-bottom: 40px;
+  // }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid var(--Color-b, #cfc7c2);
+    padding-bottom: 20px;
+
+    &__item {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+
+    &__bullet {
+      padding-top: 7px;
+    }
+  }
+
+  .card-info {
+    &__blocks {
+      display: flex;
+      gap: 20px;
+      margin: 20px 0;
+      border-bottom: 1px solid var(--Color-b, #cfc7c2);
+      padding-bottom: 20px;
+    }
+  }
+
+  .block {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .cost {
+    &__money {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      h3 {
+        color: var(--Color-a, #614f44);
+        width: 95px;
+      }
+
+      h2 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+    }
+
+    &__button {
+      margin: 20px 0;
+
+      h3 {
+        color: white;
+      }
+    }
+
+    h4 {
+      width: 400px;
+    }
+  }
+}
+
+.portfolio {
+  position: relative;
+}
+
+.swipers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 35vw;
+  max-width: 35vw;
+
+  .swiper {
+    border-radius: 4%;
+    display: flex;
+    max-width: 35vw;
+    width: 100%;
+    height: auto;
+
+    &-wrapper {
+      box-sizing: content-box;
+    }
+
+    &-slide {
+      display: flex;
+      justify-content: center;
+
+      img {
+        border-radius: 4%;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-button {
+      &-prev {
+        left: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+
+        &::after {
+          color: #e86439;
+          font-size: 15px;
+          padding-right: 2px;
+        }
+      }
+
+      &-next {
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+
+        &::after {
+          color: #e86439;
+          font-size: 15px;
+          padding-left: 2px;
+        }
+      }
+    }
+
+    &-pagination {
+      &-bullet {
+        background-color: transparent;
+        width: 15px;
+        height: 15px;
+        opacity: 1;
+        border: 2px solid orange;
+
+        &-active {
+          background-color: white;
+        }
+      }
+    }
+
+    &--standart {
+      width: 98%;
+      margin: 0;
+
+      &__slide {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      &__img {
+        cursor: pointer;
+      }
+    }
+
+    &--mini {
+      width: 98%;
+      margin: 0;
+      cursor: pointer;
+
+      &__wrapper {
+        display: flex;
+
+        &__slide {
+        }
+      }
+
+      &__slide {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 3000px) {
-    .swiper--large {
-
-        max-width: 64vw;
-    }
+  .swiper--large {
+    max-width: 64vw;
+  }
 }
 
 @media screen and (max-width: 2500px) {
+  .portfolio {
+    .swiper--standart {
+      &__button-next {
+        width: 3vw;
+        height: 3vw;
 
-    .portfolio {
-        .swiper--standart {
-            &__button-next {
-                width: 3vw;
-                height: 3vw;
-
-                &::after {
-                    font-size: 30px;
-                    padding-left: 5px;
-                }
-            }
-
-            &__button-prev {
-                width: 3vw;
-                height: 3vw;
-
-                &::after {
-                    font-size: 30px;
-                    padding-right: 5px;
-                }
-            }
+        &::after {
+          font-size: 30px;
+          padding-left: 5px;
         }
+      }
 
-        .swiper--large {
-            max-width: 75vw;
+      &__button-prev {
+        width: 3vw;
+        height: 3vw;
+
+        &::after {
+          font-size: 30px;
+          padding-right: 5px;
         }
+      }
     }
+
+    .swiper--large {
+      max-width: 75vw;
+    }
+  }
 }
 
 @media screen and (max-width: 1750px) {
-
-    .portfolio {
-        &__inner {
-            margin: 0 auto;
-        }
-
-        .swippers {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper--standart {
-            &__button-next {
-
-                &::after {
-                    font-size: 22px;
-                }
-            }
-
-            &__button-prev {
-
-                &::after {
-                    font-size: 22px;
-                }
-            }
-        }
-
-        .swiper--large {
-            max-width: 85vw;
-        }
+  .portfolio {
+    &__inner {
+      margin: 0 auto;
     }
+
+    .swippers {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper--standart {
+      &__button-next {
+        &::after {
+          font-size: 22px;
+        }
+      }
+
+      &__button-prev {
+        &::after {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .swiper--large {
+      max-width: 85vw;
+    }
+  }
 }
 
 @media screen and (max-width: 1600px) {
-    .portfolio {
-        &__card {
-            justify-content: space-between;
-        }
-
-        .swipers {
-            width: 700px;
-
-            .swiper {
-                &--standart {
-                    max-width: 700px;
-                    width: 700px;
-                }
-
-                &--mini {
-                    max-width: 700px;
-                    width: 700px;
-                }
-            }
-        }
+  .portfolio {
+    &__card {
+      justify-content: space-between;
     }
 
+    .swipers {
+      width: 700px;
+
+      .swiper {
+        &--standart {
+          max-width: 700px;
+          width: 700px;
+        }
+
+        &--mini {
+          max-width: 700px;
+          width: 700px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1375px) {
-    .portfolio {
-        &__card {
-            justify-content: left;
-            gap: 40px;
-        }
-
-        .swipers {
-            width: 47vw;
-            max-width: 47vw;
-
-            .swiper {
-                &--standart {
-                    max-width: 47vw;
-                    width: 47vw;
-                }
-
-                &--mini {
-                    max-width: 47vw;
-                    width: 47vw;
-                }
-            }
-        }
+  .portfolio {
+    &__card {
+      justify-content: left;
+      gap: 40px;
     }
 
+    .swipers {
+      width: 47vw;
+      max-width: 47vw;
+
+      .swiper {
+        &--standart {
+          max-width: 47vw;
+          width: 47vw;
+        }
+
+        &--mini {
+          max-width: 47vw;
+          width: 47vw;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1315px) {
-    .portfolio {
-        &__inner {
-            width: 90vw;
-        }
+  .portfolio {
+    &__inner {
+      width: 90vw;
     }
+  }
 }
 
 @media screen and (max-width: 993px) {
-    .swiper--large {
-        max-width: 95%;
+  .swiper--large {
+    max-width: 95%;
 
-        .swiper-pagination {
-            height: 2rem;
+    .swiper-pagination {
+      height: 2rem;
 
-            &-bullet {
-                width: 25px;
-                height: 25px;
+      &-bullet {
+        width: 25px;
+        height: 25px;
 
-                &-active {
-                    border: 3px solid #e86539ce;
-                }
-            }
+        &-active {
+          border: 3px solid #e86539ce;
         }
-
-
-        &__button {
-            &-prev {
-                left: 20px;
-                width: 60px;
-                height: 60px;
-
-                &::after {
-                    font-size: 40px;
-                    padding-right: 3px;
-                    padding-top: 2px;
-                }
-
-            }
-
-
-            &-next {
-                right: 20px;
-                width: 60px;
-                height: 60px;
-
-                &::after {
-                    font-size: 40px;
-                    padding-left: 3px;
-                    padding-top: 2px;
-                }
-
-            }
-        }
+      }
     }
 
-    .portfolio {
-        &__text {
-            width: 90vw;
+    &__button {
+      &-prev {
+        left: 20px;
+        width: 60px;
+        height: 60px;
 
-            h5 {
-                width: 90vw;
-            }
-
-            h2 {
-                width: 75vw;
-            }
+        &::after {
+          font-size: 40px;
+          padding-right: 3px;
+          padding-top: 2px;
         }
+      }
 
-        .card {
-            flex-direction: column;
-            gap: 2vw;
+      &-next {
+        right: 20px;
+        width: 60px;
+        height: 60px;
 
-            &-info {
-                &__block {
-                    padding: 0;
-                }
-
-                .card-info__blocks {
-                    flex-direction: column;
-                }
-            }
+        &::after {
+          font-size: 40px;
+          padding-left: 3px;
+          padding-top: 2px;
         }
-
-        .swipers {
-            max-width: 85vw;
-            width: 85vw;
-
-            .swiper {
-                &--standart {
-                    max-width: 88vw;
-                    width: 88vw;
-
-                    &__button-next {
-                        width: 5vw;
-                        height: 5vw;
-
-                        &::after {
-                            font-size: 20px;
-                        }
-                    }
-
-                    &__button-prev {
-                        width: 5vw;
-                        height: 5vw;
-
-                        &::after {
-                            font-size: 20px;
-                        }
-                    }
-                }
-
-                &--mini {
-                    max-width: 88vw;
-                    width: 88vw;
-                }
-            }
-        }
+      }
     }
+  }
+
+  .portfolio {
+    &__text {
+      width: 90vw;
+
+      h5 {
+        width: 90vw;
+      }
+
+      h2 {
+        width: 75vw;
+      }
+    }
+
+    .card {
+      flex-direction: column;
+      gap: 2vw;
+
+      &-info {
+        &__block {
+          padding: 0;
+        }
+
+        .card-info__blocks {
+          flex-direction: column;
+        }
+      }
+    }
+    &__button {
+      margin-left: 0;
+    }
+
+    .swipers {
+      max-width: 85vw;
+      width: 85vw;
+
+      .swiper {
+        &--standart {
+          max-width: 88vw;
+          width: 88vw;
+
+          &__button-next {
+            width: 5vw;
+            height: 5vw;
+
+            &::after {
+              font-size: 20px;
+            }
+          }
+
+          &__button-prev {
+            width: 5vw;
+            height: 5vw;
+
+            &::after {
+              font-size: 20px;
+            }
+          }
+        }
+
+        &--mini {
+          max-width: 88vw;
+          width: 88vw;
+        }
+      }
+    }
+  }
 }
 
-
 @media screen and (max-width: 650px) {
-    .swiper--large {
+  .swiper--large {
+    .swiper-pagination {
+      height: 1.5rem;
 
-        .swiper-pagination {
-            height: 1.5rem;
+      &-bullet {
+        width: 20px;
+        height: 20px;
 
-            &-bullet {
-                width: 20px;
-                height: 20px;
-
-                &-active {
-                    border: 2px solid #e86539ce;
-                }
-            }
+        &-active {
+          border: 2px solid #e86539ce;
         }
-
-
-        &__button {
-            &-prev {
-                left: 15px;
-                width: 45px;
-                height: 45px;
-
-                &::after {
-                    font-size: 30px;
-                }
-
-            }
-
-
-            &-next {
-                right: 15px;
-                width: 45px;
-                height: 45px;
-
-                &::after {
-                    font-size: 30px;
-                }
-
-            }
-        }
+      }
     }
 
-    .portfolio {
-        &__text {
+    &__button {
+      &-prev {
+        left: 15px;
+        width: 45px;
+        height: 45px;
 
-            h5 {
-                width: 75vw;
-            }
-
-            h2 {
-                width: 89vw;
-            }
+        &::after {
+          font-size: 30px;
         }
+      }
 
-        .card-info {
-            .cost {
-                h4 {
-                    width: 60vw;
-                }
-            }
+      &-next {
+        right: 15px;
+        width: 45px;
+        height: 45px;
+
+        &::after {
+          font-size: 30px;
         }
+      }
     }
+  }
+
+  .portfolio {
+    &__text {
+      h5 {
+        width: 75vw;
+      }
+
+      h2 {
+        width: 89vw;
+      }
+    }
+
+    .card-info {
+      .cost {
+        h4 {
+          width: 60vw;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .portfolio {
-        .swipers {
-            .swiper {
-                &--standart {
-                    &__button-next {
-                        width: 7vw;
-                        height: 7vw;
+  .portfolio {
+    .swipers {
+      .swiper {
+        &--standart {
+          &__button-next {
+            width: 7vw;
+            height: 7vw;
 
-                        &::after {
-                            font-size: 17px;
-                            padding-left: 2px;
-                        }
-                    }
-
-                    &__button-prev {
-                        width: 7vw;
-                        height: 7vw;
-
-
-                        &::after {
-                            font-size: 17px;
-                            padding-right: 2px;
-                        }
-                    }
-
-                }
+            &::after {
+              font-size: 17px;
+              padding-left: 2px;
             }
+          }
+
+          &__button-prev {
+            width: 7vw;
+            height: 7vw;
+
+            &::after {
+              font-size: 17px;
+              padding-right: 2px;
+            }
+          }
         }
+      }
     }
+  }
+}
+
+@media (max-width: 475px) {
+  .portfolio {
+    &__inner {
+      padding-bottom: 50px;
+    }
+  }
 }
 
 @media (max-width: 375px) {
-
-    .portfolio {
-        .card-info {
-            .cost {
-
-                &__button {
-                    width: 75vw;
-                }
-
-                &__money {
-                    gap: 10px;
-
-                    h3 {
-                        width: 75px;
-                    }
-
-                    h2 {
-                        font-size: 30px;
-                    }
-                }
-            }
+  .portfolio {
+    .card-info {
+      .cost {
+        &__button {
+          width: 75vw;
         }
+
+        &__money {
+          gap: 10px;
+
+          h3 {
+            width: 75px;
+          }
+
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
     }
+    &__button {
+      width: 75vw;
+    }
+  }
 }

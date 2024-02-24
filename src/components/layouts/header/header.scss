@@ -50,106 +50,110 @@
   }
 }
 
-@media screen and (max-width: 1350px){
+@media screen and (max-width: 1350px) {
   .header {
+    &__inner {
+      width: 90vw;
+    }
     .connection__inner {
       padding-right: 15px;
     }
   }
 }
+@media screen and (max-width: 1130px) {
+  .header {
+    .connection {
+      gap: 25px;
+    }
+  }
+}
 @media (max-width: 985px) {
   .header {
-
     &__inner {
       gap: 50px;
       justify-content: center;
-
     }
 
     &__logo-inner {
-
       gap: 20px;
-
     }
 
     .connection {
       gap: 50px;
 
       &__inner {
-
         h4,
         h3,
         h2 {
           display: none;
         }
-
       }
 
       &__link {
-
         &-icon {
           width: 50px;
           height: 50px;
         }
       }
     }
-
   }
 }
 
 @media (max-width: 600px) {
   .header {
-      &__inner {
-          margin: 0 20px;
-          gap: 0;
+    &__inner {
+      margin: 0 20px;
+      gap: 0;
+    }
+
+    &__logo {
+      width: 66px;
+      height: 50px;
+    }
+
+    &__inner {
+      justify-content: space-between;
+    }
+
+    &__logo-inner {
+      display: block;
+      padding-top: 12px;
+
+      h4 {
+        width: 160px;
       }
+    }
 
-      &__logo {
-          width: 66px;
-          height: 50px;
+    .connection {
+      padding-top: 40px;
+      gap: 20px;
+
+      &__link {
+        &-icon {
+          width: 40px;
+          height: 40px;
+        }
       }
-
-      &__inner {
-          gap: 50px;
-          justify-content: space-between;
-      }
-
-      &__logo-inner {
-          display: block;
-          padding-top: 12px;
-
-          h4 {
-              width: 160px;
-          }
-      }
-
-      .connection {
-          padding-top: 40px;
-          gap: 20px;
-
-          &__link {
-
-              &-icon {
-                  width: 40px;
-                  height: 40px;
-              }
-          }
-      }
+    }
   }
+}
+
+@media (max-width: 475px) {
 }
 
 @media (max-width: 375px) {
   .header {
-      &__inner {
-          padding-left: 5px;
-          margin: 0 0 0 20px;
-          gap: 0;
-      }
-      &__logo-inner {
-          width: 30vw;
-      }
-      .connection {
-          padding-top: 30px;
-      }
+    &__inner {
+      padding-left: 5px;
+      margin: 0 0 0 20px;
+      gap: 0;
+    }
+    &__logo-inner {
+      width: 30vw;
+    }
+    .connection {
+      padding-top: 30px;
+      gap: 5px;
+    }
   }
 }

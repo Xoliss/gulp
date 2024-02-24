@@ -102,6 +102,10 @@
 @media (max-width: 1315px) {
   .promo {
 
+    &__inner {
+      width: 90vw;
+    }
+
     &__abstraction {
       height: 60vh;
     }
@@ -117,7 +121,7 @@
 @media (max-width: 985px) {
 
   .promo {
-    background-position-x: 40px;
+    background-position-x: 88px;
     background-size: 100% 33%;
     padding-top: 50px;
 
@@ -168,6 +172,10 @@
   .promo {
     background-position-x: 40px;
     background-size: 100% 36%;
+
+    &__inner {
+      width: 100vw;
+    }
   }
 }
 
