@@ -1,3 +1,8 @@
+.swiper-slide.swiper-slide-blank {
+  display: none;
+}
+
+
 .swiper--large {
   display: none;
   position: fixed;
@@ -113,6 +118,7 @@
     display: flex;
     gap: 40px;
     margin-bottom: 40px;
+    min-width: 0;
     &--last {
       margin-bottom: 0;
       padding-bottom: 40px;
@@ -299,10 +305,10 @@
       width: 98%;
       margin: 0;
 
-      &__slide {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
+      // &__slide {
+      //   padding-left: 10px;
+      //   padding-right: 10px;
+      // }
 
       &__img {
         cursor: pointer;
@@ -321,10 +327,10 @@
         }
       }
 
-      &__slide {
-        padding-right: 10px;
-        padding-left: 10px;
-      }
+      // &__slide {
+      //   padding-right: 10px;
+      //   padding-left: 10px;
+      // }
     }
   }
 }

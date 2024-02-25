@@ -520,6 +520,10 @@ h5 {
   color: white;
 }
 
+.swiper-slide.swiper-slide-blank {
+  display: none;
+}
+
 .swiper--large {
   display: none;
   position: fixed;
@@ -642,6 +646,7 @@ h5 {
   display: flex;
   gap: 40px;
   margin-bottom: 40px;
+  min-width: 0;
 }
 
 .portfolio .card--last {
@@ -853,11 +858,6 @@ h5 {
   margin: 0;
 }
 
-.swipers .swiper--standart__slide {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .swipers .swiper--standart__img {
   cursor: pointer;
 }
@@ -872,11 +872,6 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.swipers .swiper--mini__slide {
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 .advantages {

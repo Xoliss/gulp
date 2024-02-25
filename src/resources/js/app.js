@@ -5,71 +5,81 @@
 
 import Swiper from "swiper";
 
-import IMask from 'imask';
+import SwiperSlide from "swiper";
 
-import { Navigation, Controller, Pagination } from 'swiper/modules'
+import IMask from "imask";
+
+import { Navigation, Controller, Pagination, Thumbs, FreeMode} from "swiper/modules";
 
 import * as flsFunctions from "./modules/functions.js";
 
+let swiperStandart = new Swiper(".swiper--standart");
 
-let swiperStandart = new Swiper('.swiper--standart');
+let swiperLarge = new Swiper(".swiper--large");
 
-let swiperLarge = new Swiper('.swiper--large');
+let swiperMini = new Swiper(".swiper--mini", {
+  modules: [Navigation, Controller, FreeMode],
+ 
+  spaceBetween: 19,
+  loop: true,
+  slidesPerView: 3,
+  nested: true,
+  slidesPerGroup: 1,
 
-let swiperMini = new Swiper('.swiper--mini', {
+  slidesToScroll: 1,
+  freeMode: true,
+  simulateTouch: false,
+  // slideThumbActiveClass: 'swiper-slide-thumb-active',
 
-    modules: [Navigation, Controller],
-
-    loop: true,
-    slidesPerView: 3,
-    nested: true,
-    slidesPerGroup: 1,
-
-    controller: {
-        control: swiperStandart
-    },
-
+  controller: {
+    control: swiperStandart,
+  },
 });
 
-new Swiper('.swiper--standart', {
-    modules: [Navigation, Controller],
+new Swiper(".swiper--standart", {
+  modules: [Navigation, Controller],
 
-    loop: true,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
+  loop: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  slidesToScroll: 1,
+  allowTouchMove: false,
+  nested: true,
 
-    navigation: { 
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+  
 
-    controller: {
-        control: swiperMini
-    },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+
+  },
+
+  controller: {
+    control: swiperMini,
+  },
 });
 
-new Swiper('.swiper--large', {
-    modules: [Navigation, Pagination, Controller],
+new Swiper(".swiper--large", {
+  modules: [Navigation, Pagination, Controller],
 
-    loop: true,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
+  loop: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
 
-    navigation: { 
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },      
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 
-    controller: {
-        control: swiperMini
-    },
+  controller: {
+    control: swiperMini,
+  },
 });
-
 
 // swiperMini.controller.control = swiperStandart;
 // swiperStandart.controller.control = swiperMini;
