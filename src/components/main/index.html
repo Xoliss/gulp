@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-    @@include('../layouts/head.html', {
-    "title" :"Главная"
-    })
-    
-    <body>
-        @@include('../layouts/header/header.html', {})
-        <main>
-            @@include('../layouts/promo/promo.html', {})
+  @@include('../layouts/head.html', { "title" :"ddom" })
 
-            @@include('../layouts/trade-offer/trade-offer.html', {})
-        
-            @@include('../layouts/portfolio/portfolio.html', {})
-            
-            @@include('../layouts/advantages/advantages.html', {})
-
-            @@include('../layouts/dignities/dignities.html', {})
-
-            @@include('../pop-ups/consultation.html', {})
-        </main>
-        @@include('../layouts/footer/footer.html', {})
-        <script src="js/app.min.js"></script>
-    </body>
+  <body>
+    @@include('../layouts/header/header.html', {})
+    <main>
+      @@include('../layouts/promo/promo.html', {})
+      @@include('../layouts/trade-offer/trade-offer.html', {})
+      @@include('../layouts/portfolio/portfolio.html', {})
+      @@include('../layouts/advantages/advantages.html', {})
+      @@include('../layouts/dignities/dignities.html', {})
+      @@include('../pop-ups/consultation.html', {})
+    </main>
+    @@include('../layouts/footer/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
 </html>
