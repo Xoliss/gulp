@@ -187,7 +187,6 @@ fio.oninput = checkAllConditions;
 check.oninput = checkAllConditions;
 phoneInput.oninput = checkAllConditions;
 
-fun
 
 // Отдельно для телефона (условие: если введена маска активировать кнопку)
 

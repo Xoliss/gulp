@@ -9,7 +9,7 @@ import SwiperSlide from "swiper";
 
 import IMask from "imask";
 
-import { Navigation, Controller, Pagination, Thumbs} from "swiper/modules";
+import { Navigation, Controller, Pagination, Thumbs, Zoom} from "swiper/modules";
 
 import * as flsFunctions from "./modules/functions.js";
 
@@ -50,7 +50,7 @@ new Swiper(".swiper--standart", {
 });
 
 new Swiper(".swiper--large", {
-  modules: [Navigation, Controller, Thumbs],
+  modules: [Navigation, Pagination, Controller, Thumbs, Zoom],
 	loop: true,
 
 	mousewheel: {
@@ -63,4 +63,13 @@ new Swiper(".swiper--large", {
 	thumbs: {
 		swiper: swiperStandart,
 	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	zoom: {
+        maxRatio: 6,
+        minRation: 1,
+    },
 });
+
