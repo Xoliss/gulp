@@ -43,7 +43,11 @@ new Swiper(".swiper--standart", {
 		prevEl: ".swiper-button-prev",
 	},
 	thumbs: {
-		swiper: swiperMini,
+		swiper: {
+			el: '.swiper--mini',
+			slidesPerView: 3,
+			spaceBetween: 19,
+		}
 	},
   // slideActiveClass: "Active",
 
@@ -52,6 +56,7 @@ new Swiper(".swiper--standart", {
 new Swiper(".swiper--large", {
   modules: [Navigation, Pagination, Controller, Thumbs, Zoom],
 	loop: true,
+	preloadImages: false,
 
 	mousewheel: {
 		invert: false,
@@ -71,5 +76,12 @@ new Swiper(".swiper--large", {
         maxRatio: 6,
         minRation: 1,
     },
+	lazy: {
+		loadOnTransitionStart: false,
+
+		loadPrevNext: true,
+	},
+	// watchSlidesProgress: true,
+	// watchSlidesVisibility: true,
 });
 

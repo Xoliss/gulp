@@ -262,6 +262,19 @@
     }
   }
 
+  .swiper--mini {
+    &__slide {
+      opacity: 0.4;
+      transition: opacity 0.3s ease 0s;
+      cursor: pointer;
+      // width: 160px!important;
+      // height: 140px!important;
+    }
+    .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+  }
+
   .swiper--large {
     display: none;
     position: fixed;

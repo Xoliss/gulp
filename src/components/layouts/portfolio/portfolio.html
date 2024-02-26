@@ -11,7 +11,6 @@
     </div>
 
     <div class="portfolio__cards">
-
       <div class="portfolio__card card">
         <div class="portfolio__swipers swipers">
           <div class="swiper--standart swiper">
@@ -19,32 +18,31 @@
               <div class="swiper--standart__slide swiper-slide">
                 <img
                   class="swiper--standart__img slide"
-                  src="@img/slides/slide-1.png"
+                  src="@img/slides/slide-1-large.png"
                   alt=""
                 />
               </div>
               <div class="swiper--standart__slide swiper-slide">
                 <img
                   css="swiper--standart__img slide"
-                  src="@img/slides/slide-2.png"
+                  src="@img/slides/slide-2-large.png"
                   alt=""
                 />
               </div>
               <div class="swiper--standart__slide swiper-slide">
                 <img
                   class="swiper--standart__img slide"
-                  src="@img/slides/slide-3.png"
+                  src="@img/slides/slide-3-large.png"
                   alt=""
                 />
               </div>
               <div class="swiper--standart__slide swiper-slide">
                 <img
                   class="swiper--standart__img slide"
-                  src="@img/slides/slide-4.png"
+                  src="@img/slides/slide-4-large.png"
                   alt=""
                 />
               </div>
-
             </div>
 
             <div class="swiper--standart__button-prev swiper-button-prev"></div>
@@ -56,28 +54,28 @@
               <div class="swiper--mini__slide swiper-slide">
                 <img
                   class="swiper--mini__img slide"
-                  src="@img/slides/slide-1-mini.png"
+                  src="@img/slides/slide-1-large.png"
                   alt=""
                 />
               </div>
               <div class="swiper--mini__slide swiper-slide">
                 <img
                   class="swiper--mini__img slide"
-                  src="@img/slides/slide-2-mini.png"
+                  src="@img/slides/slide-2-large.png"
                   alt=""
                 />
               </div>
               <div class="swiper--mini__slide swiper-slide">
                 <img
                   class="swiper--mini__img slide"
-                  src="@img/slides/slide-3-mini.png"
+                  src="@img/slides/slide-3-large.png"
                   alt=""
                 />
               </div>
               <div class="swiper--mini__slide swiper-slide">
                 <img
                   class="swiper--mini__img slide"
-                  src="@img/slides/slide-4-mini.png"
+                  src="@img/slides/slide-4-large.png"
                   alt=""
                 />
               </div>
@@ -85,56 +83,62 @@
           </div>
 
           <div class="swiper--large swiper">
-            <div class="swiper--large__close"><img src="@img/icon/portfolio__close.png" alt=""></div>
+            <div class="swiper--large__close">
+              <img src="@img/icon/portfolio__close.png" alt="" />
+            </div>
             <div class="swiper--large__wrapper swiper-wrapper">
-              <div class="swiper--large__slide swiper-slide">
+              <div lazy="true" class="swiper--large__slide swiper-slide">
                 <div class="swiper-zoom-container">
-                <img
-                  class="swiper--large__img slide"
-                  src="@img/slides/slide-1-large.png"
-                  loading="lazy"
-                  alt=""
-                />
-              </div>
-              </div>
-              <div class="swiper--large__slide swiper-slide">
-                <div class="swiper-zoom-container">
-                <img
-                  class="swiper--large__img slide"
-                  src="@img/slides/slide-2-large.png"
-                  loading="lazy"
-                  alt=""
-                />
+                  <img
+                    class="swiper-lazy swiper--large__img"
+                    src="@img/slides/slide-1-large.png"  
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
-              <div class="swiper--large__slide swiper-slide">
+              <div lazy="true" class="swiper--large__slide swiper-slide">
                 <div class="swiper-zoom-container">
-                <img
-                  class="swiper--large__img slide"
-                  src="@img/slides/slide-3-large.png"
-                  loading="lazy"
-                  alt=""
-                />
+                  <img
+                  class="swiper-lazy swiper--large__img"
+                    src="@img/slides/slide-2-large.png"  
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
-              <div class="swiper--large__slide swiper-slide">
+              <div lazy="true" class="swiper--large__slide swiper-slide">
                 <div class="swiper-zoom-container">
-                <img
-                  class="swiper--large__img slide"
-                  src="@img/slides/slide-4-large.png"
-                  loading="lazy"
-                  alt=""
-                />
+                  <img
+                  class="swiper-lazy swiper--large__img"
+                    src="@img/slides/slide-3-large.png"  
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div lazy="true" class="swiper--large__slide swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img
+                  class="swiper-lazy swiper--large__img"
+                    src="@img/slides/slide-4-large.png"  
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
             </div>
-        
+
             <div class="swiper--large__button-prev swiper-button-prev"></div>
             <div class="swiper--large__button-next swiper-button-next"></div>
-        
+
             <div class="swiper--large__pagination swiper-pagination"></div>
           </div>
-        
+
           <div class="overlay-slider"></div>
         </div>
 
@@ -206,7 +210,7 @@
         </div>
       </div>
 
-    <!-- <div class="portfolio__card card card--last">
+      <!-- <div class="portfolio__card card card--last">
 
       <div class="swipers">
 
@@ -303,6 +307,8 @@
     </div> -->
     </div>
 
-    <div class="portfolio__button"><h3 class="button__text">Открыть еще проекты</h3></div>
+    <div class="portfolio__button">
+      <h3 class="button__text">Открыть еще проекты</h3>
+    </div>
   </div>
 </section>

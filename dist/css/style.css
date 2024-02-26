@@ -813,6 +813,17 @@ h5 {
   display: flex;
 }
 
+.swipers .swiper--mini__slide {
+  opacity: 0.4;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.swipers .swiper--mini .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
 .swipers .swiper--large {
   display: none;
   position: fixed;
