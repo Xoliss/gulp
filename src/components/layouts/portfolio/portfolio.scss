@@ -284,6 +284,7 @@
       z-index: 2;
       transition: all .7s ease;
       cursor: pointer;
+      opacity: 0.9;
       &:hover {
         opacity: 0.6;
       }

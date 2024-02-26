@@ -21,6 +21,8 @@ export function isWebp() {
 export function toggleSlider() {
   const slider = document.querySelector('.swiper--large');
   const overlay = document.querySelector('.overlay-slider');
+  const body = document.querySelector('body');
+  var close = document.querySelector('.swiper--large__close')
 
   const images = document.querySelectorAll('.swiper--standart__img');
   images.forEach(image => {
@@ -28,6 +30,7 @@ export function toggleSlider() {
       slider.style.display = 'block'; // Показываем слайдер
       slider.style.position = 'fixed'; // Устанавливаем позицию "absolute"
       overlay.style.display = 'block'; // Проявляем оверлэй
+      body.style.overflowY = 'hidden';
     });
   });
 
@@ -35,10 +38,20 @@ export function toggleSlider() {
     slider.style.display = 'none'; // Скрываем слайдер
     slider.style.position = 'static'; // Устанавливаем позицию "static"
     overlay.style.display = 'none'; // Проявляем оверлэй
+    body.style.overflowY = 'visible';
+
   });
+
+  close.addEventListener('click', () => {
+    slider.style.display = 'none'; // Скрываем слайдер
+    slider.style.position = 'static'; // Устанавливаем позицию "static"
+    overlay.style.display = 'none'; // Проявляем оверлэй
+    body.style.overflowY = 'visible';
+
+  })
 }
 
-toggleSlider();
+
 
 //////////
 
@@ -53,6 +66,7 @@ toggleSlider();
 
 
 ////////////////////////////////////////////////////////////////////////////////
+
 // открытие и скрытие меню консультации
 
 export function showConsultation() {
@@ -61,7 +75,7 @@ export function showConsultation() {
   var overlay = document.querySelector('.consultation__overlay');
   consultationContent.style.display = 'block';
   overlay.style.display = 'block';
-  body.style.position = 'fixed';
+  body.style.overflowY = 'hidden';
 }
 
 export function hideConsultation() {
@@ -71,7 +85,7 @@ export function hideConsultation() {
 
   consultationContent.style.display = 'none';
   overlay.style.display = 'none';
-  body.style.position = 'relative ';
+  body.style.overflowY = 'visible';
 }
 
 var buttons = document.querySelectorAll('.button');
@@ -85,6 +99,26 @@ closeButton.addEventListener('click', hideConsultation);
 
 var overlay = document.querySelector('.consultation__overlay');
 overlay.addEventListener('click', hideConsultation);
+
+
+toggleSlider();
+
+
+// export function ClearForm () {
+
+// const cleaderButton = document.querySelector('.consultation__button');
+// const fio2 = document.querySelector('.fio');
+// const phone2 = document.querySelector('phone');
+
+// cleaderButton.Cleader('click', () => {
+//   slider.style.display = 'none'; // Скрываем слайдер
+//   slider.style.position = 'static'; // Устанавливаем позицию "static"
+//   overlay.style.display = 'none'; // Проявляем оверлэй
+//   body.style.overflowY = 'visible';
+
+// });
+// }
+// ClearForm ();
 
 
 
@@ -105,10 +139,10 @@ btn.setAttribute('disabled', true);
 
 const check = document.querySelector(".consultation__checkbox")
 
-const Fio = document.querySelector(".Fio")
+const fio = document.querySelector(".fio")
 
-Fio.oninput = function(){
-  if (Fio.value.length < 5) {
+fio.oninput = function(){
+  if (fio.value.length < 5) {
     btn.setAttribute('disabled', true);
   } else {
     btn.removeAttribute('disabled');
@@ -142,17 +176,18 @@ const phoneMask = new IMask(phoneInput, {
 //
 
 function checkAllConditions() {
-  if (Fio.value.length >= 5 && check.checked && phoneMask.masked.isComplete) {
+  if (fio.value.length >= 5 && check.checked && phoneMask.masked.isComplete) {
     btn.removeAttribute('disabled');
   } else {
     btn.setAttribute('disabled', true);
   }
 }
 
-Fio.oninput = checkAllConditions;
+fio.oninput = checkAllConditions;
 check.oninput = checkAllConditions;
 phoneInput.oninput = checkAllConditions;
 
+fun
 
 // Отдельно для телефона (условие: если введена маска активировать кнопку)
 
@@ -214,4 +249,6 @@ showMore.addEventListener('click', () => {
   }
   
 })
+
+
 
