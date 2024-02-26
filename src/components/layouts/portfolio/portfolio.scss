@@ -21,23 +21,23 @@
     cursor: pointer;
   }
 
-  &__text {
+  .text {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 60vw;
     margin-bottom: 60px;
 
-    h5 {
+    &__item {
       u {
         color: var(--Color-a, #614f44);
         font-weight: 700;
       }
+      &--mini {
+        width: 50vw;
+      }
     }
 
-    h2 {
-      width: 50vw;
-    }
   }
 
   .card {
@@ -124,32 +124,31 @@
   }
 
   .cost {
-    &__money {
+    .money {
       display: flex;
       align-items: center;
       gap: 20px;
 
-      h3 {
+      &__item {
         color: var(--Color-a, #614f44);
         width: 95px;
-      }
-
-      h2 {
-        font-size: 32px;
+        &--mini {
+          font-size: 32px;
         font-weight: 700;
         margin-bottom: 2px;
+        }
       }
     }
 
-    &__button {
+    .button {
       margin: 20px 0;
 
-      h3 {
+      &__text {
         color: white;
       }
     }
 
-    h4 {
+    &__under {
       width: 400px;
     }
   }
@@ -254,8 +253,6 @@
       &__wrapper {
         display: flex;
 
-        &__slide {
-        }
       }
 
       // &__slide {
@@ -510,16 +507,16 @@
   }
 
   .portfolio {
-    &__text {
+    .text {
       width: 90vw;
 
-      h5 {
+      &__item {
         width: 90vw;
+        &--mini {
+          width: 75vw;
+        }
       }
 
-      h2 {
-        width: 75vw;
-      }
     }
 
     .card {
@@ -616,19 +613,18 @@
   }
 
   .portfolio {
-    &__text {
-      h5 {
+    .text {
+      &__item {
         width: 75vw;
-      }
-
-      h2 {
-        width: 89vw;
+        &--mini {
+          width: 89vw;
+        }
       }
     }
 
     .card-info {
       .cost {
-        h4 {
+        &__under {
           width: 60vw;
         }
       }
@@ -682,15 +678,14 @@
           width: 75vw;
         }
 
-        &__money {
+        .money {
           gap: 10px;
 
-          h3 {
+          &__item{
             width: 75px;
-          }
-
-          h2 {
-            font-size: 30px;
+            &--mini {
+              font-size: 30px;
+            }
           }
         }
       }

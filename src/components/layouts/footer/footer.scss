@@ -25,7 +25,7 @@
       align-items: center;
       gap: 20px;
 
-      h4 {
+      .footer__text {
         width: 10vw;
       }
     }
@@ -74,11 +74,7 @@
 }
 
 @media (max-width: 985px) {
-
   .footer {
-
-    &__content {}
-
     &__top {
       flex-direction: column;
     }
@@ -98,7 +94,7 @@
       &--icon {
         margin-bottom: 40px;
 
-        h4 {
+        .footer__text {
           width: 40vw;
           font-size: 24px;
         }
@@ -108,34 +104,39 @@
 }
 
 @media (max-width: 775px) {
-
   .footer {
-      &__item {
-          margin-left: 10vw;
-      }
+    &__item {
+      margin-left: 10vw;
+    }
   }
 }
 
 @media (max-width: 475px) {
-
   .footer {
-      
-
-      &__item {
-          margin-left: 1vw;
-      }
+    &__item {
+      margin-left: 1vw;
+    }
   }
 }
 
 @media (max-width: 375px) {
-
   .footer {
-      &__item {
-          &--icon {
-              h4 {
-                  font-size: 14px;
-              }
-          }
+    &__item {
+      &--icon {
+        .footer__text {
+          font-size: 14px;
+        }
       }
+      .footer__text {
+        font-size: 14px;
+      }
+    }
+    .connection {
+      &__link {
+        font-size: 20px;
+      }
+    }
   }
+
+  
 }
