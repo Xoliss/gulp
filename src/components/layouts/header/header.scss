@@ -15,7 +15,7 @@
     display: flex;
     gap: 20px;
 
-    h4 {
+    .header__text {
       width: 180px;
       padding-top: 10px;
     }
@@ -73,6 +73,7 @@
 }
 @media (max-width: 985px) {
   .header {
+
     &__inner {
       gap: 50px;
       justify-content: center;
@@ -85,12 +86,13 @@
     .connection {
       gap: 50px;
 
-      &__inner {
-        h4,
-        h3,
-        h2 {
-          display: none;
-        }
+
+      &__text {
+        display: none;
+      }
+
+      &__link-text {
+        display: none;
       }
 
       &__link {

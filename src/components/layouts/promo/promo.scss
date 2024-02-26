@@ -25,21 +25,20 @@
     gap: 20px;
     position: relative;
 
-    h1 {
-      max-width: 785px;
-    }
-
     h2 {
       max-width: 530px;
     }
+  }
+
+  &__text {
+    max-width: 785px;
   }
 
   &__button {
     z-index: 3;
     margin: 20px 0 100px;
 
-
-    h3 {
+    .button__text {
       color: white;
       text-transform: uppercase;
     }
@@ -51,12 +50,10 @@
 
   .convenience {
     display: flex;
-    gap: 10px;
 
     &__inner {
       z-index: 5;
       width: 284px;
-      border-radius: 10px 0px 0px 10px;
       background-color: white;
       position: relative;
 
@@ -84,8 +81,22 @@
       position: absolute;
     }
 
-    h3 {
-      padding-left: 17px;
+    &__text {
+        padding-left: 17px;
+    }
+
+
+    &__shadow {
+      width: 7px;
+      height: 100px;
+      opacity: 0.7;
+      z-index: 10;
+      background: linear-gradient(
+        90deg,
+        #e6e6e6 0%,
+        rgba(0, 0, 0, 0.048) 100%
+      );
+      filter: blur(2px);
     }
   }
 
@@ -102,7 +113,6 @@
 
 @media (max-width: 1315px) {
   .promo {
-
     &__inner {
       width: 90vw;
     }
@@ -120,15 +130,14 @@
 }
 
 @media (max-width: 985px) {
-
   .promo {
+    margin-top: 30px;
     background-position-x: 88px;
     background-size: 100% 33%;
     padding-top: 50px;
 
     &__img {
       display: none;
-
     }
 
     &__info {
@@ -136,11 +145,8 @@
       padding-right: 20px;
     }
 
-
     &__button {
-
       margin: 20px 0 50px;
-
     }
 
     &__down {
@@ -153,19 +159,14 @@
         width: 35rem;
         height: 29rem;
         object-fit: scale-down;
-
       }
     }
 
     .convenience {
       padding-left: 30px;
       padding-right: 20px;
-
-      &__inner {
-        background: linear-gradient(270deg, #e9e9e9 0%, rgba(255, 255, 255, 0.322) 1%);
       }
-    }
-
+    
   }
 }
 
@@ -181,10 +182,10 @@
 }
 
 @media (max-width: 600px) {
-
   .promo {
     background-position-x: 20px;
     background-size: 100% 34%;
+    margin-top: 60px;
 
     &__under {
       display: none;
@@ -199,9 +200,7 @@
     }
 
     &__button {
-
       margin: 20px 0 50px;
-
     }
 
     .convenience {
@@ -211,18 +210,24 @@
       &__inner {
         width: 65vw;
         border-radius: 0px;
-        background: linear-gradient(0deg, #e9e9e9 0%, #fffffff8 7%);
         height: 100px;
-
-        &--3 {
-          background: linear-gradient(0deg, #e9e9e9 0%, #fffffff8 0%);
-        }
-
       }
 
       &__info {
         width: 65vw;
+      }
 
+      &__shadow {
+        width: 65vw;
+        height: 7px;
+        opacity: 0.7;
+        z-index: 10;
+        background: linear-gradient(
+          180deg,
+          #e6e6e6 0%,
+          rgba(0, 0, 0, 0.048) 100%
+        );
+        filter: blur(2px);
       }
     }
   }
@@ -236,14 +241,13 @@
 }
 
 @media (max-width: 375px) {
-
   .promo {
     background-size: 100% 24%;
-    padding-top: 75px;
+    padding-top: 45px;
 
     &__abstraction {
       height: 35vh;
-      left: 24px
+      left: 24px;
     }
 
     &__button {
@@ -256,7 +260,6 @@
       &--img {
         height: 25vh;
         margin-top: 30px;
-
       }
     }
 
@@ -268,6 +271,6 @@
     .block__shadow {
       height: 300px;
       bottom: -10px;
-  }
+    }
   }
 }
