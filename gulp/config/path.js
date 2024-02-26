@@ -29,8 +29,10 @@ export const path = {
         // автоматический перенос файлов в наш результат (dist/files)
         js: `${srcFolder}/resources/js/**/*.js`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
-        scss: `${srcFolder}/components/main/*.scss`,
-        html: `${srcFolder}/components/main/*.html`, // Наблюдем за components файлами, которые в src и в других подпапках src
+        scss: `${srcFolder}/**/*.scss`,
+        html: `${srcFolder}/**/*.html`,
+        // scss: `${srcFolder}/components/main/*.scss`,
+        // html: `${srcFolder}/components/main/*.html`, // Наблюдем за components файлами, которые в src и в других подпапках src
         files: `${srcFolder}/files/**/*.*`,
     }, 
     clean: buildFolder, // clean = папке с результатом
