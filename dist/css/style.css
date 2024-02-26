@@ -226,6 +226,7 @@ h5 {
 
 .grey-color {
   color: var(--Color-a, #614f44);
+  font-weight: 700;
 }
 
 :disabled {
