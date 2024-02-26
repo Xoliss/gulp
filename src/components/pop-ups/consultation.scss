@@ -1,3 +1,4 @@
+
 .consultation {
   display: none;
   position: fixed;
@@ -123,6 +124,19 @@
     transform: translate(-50%, -50%) scale(1);
   }
 
+}
+
+
+.consultation__overlay {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
 }
 
 @media screen and (max-width: 600px) {

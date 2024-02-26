@@ -1,7 +1,7 @@
 .promo {
   position: relative;
   background: var(--Bg, #ffffff);
-  padding-top: 100px;
+  padding-top: 180px;
 
   &__under {
     position: absolute;
@@ -37,6 +37,7 @@
   &__button {
     z-index: 3;
     margin: 20px 0 100px;
+
 
     h3 {
       color: white;

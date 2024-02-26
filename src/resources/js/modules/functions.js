@@ -40,6 +40,7 @@ export function toggleSlider() {
 
 toggleSlider();
 
+//////////
 
 // var buttons = document.querySelectorAll('.button');
 // buttons.forEach(function (button) {
@@ -55,31 +56,35 @@ toggleSlider();
 // открытие и скрытие меню консультации
 
 export function showConsultation() {
-
+  var body = document.querySelector('body');
   var consultationContent = document.querySelector('.consultation');
-  var overlay = document.querySelector('.overlay');
-
+  var overlay = document.querySelector('.consultation__overlay');
   consultationContent.style.display = 'block';
-
   overlay.style.display = 'block';
+  body.style.position = 'fixed';
 }
 
 export function hideConsultation() {
+  var body = document.querySelector('body');
   var consultationContent = document.querySelector('.consultation');
-  var overlay = document.querySelector('.overlay');
+  var overlay = document.querySelector('.consultation__overlay');
 
   consultationContent.style.display = 'none';
-
   overlay.style.display = 'none';
+  body.style.position = 'relative ';
 }
 
 var buttons = document.querySelectorAll('.button');
 buttons.forEach(function (button) {
   button.addEventListener('click', showConsultation);
+
 });
 
 var closeButton = document.querySelector('.consultation__close');
 closeButton.addEventListener('click', hideConsultation);
+
+var overlay = document.querySelector('.consultation__overlay');
+overlay.addEventListener('click', hideConsultation);
 
 
 
