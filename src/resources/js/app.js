@@ -9,7 +9,7 @@ import SwiperSlide from "swiper";
 
 import IMask from "imask";
 
-import { Navigation, Controller, Pagination, Thumbs, FreeMode} from "swiper/modules";
+import { Navigation, Controller, Pagination, Thumbs} from "swiper/modules";
 
 import * as flsFunctions from "./modules/functions.js";
 
@@ -18,67 +18,48 @@ let swiperStandart = new Swiper(".swiper--standart");
 let swiperLarge = new Swiper(".swiper--large");
 
 let swiperMini = new Swiper(".swiper--mini", {
-  modules: [Navigation, Controller, FreeMode],
+  modules: [Navigation, Controller, Thumbs],
  
-  spaceBetween: 19,
-  loop: true,
-  slidesPerView: 3,
-  nested: true,
-  slidesPerGroup: 1,
-
-  slidesToScroll: 1,
-  freeMode: true,
-  simulateTouch: false,
-  // slideThumbActiveClass: 'swiper-slide-thumb-active',
-
-  controller: {
-    control: swiperStandart,
-  },
+	spaceBetween: 19,
+	slidesPerView: 3,
+	watchSlidesProgress: true,
+	loop: true,
+	updateOnWindowResize: true,
+	observer: true,
+	observeParents: true,
 });
 
 new Swiper(".swiper--standart", {
-  modules: [Navigation, Controller],
+  modules: [Navigation, Controller, Thumbs],
+	loop: true,
 
-  loop: true,
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  slidesToScroll: 1,
-  allowTouchMove: false,
-  nested: true,
+	mousewheel: {
+		invert: false,
+	},
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	thumbs: {
+		swiper: swiperMini,
+	},
 
-  
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-
-  },
-
-  controller: {
-    control: swiperMini,
-  },
 });
 
 new Swiper(".swiper--large", {
-  modules: [Navigation, Pagination, Controller],
+  modules: [Navigation, Controller, Thumbs],
+	loop: true,
 
-  loop: true,
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  controller: {
-    control: swiperMini,
-  },
+	mousewheel: {
+		invert: false,
+	},
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	thumbs: {
+		swiper: swiperStandart,
+	},
 });
 
 // swiperMini.controller.control = swiperStandart;
