@@ -385,6 +385,7 @@ h5 {
   width: 284px;
   background-color: white;
   position: relative;
+  list-style-type: disc;
 }
 
 .promo .convenience__inner--1 {
@@ -395,8 +396,12 @@ h5 {
   border-radius: 0 10px 10px 0;
 }
 
+.promo .convenience__item {
+  list-style-image: url(../../../img/icon/Bullet.svg);
+}
+
 .promo .convenience__info {
-  padding: 30px 20px 20px;
+  padding: 30px 34px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,14 +411,6 @@ h5 {
   position: absolute;
   top: -25px;
   left: 20px;
-}
-
-.promo .convenience__bullet {
-  position: absolute;
-}
-
-.promo .convenience__text {
-  padding-left: 17px;
 }
 
 .promo .convenience__shadow {
@@ -826,6 +823,26 @@ h5 {
           transform: translate(-50%, -50%);
   z-index: 9999;
   max-width: 99vw;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.swipers .swiper--large__close {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 0 0 0 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+
+.swipers .swiper--large__close:hover {
+  opacity: 0.6;
 }
 
 .swipers .swiper--large__slide {
@@ -833,10 +850,7 @@ h5 {
 }
 
 .swipers .swiper--large__img {
-  -o-object-fit: unset;
-     object-fit: unset;
-  margin: 0 auto;
-  border-radius: 10%;
+  border-radius: 0% !important;
 }
 
 .swipers .swiper--large .swiper-pagination {
