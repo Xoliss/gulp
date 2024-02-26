@@ -2,7 +2,7 @@
 
 <section class="consultation">
 
-    <div class="consultation__inner">
+    <form action="handler.php" method="post" class="consultation__inner">
         <div class="consultation__content">
 
             <div class="consultation__close">
@@ -18,7 +18,7 @@
 
             <div class="consultation__blocks">
 
-                <input class="consultation__input Fio" type="text" name="FIO" placeholder="ФИО*" required>
+                <input class="consultation__input Fio" type="text" name="Fio" placeholder="ФИО*" required>
 
                 <input id="phone" class="consultation__input phone" type="tel" name="phone" placeholder="Номер телефона*" required>
 
@@ -32,7 +32,7 @@
 
                     <style>
                         .consultation__checkbox--custom::before {
-                            background-image: url(../../img/icon/Vector.png);
+                            background-image: url(@img/icon/Vector.png);
                             background-repeat: no-repeat;
                         }
                     </style>
@@ -43,9 +43,9 @@
                 </label>
             </div>
 
-            <button class="consultation__button button"><h3>Отправить</h3></button>
+            <button class="consultation__button button" type="submit"><h3>Отправить</h3></button>
 
         </div>
-    </div>
+    </form>
 
 </section>

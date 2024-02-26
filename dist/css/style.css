@@ -219,9 +219,13 @@ h5 {
   transition: all 0.75s ease;
 }
 
-.orange {
+.orange-color {
   color: var(--Color-c, #E86439);
   font-weight: 700;
+}
+
+.grey-color {
+  color: var(--Color-a, #614f44);
 }
 
 :disabled {
@@ -470,10 +474,6 @@ h5 {
 
 .trade-offer__info h5 {
   margin-left: 50px;
-}
-
-.trade-offer__info h5 u {
-  color: var(--Color-a, #614f44);
 }
 
 .trade-offer__name {
@@ -899,10 +899,6 @@ h5 {
   gap: 20px;
 }
 
-.advantages__info h5 {
-  color: var(--Color-a, #614f44);
-}
-
 .advantages__info h5 u {
   font-weight: 700;
 }
@@ -985,7 +981,6 @@ h5 {
 }
 
 .dignities__info h5 {
-  color: var(--Color-a, #614f44);
   width: 50vw;
 }
 
