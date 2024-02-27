@@ -15,73 +15,88 @@ import * as flsFunctions from "./modules/functions.js";
 
 // 1 slider
 
-let swiperStandart = new Swiper(".swiper--standart");
 
-let swiperLarge = new Swiper(".swiper--large");
+let swipers = document.querySelectorAll('.portfolio__swipers')
 
-let swiperMini = new Swiper(".swiper--mini", {
-  modules: [Navigation, Controller, Thumbs],
- 
-	spaceBetween: 19,
-	slidesPerView: 3,
-	watchSlidesProgress: true,
-	loop: true,
-	updateOnWindowResize: true,
-	observer: true,
-	observeParents: true,
-});
 
-new Swiper(".swiper--standart", {
-  modules: [Navigation, Controller, Thumbs],
-	loop: true,
+console.log(swipers)
 
-	mousewheel: {
-		invert: false,
-	},
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-	thumbs: {
-		swiper: {
-			el: '.swiper--mini',
-			slidesPerView: 3,
-			spaceBetween: 19,
-		}
-	},
-  // slideActiveClass: "Active",
+swipers.forEach(el => {
+	let standart = el.querySelector('.swiper--standart')
+	let large = el.querySelector('.swiper--large')
+	let mini = el.querySelector('.swiper--mini')
 
-});
 
-new Swiper(".swiper--large", {
-  modules: [Navigation, Pagination, Controller, Thumbs, Zoom],
-	loop: true,
-	preloadImages: false,
+	
+	
+	 new Swiper(mini, {
+	  modules: [Navigation, Controller, Thumbs],
+	 
+		spaceBetween: 19,
+		slidesPerView: 3,
+		watchSlidesProgress: true,
+		loop: true,
+		updateOnWindowResize: true,
+		observer: true,
+		observeParents: true,
+	});
+	
+	new Swiper(standart, {
+	  modules: [Navigation, Controller, Thumbs],
+		loop: true,
+	
+		mousewheel: {
+			invert: false,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		thumbs: {
+			swiper: {
+				el: mini,
+				slidesPerView: 3,
+				spaceBetween: 19,
+			}
+		},
+	  // slideActiveClass: "Active",
+	
+	});
+	
+	new Swiper(large, {
+	  modules: [Navigation, Pagination, Controller, Thumbs, Zoom],
+		loop: true,
+		preloadImages: false,
+	
+		mousewheel: {
+			invert: false,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		thumbs: {
+			swiper: standart,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		zoom: {
+			maxRatio: 6,
+			minRation: 1,
+		},
+		lazy: {
+			loadOnTransitionStart: false,
+	
+			loadPrevNext: true,
+		},
+		// watchSlidesProgress: true,
+		// watchSlidesVisibility: true,
+	});
+	
 
-	mousewheel: {
-		invert: false,
-	},
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-	thumbs: {
-		swiper: swiperStandart,
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	zoom: {
-        maxRatio: 6,
-        minRation: 1,
-    },
-	lazy: {
-		loadOnTransitionStart: false,
+})
 
-		loadPrevNext: true,
-	},
-	// watchSlidesProgress: true,
-	// watchSlidesVisibility: true,
-});
+
 

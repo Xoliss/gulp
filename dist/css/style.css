@@ -33,7 +33,7 @@ body {
 * {
   padding: 0px;
   margin: 0px;
-  border: none;
+  border: 0px;
 }
 
 *,
@@ -534,6 +534,7 @@ h5 {
   margin-top: 90px;
   padding-top: 60px;
   background-color: white;
+  padding-bottom: 5px;
 }
 
 .portfolio .overlay-slider {
@@ -835,7 +836,8 @@ h5 {
   z-index: 9999;
   max-width: 99vw;
   border-radius: 0px;
-  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 .swipers .swiper--large__close {
@@ -893,6 +895,13 @@ h5 {
   height: 80px;
   background-color: white;
   border-radius: 50%;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+.swipers .swiper--large__button-prev:hover {
+  opacity: 0.75s;
+  background-color: #7c7c7c;
 }
 
 .swipers .swiper--large__button-prev::after {
@@ -908,6 +917,13 @@ h5 {
   height: 80px;
   background-color: white;
   border-radius: 50%;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+.swipers .swiper--large__button-next:hover {
+  opacity: 0.75s;
+  background-color: #7c7c7c;
 }
 
 .swipers .swiper--large__button-next::after {
@@ -1005,7 +1021,7 @@ h5 {
 }
 
 .advantages__block-shadow {
-  width: 100vw;
+  width: 99vw;
   height: 120px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #f5f4f4), to(rgba(245, 244, 244, 0)));
   background: linear-gradient(0deg, #f5f4f4 9%, rgba(245, 244, 244, 0) 100%);

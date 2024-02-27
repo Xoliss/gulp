@@ -7,6 +7,7 @@
   margin-top: 90px;
   padding-top: 60px;
   background-color: white;
+  padding-bottom: 5px;
 
   .overlay-slider {
     display: none;
@@ -284,7 +285,7 @@
     z-index: 9999;
     max-width: 99vw;
     border-radius: 0px;
-    cursor: pointer;
+    cursor: zoom-in;
 
     &__close {
       width: 70px;
@@ -341,12 +342,18 @@
         height: 80px;
         background-color: white;
         border-radius: 50%;
+        transition: all .9s ease;
+        &:hover {
+          opacity: .75s;
+          background-color: #7c7c7c;
+        }
   
         &::after {
           color: #e86439;
           font-size: 45px;
           padding-right: 5px;
           padding-top: 4px;
+
         }
       }
   
@@ -356,6 +363,11 @@
         height: 80px;
         background-color: white;
         border-radius: 50%;
+        transition: all .9s ease;
+        &:hover {
+          opacity: .75s;
+          background-color: #7c7c7c;
+        }
   
         &::after {
           color: #e86439;

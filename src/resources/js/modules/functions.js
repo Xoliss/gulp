@@ -237,7 +237,7 @@ const productsLenght = document.querySelectorAll('.card').length; // сколь�
 let items = 3; //начальные карточки
 
 showMore.addEventListener('click', () => {
-  items += 3;
+  items += 1;
   const array = Array.from(document.querySelector('.portfolio__cards').children);
   const VisItems = array.slice(0, items);
 
