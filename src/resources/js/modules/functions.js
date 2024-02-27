@@ -218,6 +218,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // Прокрутка вниз
       header.style.height = "80px";
       header.style.paddingTop = "0";
+      header.style.borderBottom = "1px solid grey";
+      header.style.borderRadius = "0 0 10px 10px";
+
       text.forEach(text => text.classList.add('hidden'));
       logo.style.marginTop = "12%";
     } else {
@@ -225,6 +228,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // header.style.height = `${headerHeight}px`;
       header.style.height = "110px";
       header.style.paddingTop = "0";
+      header.style.borderBottom = "none";
+      header.style.borderRadius = "none";
       headerLogoInner.marginBottom = "15px";
       text.forEach(text => text.classList.remove('hidden'));
     }
