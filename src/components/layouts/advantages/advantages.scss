@@ -62,7 +62,7 @@
   }
 
   &__block-shadow {
-    width: 99vw;
+    width: 99.99vw;
     height: 120px;
     background: linear-gradient(0deg, #f5f4f4 9%, rgba(245, 244, 244, 0) 100%);
   }
@@ -137,11 +137,11 @@
     padding-bottom: 0;
 
     &__inner {
-      background-position: center top (100px);
+      background-position: center top (260px);
       height: 1600px;
     }
 
-    &__info {
+    .info {
       width: 85vw;
     }
 
@@ -173,7 +173,7 @@
 
 
     &__inner {
-      background-position: center top 160px;
+      background-position: center top 320px;
       height: 1700px;
     }
     &__block-shadow {
@@ -192,7 +192,7 @@
 
 
     &__inner {
-      background-position: center top (145px);
+      background-position: center top (305px);
       height: 1600px;
     }
   }
@@ -205,7 +205,7 @@
 
     &__inner {
       height: 1280px;
-      background-position: center top (10px);
+      background-position: center top (130px);
     }
   }
 }

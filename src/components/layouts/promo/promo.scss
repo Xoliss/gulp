@@ -130,7 +130,12 @@
       top: 5rem;
       width: 35rem;
     }
+    .block__shadow {
+      bottom: 0;
+  
+    }
   }
+  
 }
 
 @media (max-width: 985px) {
@@ -170,7 +175,10 @@
       padding-left: 30px;
       padding-right: 20px;
       }
-    
+      .block__shadow {
+        bottom: 0;
+        height: 400px;
+      }
   }
 }
 
@@ -237,10 +245,14 @@
   }
 }
 
+
 @media (max-width: 475px) {
   .promo {
     background-position-x: 25px;
     background-size: 100% 33%;
+    .block__shadow {
+      height: 500px;
+    }
   }
 }
 

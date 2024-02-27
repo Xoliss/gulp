@@ -1021,7 +1021,7 @@ h5 {
 }
 
 .advantages__block-shadow {
-  width: 99vw;
+  width: 99.99vw;
   height: 120px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #f5f4f4), to(rgba(245, 244, 244, 0)));
   background: linear-gradient(0deg, #f5f4f4 9%, rgba(245, 244, 244, 0) 100%);
@@ -1270,7 +1270,7 @@ h5 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 6vw;
+  margin-top: 5vw;
 }
 
 .footer__bottom .footer__item {
@@ -1608,6 +1608,10 @@ h5 {
     width: 35rem;
   }
 
+  .promo .block__shadow {
+    bottom: 0;
+  }
+
   .trade-offer__inner {
     width: 90vw;
     height: 1300px;
@@ -1882,6 +1886,11 @@ h5 {
     padding-right: 20px;
   }
 
+  .promo .block__shadow {
+    bottom: 0;
+    height: 400px;
+  }
+
   .block__shadow {
     height: 300px;
   }
@@ -2056,11 +2065,11 @@ h5 {
   }
 
   .advantages__inner {
-    background-position: center top 100px;
+    background-position: center top 260px;
     height: 1600px;
   }
 
-  .advantages__info {
+  .advantages .info {
     width: 85vw;
   }
 
@@ -2268,7 +2277,7 @@ h5 {
   }
 
   .advantages__inner {
-    background-position: center top 160px;
+    background-position: center top 320px;
     height: 1700px;
   }
 
@@ -2341,6 +2350,10 @@ h5 {
     background-size: 100% 33%;
   }
 
+  .promo .block__shadow {
+    height: 500px;
+  }
+
   .trade-offer__inner {
     height: 1070px;
   }
@@ -2361,7 +2374,7 @@ h5 {
   }
 
   .advantages__inner {
-    background-position: center top 145px;
+    background-position: center top 305px;
     height: 1600px;
   }
 
@@ -2473,7 +2486,7 @@ h5 {
 
   .advantages__inner {
     height: 1280px;
-    background-position: center top 10px;
+    background-position: center top 130px;
   }
 
   .dignities .info__text {
