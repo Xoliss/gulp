@@ -1816,9 +1816,6 @@ h5 {
 
   .header__inner {
     gap: 50px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .header__logo-inner {
@@ -2147,6 +2144,13 @@ h5 {
   .header__inner {
     margin: 0 20px;
     gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .header__text {
+    display: none;
   }
 
   .header__logo {
